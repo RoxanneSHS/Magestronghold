@@ -1,0 +1,19 @@
+IF
+	Global("psRetrieveSpellKeyCounter","GLOBAL",1)
+	Global("psGovtBuildingSpawnCounter","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("psGovtBuildingSpawnCounter","GLOBAL",1)
+		SetGlobal("psRetrieveSpellKeyCounter","GLOBAL",2)
+		ActionOverride(Player1,LeaveAreaLUA("AR0069","",[418.1011],1))
+		ActionOverride(Player2,LeaveAreaLUA("AR0069","",[418.1011],1))
+		ActionOverride(Player3,LeaveAreaLUA("AR0069","",[418.1011],1))
+		ActionOverride(Player4,LeaveAreaLUA("AR0069","",[418.1011],1))
+		ActionOverride(Player5,LeaveAreaLUA("AR0069","",[418.1011],1))
+		ActionOverride(Player6,LeaveAreaLUA("AR0069","",[418.1011],1))
+		Continue()
+END
+
+
+

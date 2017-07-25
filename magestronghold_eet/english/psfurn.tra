@@ -1,0 +1,87 @@
+@0    = ~*The furnace glows red hot. If you so desired, you could use it to forge an item.*~
+@1    = ~*Leave the furnace alone*~
+@2    = ~*Prepare to create an item*~
+@3    = ~*Attempt to make another test item after your original failure*~
+@4    = ~*Prepare to make a Test Item - you had better make it small* ~
+@5    = ~What type of item do you wish to enchant?~
+@6    = ~Long Sword~
+@7    = ~Spear~
+@8    = ~Ring~
+@9    = ~Amulet~
+@10   = ~Wand~
+@11   = ~Staff~
+@12   = ~Shield~
+@13   = ~Mage Robe~
+@14   = ~Full Plate Mail~
+@15   = ~Nevermind.~
+@16   = ~Leather Armor~
+@17   = ~Axe~
+@18   = ~What power of enchantment do you want to place on the Item?~
+@19   = ~+1~
+@20   = ~+3~
+@21   = ~+2~
+@22   = ~What other abilities shall the item have?~
+@23   = ~To stun those whom the item is used against.~
+@24   = ~To do Magical Damage to those who the Item strikes.~
+@25   = ~To be a powerful Vorpal Weapon.~
+@26   = ~Forge the item? ~
+@27   = ~Yes~
+@28   = ~No~
+@29   = ~The Furnace Flares and you begin your work.~
+@30   = ~The item will not be forged.~
+@31   = ~To stun those who the item is used against.~
+@32   = ~What power of enchantment do you want to place on the Item?~
+@33   = ~<NO TEXT>~
+@34   = ~Leave the furnace alone.~
+@35   = ~I want to make a set of plate mail with good physical protections.~
+@36   = ~I want to make a set of plate mail capable of fending off the most vicious of physical attacks  ~
+@37   = ~I want to make a set of plate mail that grants the wearer immunity to lesser weapons. ~
+@38   = ~I want to make a set of plate mail that would allow me to battle anything single handedly. ~
+@39   = ~You must first get the required component to forge a item. ~
+@40   = ~I want it to provide impressive physical protections. ~
+@41   = ~I want it to provide powerful physical protections.~
+@42   = ~I want it to protect from spells that are cast against it. ~
+@43   = ~+4~
+@44   = ~You begin your work being careful not to make the same mistakes you made last time.~
+@45   = ~You begin your work on the item but you can't help feeling you need more practice.~
+
+@46   = ~What power of enchantment do you want to place on the Item?~
+@47   = ~I want it to protect me from physical attacks.~
+@48   = ~I want it to protect me from magical attacks.~
+@49   = ~I want it to aid my spell casting abilities.~
+@50   = ~I want it to do damage to my opponents.~
+@51   = ~I want it grant immunity to lesser weapons. ~
+@52   = ~Forge the item? ~
+@53   = ~No~
+@54   = ~Yes~
+@55   = ~The item will not be forged.~
+@56   = ~The Furnace Flares and you begin your work.~
+
+@57   = ~I want it to make me wiser in all that I do.~
+@58   = ~I want it to protect me from the elements. ~
+@59   = ~I want it to block attacks made against me.~
+@60   = ~I want it to protect me against any fearsome foes I meet. ~
+@61   = ~I want it to protect me from Physical Attacks.~
+
+@62    = ~I want it spew forth mighty balls of fire.~
+@63    = ~I want it to unleash bursts of electrical energy.~
+@64    = ~I want it to burn, freeze and electrocute my enemies.~
+@65    = ~I want it to destroy and wreck Havoc upon those who would defy my will.~
+
+@66   = ~I want a staff of power that will aid me in all that I do.~
+@67   = ~I want staff that will allow me to wield the elemental force of fire.~
+@68   = ~I want staff that will allow me to wield the elemental force of air.~
+@69   = ~I want a staff that will improve my ability to cast spells.~
+
+@70   = ~I want to create a shield that gives me impressive protections.~
+@71   = ~I want to create a shield the gives me mighty protections.  ~
+@72   = ~I want to create a shield that reflects damage back at my enemies.~
+@73   = ~I want to  create a shield that protects me from spells.~
+
+@74   = ~I want to create a robe that will protect me while adventuring.~
+@75   = ~I want to create a robe that will increase my spell casting abilities.~
+@76   = ~I want to create a robe that will protect me from powerful magics.~
+@77   = ~I want to create a robe that will protect me from physical attacks.~
+@78   = ~I want to create a robe that will protect me from my foes.~
+
+@79   = ~You are not of a high enough level to make anything useful. Come back later when you are more experienced.~

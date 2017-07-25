@@ -1,0 +1,45 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneID(Player1)
+		CreateCreature("OBSERVE", [2150.2400], 0)
+		CreateCreature("psTana01", [2203.2429], 7)
+		CreateCreature("psTana02", [2121.2575], 8)
+		CreateCreature("psTana2a", [2415.2322], 6)
+		CreateCreature("psTana03", [2290.2471], 7)
+
+		CreateCreature("psTalos1", [2102.2351], 14)
+		CreateCreature("psTalos2", [2038.2347], 14)
+		CreateCreature("psTalos3", [2077.2310], 14)
+		CreateCreature("psTalos4", [2044.2287], 14)
+		CreateCreature("psTalos5", [1999.2324], 14)
+
+		MoveViewPoint([2150.2400], INSTANT)
+		FadeFromColor([20.0], 0)
+		Wait(3)
+		DisplayStringHead("psTana01", @6)
+		Wait(6)
+		DisplayStringHead("psTana01", @7)
+		Wait(6)
+		DisplayStringHead("psTalos1", @8)
+		Wait(6)
+		DisplayStringHead("psTana01", @9)
+		Wait(6)
+		ActionOverride("psTalos1", ForceSpell("psTana01", CLERIC_SYMBOL_FEAR)
+		ActionOverride("psTalos2", Attack("psTana01"))
+		ActionOverride("psTalos3", Attack("psTana01"))
+		ActionOverride("psTalos4", Attack("psTana03"))
+		ActionOverride("psTalos5", Attack("psTana03"))
+
+		ActionOverride("psTana01", Attack("psTalos1"))
+		ActionOverride("psTana02", Attack("psTalos1"))
+		ActionOverride("psTana2a", Attack("psTalos1"))
+		ActionOverride("psTana03", Attack("psTalos1"))
+		Wait(4)
+
+		FadeToColor([20.0], 0)
+		ActionOverride("OBSERVE", DestroySelf())
+		StartCutScene("psCut44")
+END
+

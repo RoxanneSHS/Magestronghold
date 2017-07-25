@@ -1,0 +1,2221 @@
+BACKUP ~magestronghold_eet/backup~
+
+AUTHOR ~Org: Inferno & M, Updates: Hlid, Duality, Malbolgia~
+//EET reduced and adapted version of Planar Sphere mod, by Roxanne@SHS
+VERSION ~0.1~
+
+AUTO_TRA ~magestronghold_eet/%s~
+
+LANGUAGE ~English~
+~english~
+//~magestronghold_eet/english~
+~magestronghold_eet/english/setup.tra~
+
+BEGIN @0
+
+COPY ~magestronghold_eet/Pics~   ~override~ // Bmp files including additional search regions in AR0412SR.bmp
+     ~magestronghold_eet/eff~   ~override~ // Eff Files
+     ~magestronghold_eet/misc/SPPSQ22.2da~   ~override/SPPSQ22.2da~ // Non-.pro file copy
+     ~magestronghold_eet/bam~   ~override~ // Bam files
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME	~MSPLG1.BAM~	THEN BEGIN
+  COPY	~magestronghold_eet/bam/MSPLG1.BAM~   ~override~
+END
+
+
+// Cre Files
+COPY_EXISTING	~HELMKNI1.CRE~	~override~
+  PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN 	// protects against invalid files
+    WRITE_ASCII	0x248		~PSTEMPLE~ #8	// Override 
+    WRITE_ASCII	0x250		~SHT0901~ #8	// Class 
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING	~LATKNI01.CRE~	~override~
+  PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN 	// protects against invalid files
+    WRITE_ASCII	0x248		~PSTEMPLE~ #8	// Override 
+    WRITE_ASCII	0x250		~TALWAR~ #8		// Class 
+    WRITE_ASCII	0x258		~SHT0902~ #8	// Race 
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING	~TALKNI01.CRE~	~override~
+  PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN 	// protects against invalid files
+    WRITE_ASCII	0x248		~PSTEMPLE~ #8	// Override 
+    WRITE_ASCII	0x250		~SHT0904~ #8	// Class 
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~LAVOK01.cre~ ~override~       	//LAVOK needs Robe of Evil Archmagi added and equiped in Armor slot
+  PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN 	// protects against invalid files
+    ADD_CRE_ITEM			~CLCK17~	#0 #0 #0	~NONE~	~ARMOR~	EQUIP
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+
+COPY ~magestronghold_eet/cre/psDwarf1.cre~ ~override/psDwarf1.cre~
+  SAY NAME1 @618
+  SAY NAME2 @618
+
+COPY ~magestronghold_eet/cre/psDwarf2.cre~ ~override/psDwarf2.cre~
+  SAY NAME1 @618
+  SAY NAME2 @618
+
+COPY ~magestronghold_eet/cre/psTeosCh.cre~ ~override/psTeosCh.cre~
+  SAY NAME1 @4
+  SAY NAME2 @4
+
+COPY ~magestronghold_eet/cre/psLothan.cre~ ~override/psLothan.cre~
+  SAY NAME1 @599
+  SAY NAME2 @599
+
+COPY ~magestronghold_eet/cre/psTalAc1.cre~ ~override/psTalAc1.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psTalAc2.cre~ ~override/psTalAc2.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psTalAc3.cre~ ~override/psTalAc3.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psTalAc4.cre~ ~override/psTalAc4.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psTalAc5.cre~ ~override/psTalAc5.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psTalAc6.cre~ ~override/psTalAc6.cre~
+  SAY NAME1 @606
+  SAY NAME2 @606
+
+COPY ~magestronghold_eet/cre/psLotAc1.cre~ ~override/psLotAc1.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psLotAc2.cre~ ~override/psLotAc2.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psLotAc3.cre~ ~override/psLotAc3.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psLotAc4.cre~ ~override/psLotAc4.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psLotAc5.cre~ ~override/psLotAc5.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psLotAc6.cre~ ~override/psLotAc6.cre~
+  SAY NAME1 @607
+  SAY NAME2 @607
+
+COPY ~magestronghold_eet/cre/psKob01.cre~ ~override/psKob01.cre~
+  SAY NAME1 @603
+  SAY NAME2 @603
+
+COPY ~magestronghold_eet/cre/psKob02.cre~ ~override/psKob02.cre~
+  SAY NAME1 @603
+  SAY NAME2 @603
+
+COPY ~magestronghold_eet/cre/psAver.cre~ ~override/psAver.cre~
+  SAY NAME1 @570
+  SAY NAME2 @570
+
+COPY ~magestronghold_eet/cre/psTalos.cre~ ~override/psTalos.cre~
+  SAY NAME1 @601
+  SAY NAME2 @601
+
+COPY ~magestronghold_eet/cre/psHelm.cre~ ~override/psHelm.cre~
+  SAY NAME1 @600
+  SAY NAME2 @600
+
+COPY ~magestronghold_eet/cre/psDMAd01.cre~ ~override/psDMAd01.cre~
+  SAY NAME1 @590
+  SAY NAME2 @590
+
+COPY ~magestronghold_eet/cre/psDMAd02.cre~ ~override/psDMAd02.cre~
+  SAY NAME1 @591
+  SAY NAME2 @591
+
+COPY ~magestronghold_eet/cre/psDMAd03.cre~ ~override/psDMAd03.cre~
+  SAY NAME1 @591
+  SAY NAME2 @591
+
+COPY ~magestronghold_eet/cre/psApp06a.cre~ ~override/psApp06a.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp06b.cre~ ~override/psApp06b.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp06c.cre~ ~override/psApp06c.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp06d.cre~ ~override/psApp06d.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp07a.cre~ ~override/psApp07a.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp07b.cre~ ~override/psApp07b.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp07c.cre~ ~override/psApp07c.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp08.cre~ ~override/psApp08.cre~
+  SAY NAME1 @572
+  SAY NAME2 @572
+
+COPY ~magestronghold_eet/cre/psCowl01.cre~ ~override/psCowl01.cre~
+  SAY NAME1 @571
+  SAY NAME2 @571
+
+COPY ~magestronghold_eet/cre/psBaat01.cre~ ~override/psBaat01.cre~
+  SAY NAME1 @585
+  SAY NAME2 @585
+
+COPY ~magestronghold_eet/cre/psBaat03.cre~ ~override/psBaat03.cre~
+  SAY NAME1 @589
+  SAY NAME2 @589
+
+COPY ~magestronghold_eet/cre/psBaat04.cre~ ~override/psBaat04.cre~
+  SAY NAME1 @587
+  SAY NAME2 @587
+
+COPY ~magestronghold_eet/cre/psBaatL.cre~ ~override/psBaatL.cre~
+  SAY NAME1 @596
+  SAY NAME2 @596
+
+COPY ~magestronghold_eet/cre/psBaatUD.cre~ ~override/psBaatUD.cre~
+  SAY NAME1 @597
+  SAY NAME2 @597
+
+COPY ~magestronghold_eet/cre/psPal01.cre~ ~override/psPal01.cre~
+  SAY NAME1 @588
+  SAY NAME2 @588
+
+COPY ~magestronghold_eet/cre/psPal02.cre~ ~override/psPal02.cre~
+  SAY NAME1 @588
+  SAY NAME2 @588
+
+COPY ~magestronghold_eet/cre/psPal03.cre~ ~override/psPal03.cre~
+  SAY NAME1 @588
+  SAY NAME2 @588
+
+COPY ~magestronghold_eet/cre/psPal04.cre~ ~override/psPal04.cre~
+  SAY NAME1 @588
+  SAY NAME2 @588
+
+COPY ~magestronghold_eet/cre/psBaat02.cre~ ~override/psBaat02.cre~
+  SAY NAME1 @585
+  SAY NAME2 @585
+
+COPY ~magestronghold_eet/cre/psBaat2a.cre~ ~override/psBaat2a.cre~
+  SAY NAME1 @585
+  SAY NAME2 @585
+
+COPY ~magestronghold_eet/cre/ps900Spa.cre~ ~override/ps900Spa.cre~
+  SAY NAME1 @584
+  SAY NAME2 @584
+
+COPY ~magestronghold_eet/cre/psHelm01.cre~ ~override/psHelm01.cre~
+  SAY NAME1 @577
+  SAY NAME2 @577
+
+COPY ~magestronghold_eet/cre/psHelm02.cre~ ~override/psHelm02.cre~
+  SAY NAME1 @578
+  SAY NAME2 @578
+
+COPY ~magestronghold_eet/cre/psHelm03.cre~ ~override/psHelm03.cre~
+  SAY NAME1 @578
+  SAY NAME2 @578
+
+COPY ~magestronghold_eet/cre/psTana01.cre~ ~override/psTana01.cre~
+  SAY NAME1 @579
+  SAY NAME2 @579
+
+COPY ~magestronghold_eet/cre/psTana02.cre~ ~override/psTana02.cre~
+  SAY NAME1 @586
+  SAY NAME2 @586
+
+COPY ~magestronghold_eet/cre/psTana2a.cre~ ~override/psTana2a.cre~
+  SAY NAME1 @586
+  SAY NAME2 @586
+
+COPY ~magestronghold_eet/cre/psTana03.cre~ ~override/psTana03.cre~
+  SAY NAME1 @583
+  SAY NAME2 @583
+
+COPY ~magestronghold_eet/cre/psTana04.cre~ ~override/psTana04.cre~
+  SAY NAME1 @580
+  SAY NAME2 @580
+
+COPY ~magestronghold_eet/cre/psTanaL.cre~ ~override/psTanaL.cre~
+  SAY NAME1 @595
+  SAY NAME2 @595
+
+COPY ~magestronghold_eet/cre/psTanaUD.cre~ ~override/psTanaUD.cre~
+  SAY NAME1 @598
+  SAY NAME2 @598
+
+COPY ~magestronghold_eet/cre/psTalos1.cre~ ~override/psTalos1.cre~
+  SAY NAME1 @581
+  SAY NAME2 @581
+
+COPY ~magestronghold_eet/cre/psTalos2.cre~ ~override/psTalos2.cre~
+  SAY NAME1 @582
+  SAY NAME2 @582
+
+COPY ~magestronghold_eet/cre/psTalos3.cre~ ~override/psTalos3.cre~
+  SAY NAME1 @582
+  SAY NAME2 @582
+
+COPY ~magestronghold_eet/cre/psTalos4.cre~ ~override/psTalos4.cre~
+  SAY NAME1 @582
+  SAY NAME2 @582
+
+COPY ~magestronghold_eet/cre/psTalos5.cre~ ~override/psTalos5.cre~
+  SAY NAME1 @582
+  SAY NAME2 @582
+
+COPY ~magestronghold_eet/cre/psTeos.cre~ ~override/psTeos.cre~
+  SAY NAME1 @4
+  SAY NAME2 @4
+
+COPY ~magestronghold_eet/cre/psAdv06.cre~ ~override/psAdv06.cre~
+  SAY NAME1 @592
+  SAY NAME2 @592
+
+COPY ~magestronghold_eet/cre/psAdv07.cre~ ~override/psAdv07.cre~
+  SAY NAME1 @592
+  SAY NAME2 @592
+
+COPY ~magestronghold_eet/cre/psAdv08.cre~ ~override/psAdv08.cre~
+  SAY NAME1 @592
+  SAY NAME2 @592
+
+COPY ~magestronghold_eet/cre/psDem02.cre~ ~override/psDem02.cre~
+  SAY NAME1 @34
+  SAY NAME2 @34
+
+COPY ~magestronghold_eet/cre/psDem03.cre~ ~override/psDem03.cre~
+  SAY NAME1 @34
+  SAY NAME2 @34
+
+COPY ~magestronghold_eet/cre/psNiSum.cre~ ~override/psNiSum.cre~
+  SAY NAME1 @16
+  SAY NAME2 @16
+
+COPY ~magestronghold_eet/cre/psKhel.cre~ ~override/psKhel.cre~
+  SAY NAME1 @538
+  SAY NAME2 @538
+
+COPY ~magestronghold_eet/cre/psSPrst.cre~ ~override/psSPrst.cre~
+  SAY NAME1 @545
+  SAY NAME2 @545
+
+COPY ~magestronghold_eet/cre/psSplit1.cre~ ~override/psSplit1.cre~
+  SAY NAME1 @3
+  SAY NAME2 @3
+
+COPY ~magestronghold_eet/cre/psSplit2.cre~ ~override/psSplit2.cre~
+  SAY NAME1 @4
+  SAY NAME2 @4
+
+COPY ~magestronghold_eet/cre/psSplit3.cre~ ~override/psSplit3.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psSplit4.cre~ ~override/psSplit4.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psApp01.cre~ ~override/psApp01.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psDummy1.cre~ ~override/psDummy1.cre~
+  SAY NAME1 @3
+  SAY NAME2 @3
+
+COPY ~magestronghold_eet/cre/psDummy2.cre~ ~override/psDummy2.cre~
+  SAY NAME1 @3
+  SAY NAME2 @3
+
+COPY ~magestronghold_eet/cre/psTutor1.cre~ ~override/psTutor1.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psqhosu.cre~ ~override/psqhosu.cre~
+  SAY NAME1 @70
+  SAY NAME2 @70
+
+COPY ~magestronghold_eet/cre/psqmfh.cre~ ~override/psqmfh.cre~
+  SAY NAME1 @71
+  SAY NAME2 @71
+
+COPY ~magestronghold_eet/cre/psqsksu.cre~ ~override/psqsksu.cre~
+  SAY NAME1 @72
+  SAY NAME2 @72
+
+COPY ~magestronghold_eet/cre/psqssum.cre~ ~override/psqssum.cre~
+  SAY NAME1 @73
+  SAY NAME2 @73
+
+COPY ~magestronghold_eet/cre/psqtpa1.cre~ ~override/psqtpa1.cre~
+  SAY NAME1 @74
+  SAY NAME2 @74
+
+COPY ~magestronghold_eet/cre/psqtpa2.cre~ ~override/psqtpa2.cre~
+  SAY NAME1 @74
+  SAY NAME2 @74
+
+COPY ~magestronghold_eet/cre/psqtpa3.cre~ ~override/psqtpa3.cre~
+  SAY NAME1 @74
+  SAY NAME2 @74
+
+COPY ~magestronghold_eet/cre/psApp02.cre~ ~override/psApp02.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApp05.cre~ ~override/psApp05.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+
+COPY ~magestronghold_eet/cre/psSPTar2.cre~ ~override/psSPTar2.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psSPTar3.cre~ ~override/psSPTar3.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psSPTar4.cre~ ~override/psSPTar4.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psSPTar5.cre~ ~override/psSPTar5.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psPrst1.cre~ ~override/psPrst1.cre~
+  SAY NAME1 @8
+  SAY NAME2 @8
+
+COPY ~magestronghold_eet/cre/psPrst2.cre~ ~override/psPrst2.cre~
+  SAY NAME1 @9
+  SAY NAME2 @9
+
+COPY ~magestronghold_eet/cre/psPrst3.cre~ ~override/psPrst3.cre~
+  SAY NAME1 @8
+  SAY NAME2 @8
+
+COPY ~magestronghold_eet/cre/psMaEle.cre~ ~override/psMaEle.cre~
+  SAY NAME1 @10
+  SAY NAME2 @10
+
+COPY ~magestronghold_eet/cre/psLordAo.cre~ ~override/psLordAo.cre~
+  SAY NAME1 @11
+  SAY NAME2 @11
+
+COPY ~magestronghold_eet/cre/psApp03.cre~ ~override/psApp03.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psMel.cre~ ~override/psMel.cre~
+  SAY NAME1 @12
+  SAY NAME2 @12
+
+COPY ~magestronghold_eet/cre/psPort03.cre~ ~override/psPort03.cre~
+  SAY NAME1 @13
+  SAY NAME2 @13
+
+COPY ~magestronghold_eet/cre/psBelle.cre~ ~override/psBelle.cre~
+  SAY NAME1 @573
+  SAY NAME2 @573
+
+COPY ~magestronghold_eet/cre/psKnife.cre~ ~override/psKnife.cre~
+  SAY NAME1 @17
+  SAY NAME2 @17
+
+COPY ~magestronghold_eet/cre/psSorc.cre~ ~override/psSorc.cre~
+  SAY NAME1 @18
+  SAY NAME2 @18
+
+COPY ~magestronghold_eet/cre/psApAtt1.cre~ ~override/psApAtt1.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psApAtt3.cre~ ~override/psApAtt3.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdv01.cre~ ~override/psAdv01.cre~
+  SAY NAME1 @19
+  SAY NAME2 @19
+
+COPY ~magestronghold_eet/cre/psAdv02.cre~ ~override/psAdv02.cre~
+  SAY NAME1 @19
+  SAY NAME2 @19
+
+COPY ~magestronghold_eet/cre/psTutor2.cre~ ~override/psTutor2.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psAdv03.cre~ ~override/psAdv03.cre~
+  SAY NAME1 @19
+  SAY NAME2 @19
+
+COPY ~magestronghold_eet/cre/psAdv04.cre~ ~override/psAdv04.cre~
+  SAY NAME1 @19
+  SAY NAME2 @19
+
+COPY ~magestronghold_eet/cre/psAdv05.cre~ ~override/psAdv05.cre~
+  SAY NAME1 @19
+  SAY NAME2 @19
+
+COPY ~magestronghold_eet/cre/psAdApp1.cre~ ~override/psAdApp1.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdApp2.cre~ ~override/psAdApp2.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdApp3.cre~ ~override/psAdApp3.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdApp4.cre~ ~override/psAdApp4.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdApp5.cre~ ~override/psAdApp5.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psAdApp6.cre~ ~override/psAdApp6.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psTutor3.cre~ ~override/psTutor3.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psVecna.cre~ ~override/psVecna.cre~
+  SAY NAME1 @21
+  SAY NAME2 @21
+
+COPY ~magestronghold_eet/cre/psModron.cre~ ~override/psModron.cre~
+  SAY NAME1 @23
+  SAY NAME2 @23
+
+COPY ~magestronghold_eet/cre/psSolar.cre~ ~override/psSolar.cre~
+  SAY NAME1 @24
+  SAY NAME2 @24
+
+COPY ~magestronghold_eet/cre/psMarile.cre~ ~override/psMarile.cre~
+  SAY NAME1 @25
+  SAY NAME2 @25
+
+COPY ~magestronghold_eet/cre/psMari1.cre~ ~override/psMari1.cre~
+  SAY NAME1 @25
+  SAY NAME2 @25
+
+COPY ~magestronghold_eet/cre/psMari2.cre~ ~override/psMari2.cre~
+  SAY NAME1 @25
+  SAY NAME2 @25
+
+COPY ~magestronghold_eet/cre/psChaos.cre~ ~override/psChaos.cre~
+  SAY NAME1 @26
+  SAY NAME2 @26
+
+COPY ~magestronghold_eet/cre/psBaat.cre~ ~override/psBaat.cre~
+  SAY NAME1 @27
+  SAY NAME2 @27
+
+COPY ~magestronghold_eet/cre/psGlab.cre~ ~override/psGlab.cre~
+  SAY NAME1 @28
+  SAY NAME2 @28
+
+COPY ~magestronghold_eet/cre/psKord01.cre~ ~override/psKord01.cre~
+  SAY NAME1 @29
+  SAY NAME2 @29
+
+COPY ~magestronghold_eet/cre/psKord02.cre~ ~override/psKord02.cre~
+  SAY NAME1 @29
+  SAY NAME2 @29
+
+COPY ~magestronghold_eet/cre/psKord03.cre~ ~override/psKord03.cre~
+  SAY NAME1 @29
+  SAY NAME2 @29
+
+COPY ~magestronghold_eet/cre/psKord04.cre~ ~override/psKord04.cre~
+  SAY NAME1 @29
+  SAY NAME2 @29
+
+COPY ~magestronghold_eet/cre/psKord05.cre~ ~override/psKord05.cre~
+  SAY NAME1 @29
+  SAY NAME2 @29
+
+COPY ~magestronghold_eet/cre/psFanat1.cre~ ~override/psFanat1.cre~
+  SAY NAME1 @30
+  SAY NAME2 @30
+
+COPY ~magestronghold_eet/cre/psFanat2.cre~ ~override/psFanat2.cre~
+  SAY NAME1 @30
+  SAY NAME2 @30
+
+COPY ~magestronghold_eet/cre/psFanat3.cre~ ~override/psFanat3.cre~
+  SAY NAME1 @30
+  SAY NAME2 @30
+
+COPY ~magestronghold_eet/cre/psFanat4.cre~ ~override/psFanat4.cre~
+  SAY NAME1 @30
+  SAY NAME2 @30
+
+COPY ~magestronghold_eet/cre/psFanat5.cre~ ~override/psFanat5.cre~
+  SAY NAME1 @30
+  SAY NAME2 @30
+
+COPY ~magestronghold_eet/cre/psApAtt2.cre~ ~override/psApAtt2.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psHelm1.cre~ ~override/psHelm1.cre~
+  SAY NAME1 @31
+  SAY NAME2 @31
+
+COPY ~magestronghold_eet/cre/psDego.cre~ ~override/psDego.cre~
+  SAY NAME1 @32
+  SAY NAME2 @32
+
+COPY ~magestronghold_eet/cre/psHelm2.cre~ ~override/psHelm2.cre~
+  SAY NAME1 @31
+  SAY NAME2 @31
+
+COPY ~magestronghold_eet/cre/psBroom1.cre~ ~override/psBroom1.cre~
+  SAY NAME1 @33
+  SAY NAME2 @33
+
+COPY ~magestronghold_eet/cre/psBroom2.cre~ ~override/psBroom2.cre~
+  SAY NAME1 @33
+  SAY NAME2 @33
+
+COPY ~magestronghold_eet/cre/psTutor4.cre~ ~override/psTutor4.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psDem01.cre~ ~override/psDem01.cre~
+  SAY NAME1 @34
+  SAY NAME2 @34
+
+COPY ~magestronghold_eet/cre/psWeil.cre~ ~override/psWeil.cre~
+  SAY NAME1 @35
+  SAY NAME2 @35
+
+COPY ~magestronghold_eet/cre/psApp04.cre~ ~override/psApp04.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psExam.cre~ ~override/psExam.cre~
+  SAY NAME1 @36
+  SAY NAME2 @36
+
+COPY ~magestronghold_eet/cre/psTest01.cre~ ~override/psTest01.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psTest02.cre~ ~override/psTest02.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psTest03.cre~ ~override/f03.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+  COPY ~magestronghold_eet/cre/psTest03.cre~ ~override/psTest03.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psTest04.cre~ ~override/psTest04.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psTutor6.cre~ ~override/psTutor6.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psMagIte.cre~ ~override/psMagIte.cre~
+  SAY NAME1 @5
+  SAY NAME2 @5
+
+COPY ~magestronghold_eet/cre/psMeli.cre~ ~override/psMeli.cre~
+  SAY NAME1 @37
+  SAY NAME2 @37
+
+COPY ~magestronghold_eet/cre/psTutor7.cre~ ~override/psTutor7.cre~
+  SAY NAME1 @6
+  SAY NAME2 @6
+
+COPY ~magestronghold_eet/cre/psThal.cre~ ~override/psThal.cre~
+  SAY NAME1 @38
+  SAY NAME2 @38
+
+COPY ~magestronghold_eet/cre/psTrait.cre~ ~override/psTrait.cre~
+  SAY NAME1 @15
+  SAY NAME2 @15
+
+COPY ~magestronghold_eet/cre/psRedWiz.cre~ ~override/psRedWiz.cre~
+  SAY NAME1 @20
+  SAY NAME2 @20
+
+COPY ~magestronghold_eet/cre/psRedW2.cre~ ~override/psRedW2.cre~
+  SAY NAME1 @20
+  SAY NAME2 @20
+
+COPY ~magestronghold_eet/cre/psGNight.cre~ ~override/psGNight.cre~
+  SAY NAME1 @39
+  SAY NAME2 @39
+
+COPY ~magestronghold_eet/cre/psNight.cre~ ~override/psNight.cre~
+  SAY NAME1 @16
+  SAY NAME2 @16
+
+COPY ~magestronghold_eet/cre/psDream.cre~ ~override/psDream.cre~
+  SAY NAME1 @40
+  SAY NAME2 @40
+
+COPY ~magestronghold_eet/cre/psPort01.cre~ ~override/psPort01.cre~
+  SAY NAME1 @41
+  SAY NAME2 @41
+
+COPY ~magestronghold_eet/cre/psFear.cre~ ~override/psFear.cre~
+  SAY NAME1 @42
+  SAY NAME2 @42
+
+COPY ~magestronghold_eet/cre/psElmin.cre~ ~override/psElmin.cre~
+  SAY NAME1 @43
+  SAY NAME2 @43
+
+COPY ~magestronghold_eet/cre/psMystra.cre~ ~override/psMystra.cre~
+  SAY NAME1 @14
+  SAY NAME2 @14
+
+COPY ~magestronghold_eet/cre/psMysEnd.cre~ ~override/psMysEnd.cre~
+  SAY NAME1 @14
+  SAY NAME2 @14
+
+COPY ~magestronghold_eet/cre/psPain.cre~ ~override/psPain.cre~
+  SAY NAME1 @44
+  SAY NAME2 @44
+
+COPY ~magestronghold_eet/cre/psHag.cre~ ~override/psHag.cre~
+  SAY NAME1 @45
+  SAY NAME2 @45
+
+COPY ~magestronghold_eet/cre/psPNight.cre~ ~override/psPNight.cre~
+  SAY NAME1 @46
+  SAY NAME2 @46
+
+COPY ~magestronghold_eet/cre/psGlobe1.cre~ ~override/psGlobe1.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+COPY ~magestronghold_eet/cre/psGlobe2.cre~ ~override/psGlobe2.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+COPY ~magestronghold_eet/cre/psGlobe3.cre~ ~override/psGlobe3.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+COPY ~magestronghold_eet/cre/psGlobe4.cre~ ~override/psGlobe4.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+COPY ~magestronghold_eet/cre/psGlobe5.cre~ ~override/psGlobe5.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+COPY ~magestronghold_eet/cre/psGlobe6.cre~ ~override/psGlobe6.cre~
+  SAY NAME1 @47
+  SAY NAME2 @47
+
+COPY ~magestronghold_eet/cre/psMagic.cre~ ~override/psMagic.cre~
+  SAY NAME1 @48
+  SAY NAME2 @48
+
+COPY ~magestronghold_eet/cre/psMDivi.cre~ ~override/psMDivi.cre~
+  SAY NAME1 @49
+  SAY NAME2 @49
+
+COPY ~magestronghold_eet/cre/psMIllu.cre~ ~override/psMIllu.cre~
+  SAY NAME1 @50
+  SAY NAME2 @50
+
+COPY ~magestronghold_eet/cre/psMAbju.cre~ ~override/psMAbju.cre~
+  SAY NAME1 @51
+  SAY NAME2 @51
+
+COPY ~magestronghold_eet/cre/psMAlte.cre~ ~override/psMAlte.cre~
+  SAY NAME1 @52
+  SAY NAME2 @52
+
+COPY ~magestronghold_eet/cre/psMNecr.cre~ ~override/psMNecr.cre~
+  SAY NAME1 @53
+  SAY NAME2 @53
+
+COPY ~magestronghold_eet/cre/psMConj.cre~ ~override/psMConj.cre~
+  SAY NAME1 @54
+  SAY NAME2 @54
+
+COPY ~magestronghold_eet/cre/psMEnch.cre~ ~override/psMEnch.cre~
+  SAY NAME1 @55
+  SAY NAME2 @55
+
+COPY ~magestronghold_eet/cre/psMInvo.cre~ ~override/psMInvo.cre~
+  SAY NAME1 @56
+  SAY NAME2 @56
+
+COPY ~magestronghold_eet/cre/psPort02.cre~ ~override/psPort02.cre~
+  SAY NAME1 @57
+  SAY NAME2 @57
+
+COPY ~magestronghold_eet/cre/psLady.cre~ ~override/psLady.cre~
+  SAY NAME1 @58
+  SAY NAME2 @58
+
+COPY ~magestronghold_eet/cre/psNarr.cre~ ~override/psNarr.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psPPort.cre~ ~override/psPPort.cre~
+  SAY NAME1 @59
+  SAY NAME2 @59
+
+COPY ~magestronghold_eet/cre/psDemi.cre~ ~override/psDemi.cre~
+  SAY NAME1 @60
+  SAY NAME2 @60
+
+COPY ~magestronghold_eet/cre/psPeas1.cre~ ~override/psPeas1.cre~
+  SAY NAME1 @61
+  SAY NAME2 @61
+
+COPY ~magestronghold_eet/cre/psPeas2.cre~ ~override/psPeas2.cre~
+  SAY NAME1 @61
+  SAY NAME2 @61
+
+COPY ~magestronghold_eet/cre/psPeas3.cre~ ~override/psPeas3.cre~
+  SAY NAME1 @61
+  SAY NAME2 @61
+
+COPY ~magestronghold_eet/cre/psFurn.cre~ ~override/psFurn.cre~
+  SAY NAME1 @63
+  SAY NAME2 @63
+
+COPY ~magestronghold_eet/cre/psInch.cre~ ~override/psInch.cre~
+  SAY NAME1 @64
+  SAY NAME2 @64
+
+COPY ~magestronghold_eet/cre/psEnfor.cre~ ~override/psEnfor.cre~
+  SAY NAME1 @65
+  SAY NAME2 @65
+
+COPY ~magestronghold_eet/cre/psSlime.cre~ ~override/psSlime.cre~
+  SAY NAME1 @66
+  SAY NAME2 @66
+
+COPY ~magestronghold_eet/cre/psStorm.cre~ ~override/psStorm.cre~
+  SAY NAME1 @67
+  SAY NAME2 @67
+
+COPY ~magestronghold_eet/cre/psInfer.cre~ ~override/psInfer.cre~
+  SAY NAME1 @68
+  SAY NAME2 @68
+
+COPY ~magestronghold_eet/cre/psVortel.cre~ ~override/psVortel.cre~
+  SAY NAME1 @69
+  SAY NAME2 @69
+
+COPY ~magestronghold_eet/cre/psSPTar1.cre~ ~override/psSPTar1.cre~
+  SAY NAME1 @7
+  SAY NAME2 @7
+
+COPY ~magestronghold_eet/cre/psGithCa.cre~ ~override/psGithCa.cre~
+  SAY NAME1 @567
+  SAY NAME2 @567
+
+COPY ~magestronghold_eet/cre/psGith1.cre~ ~override/psGith1.cre~
+  SAY NAME1 @568
+  SAY NAME2 @568
+
+COPY ~magestronghold_eet/cre/psGith2.cre~ ~override/psGith2.cre~
+  SAY NAME1 @568
+  SAY NAME2 @568
+
+COPY ~magestronghold_eet/cre/psFlay1.cre~ ~override/psFlay1.cre~
+  SAY NAME1 @569
+  SAY NAME2 @569
+
+COPY ~magestronghold_eet/cre/psFlay2.cre~ ~override/psFlay2.cre~
+  SAY NAME1 @569
+  SAY NAME2 @569
+
+
+
+  // Item Files
+  COPY ~magestronghold_eet/itm/psMelHrd.itm~ ~override/psMelHrd.itm~
+  COPY ~magestronghold_eet/itm/psMelIns.itm~ ~override/psMelIns.itm~
+
+  COPY ~magestronghold_eet/itm/psTChick.itm~ ~override/psTChick.itm~
+    SAY NAME1 @614
+    SAY NAME2 @614
+    SAY UNIDENTIFIED_DESC @615
+    SAY DESC @615
+
+
+  COPY ~magestronghold_eet/itm/psBelt01.itm~ ~override/psBelt01.itm~
+    SAY NAME1 @563
+    SAY NAME2 @564
+    SAY UNIDENTIFIED_DESC @565
+    SAY DESC @566
+
+  COPY ~magestronghold_eet/itm/psRing01.itm~ ~override/psRing01.itm~
+    SAY NAME1 @82
+    SAY NAME2 @83
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @85
+
+  COPY ~magestronghold_eet/itm/psArti.itm~ ~override/psArti.itm~
+    SAY NAME1 @86
+    SAY NAME2 @86
+    SAY UNIDENTIFIED_DESC @87
+    SAY DESC @87
+
+  COPY ~magestronghold_eet/itm/psCre01.itm~ ~override/psCre01.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psCre02.itm~ ~override/psCre02.itm~
+    SAY NAME1 @89
+    SAY NAME2 @89
+
+  COPY ~magestronghold_eet/itm/psSW1H01.itm~ ~override/psSW1H01.itm~
+    SAY NAME1 @622
+    SAY NAME2 @557
+    SAY UNIDENTIFIED_DESC @576
+    SAY DESC @558
+
+  COPY ~magestronghold_eet/itm/psSW1H02.itm~ ~override/psSW1H02.itm~
+    SAY NAME1 @622
+    SAY NAME2 @574
+    SAY UNIDENTIFIED_DESC @576
+    SAY DESC @575
+
+  COPY ~magestronghold_eet/itm/psSW2h01.itm~ ~override/psSW2h01.itm~
+    SAY NAME1 @90
+    SAY NAME2 @91
+    SAY UNIDENTIFIED_DESC @92
+    SAY DESC @93
+
+  COPY ~magestronghold_eet/itm/psHelm01.itm~ ~override/psHelm01.itm~
+    SAY NAME1 @82
+    SAY NAME2 @100
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @101
+
+  COPY ~magestronghold_eet/itm/psHelm02.itm~ ~override/psHelm02.itm~
+    SAY NAME1 @142
+    SAY NAME2 @143
+    SAY UNIDENTIFIED_DESC @144
+    SAY DESC @145
+
+  COPY ~magestronghold_eet/itm/psHelm03.itm~ ~override/psHelm03.itm~
+    SAY NAME1 @146
+    SAY NAME2 @147
+    SAY UNIDENTIFIED_DESC @148
+    SAY DESC @149
+
+  COPY ~magestronghold_eet/itm/psHelm04.itm~ ~override/psHelm04.itm~
+    SAY NAME1 @146
+    SAY NAME2 @553
+    SAY UNIDENTIFIED_DESC @148
+    SAY DESC @554
+
+  COPY ~magestronghold_eet/itm/psHelm05.itm~ ~override/psHelm05.itm~
+    SAY NAME1 @146
+    SAY NAME2 @555
+    SAY UNIDENTIFIED_DESC @148
+    SAY DESC @556
+
+  COPY ~magestronghold_eet/itm/psWand01.itm~ ~override/psWand01.itm~
+    SAY NAME1 @102
+    SAY NAME2 @103
+    SAY UNIDENTIFIED_DESC @104
+    SAY DESC @105
+
+COPY ~magestronghold_eet/itm/psWand02.itm~ ~override/psWand02.itm~
+    SAY NAME1 @102
+    SAY NAME2 @111
+    SAY UNIDENTIFIED_DESC @112
+    SAY DESC @113
+
+COPY ~magestronghold_eet/itm/psBolt01.itm~ ~override/psBolt01.itm~
+    SAY NAME1 @114
+    SAY NAME2 @115
+    SAY UNIDENTIFIED_DESC @116
+    SAY DESC @117
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    READ_LONG  0x6a "fx_off" ELSE 0
+    FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+      READ_SHORT ("%abil_off%" + 0x1e + (0x38 * "%index%")) "abil_fx_num"
+      READ_SHORT ("%abil_off%" + 0x20 + (0x38 * "%index%")) "abil_fx_idx"
+      FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+        READ_SHORT ("%fx_off%" + (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+        PATCH_IF ("%opcode%" = 139) BEGIN
+          SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @118
+        END
+      END
+    END
+
+COPY ~magestronghold_eet/itm/psBolt02.itm~ ~override/psBolt02.itm~
+    SAY NAME1 @114
+    SAY NAME2 @559
+    SAY UNIDENTIFIED_DESC @116
+    SAY DESC @560
+
+COPY ~magestronghold_eet/itm/psBrac01.itm~ ~override/psBrac01.itm~
+    SAY NAME1 @119
+    SAY NAME2 @120
+    SAY UNIDENTIFIED_DESC @121
+    SAY DESC @122
+
+COPY ~magestronghold_eet/itm/psSands.itm~ ~override/psSands.itm~
+    SAY NAME1 @123
+    SAY NAME2 @124
+    SAY UNIDENTIFIED_DESC @125
+    SAY DESC @126
+
+COPY ~magestronghold_eet/itm/psShld01.itm~ ~override/psShld01.itm~
+    SAY NAME1 @131
+    SAY NAME2 @132
+    SAY UNIDENTIFIED_DESC @133
+    SAY DESC @134
+
+COPY ~magestronghold_eet/itm/psSW2H02.itm~ ~override/psSW2H02.itm~
+    SAY NAME1 @90
+    SAY NAME2 @135
+    SAY UNIDENTIFIED_DESC @92
+    SAY DESC @136
+
+COPY ~magestronghold_eet/itm/psBook01.itm~ ~override/psBook01.itm~
+    SAY NAME1 @137
+    SAY NAME2 @138
+    SAY UNIDENTIFIED_DESC @139
+    SAY DESC @140
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    READ_LONG  0x6a "fx_off" ELSE 0
+    FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+      READ_SHORT ("%abil_off%" + 0x1e + (0x38 * "%index%")) "abil_fx_num"
+      READ_SHORT ("%abil_off%" + 0x20 + (0x38 * "%index%")) "abil_fx_idx"
+      FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+        READ_SHORT ("%fx_off%" + (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+        PATCH_IF ("%opcode%" = 139) BEGIN
+          SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @141
+        END
+      END
+    END
+
+COPY ~magestronghold_eet/itm/psBook02.itm~ ~override/psBook02.itm~
+    SAY NAME1 @150
+    SAY NAME2 @150
+    SAY UNIDENTIFIED_DESC @151
+    SAY DESC @152
+
+  COPY ~magestronghold_eet/itm/psCre11.itm~ ~override/psCre11.itm~
+    SAY NAME1 @95
+    SAY NAME2 @95
+    SAY UNIDENTIFIED_DESC @97
+
+  COPY ~magestronghold_eet/itm/psCre12.itm~ ~override/psCre12.itm~
+    SAY NAME1 @88
+    SAY NAME2 ~~
+    SAY UNIDENTIFIED_DESC ~~
+    SAY DESC @157
+
+  COPY ~magestronghold_eet/itm/psBook03.itm~ ~override/psBook03.itm~
+    SAY NAME1 @158
+    SAY NAME2 @158
+    SAY DESC @159
+
+COPY ~magestronghold_eet/itm/psBook04.itm~ ~override/psBook04.itm~
+    SAY NAME1 @158
+    SAY NAME2 @158
+    SAY DESC @159
+
+  COPY ~magestronghold_eet/itm/psRing02.ITM~ ~override/psRing02.ITM~
+    SAY NAME1 @82
+    SAY NAME2 @160
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @161
+
+  COPY ~magestronghold_eet/itm/psSCRL02.itm~ ~override/psSCRL02.itm~
+    SAY NAME1 @162
+    SAY NAME2 @162
+    SAY DESC @163
+
+  COPY ~magestronghold_eet/itm/psCre13.itm~ ~override/psCre13.itm~
+    SAY NAME1 @82
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @164
+
+  COPY ~magestronghold_eet/itm/psClck01.itm~ ~override/psClck01.itm~
+    SAY NAME1 @165
+    SAY NAME2 @166
+    SAY UNIDENTIFIED_DESC @167
+    SAY DESC @168
+
+  COPY ~magestronghold_eet/itm/psWand03.itm~ ~override/psWand03.itm~
+    SAY NAME1 @102
+    SAY NAME2 @169
+    SAY UNIDENTIFIED_DESC @112
+    SAY DESC @170
+
+  COPY ~magestronghold_eet/itm/psPot05.itm~ ~override/psPot05.itm~
+    SAY NAME1 @171
+    SAY NAME2 @172
+    SAY UNIDENTIFIED_DESC @173
+    SAY DESC @174
+
+  COPY ~magestronghold_eet/itm/psCre14.itm~ ~override/psCre14.itm~
+    SAY NAME1 @175
+    SAY NAME2 @176
+
+  COPY ~magestronghold_eet/itm/psWand04.itm~ ~override/psWand04.itm~
+    SAY NAME1 @102
+    SAY NAME2 @177
+    SAY UNIDENTIFIED_DESC @112
+    SAY DESC @178
+    SAY 0x25e @179
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    READ_LONG  0x6a "fx_off" ELSE 0
+    FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+      READ_SHORT ("%abil_off%" + 0x1e + (0x38 * "%index%")) "abil_fx_num"
+      READ_SHORT ("%abil_off%" + 0x20 + (0x38 * "%index%")) "abil_fx_idx"
+      FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+        READ_SHORT ("%fx_off%" +        (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+        READ_BYTE  ("%fx_off%" + 0x12 + (("%abil_fx_idx%" + "%index1%") * 0x30)) "prob1"
+        PATCH_IF (("%opcode%" = 139) AND ("%prob1%" = 86)) BEGIN
+          SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @179
+        END ELSE
+        PATCH_IF (("%opcode%" = 139) AND ("%prob1%" = 100)) BEGIN
+          SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @180
+        END
+      END
+    END
+
+  COPY ~magestronghold_eet/itm/psRobe06.itm~ ~override/psRobe06.itm~
+    SAY NAME1 @181
+    SAY NAME2 @182
+    SAY UNIDENTIFIED_DESC @183
+    SAY DESC @184
+
+  COPY ~magestronghold_eet/itm/psSCRL03.itm~ ~override/psSCRL03.itm~
+    SAY NAME1 @185
+    SAY NAME2 @185
+    SAY UNIDENTIFIED_DESC @186
+
+  COPY ~magestronghold_eet/itm/psAxe01.itm~ ~override/psAxe01.itm~
+    SAY NAME1 @187
+    SAY NAME2 @188
+    SAY UNIDENTIFIED_DESC @189
+    SAY DESC @190
+
+  COPY ~magestronghold_eet/itm/psRing03.itm~ ~override/psRing03.itm~
+    SAY NAME1 @82
+    SAY NAME2 @191
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @192
+
+  COPY ~magestronghold_eet/itm/psRing04.itm~ ~override/psRing04.itm~
+    SAY NAME1 @82
+    SAY NAME2 @193
+    SAY UNIDENTIFIED_DESC @194
+    SAY DESC @195
+
+  COPY ~magestronghold_eet/itm/psCre15.itm~ ~override/psCre15.itm~
+    SAY NAME1 @95
+    SAY NAME2 @95
+    SAY UNIDENTIFIED_DESC @97
+
+  COPY ~magestronghold_eet/itm/psCre03.itm~ ~override/psCre03.itm~
+    SAY NAME1 @89
+    SAY NAME2 @89
+
+  COPY ~magestronghold_eet/itm/psCre04.itm~ ~override/psCre04.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psTalos.itm~ ~override/psTalos.itm~
+
+  COPY ~magestronghold_eet/itm/psHelm.itm~ ~override/psHelm.itm~
+
+  COPY ~magestronghold_eet/itm/psLothan.itm~ ~override/psLothan.itm~
+
+  COPY ~magestronghold_eet/itm/psDivi.itm~ ~override/psDivi.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psIllu.itm~ ~override/psIllu.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psAbju.itm~ ~override/psAbju.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psAlte.itm~ ~override/psAlte.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psNecr.itm~ ~override/psNecr.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psConj.itm~ ~override/psConj.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psEnch.itm~ ~override/psEnch.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psInvo.itm~ ~override/psInvo.itm~
+    SAY NAME1 @181
+    SAY NAME2 @198
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @200
+
+  COPY ~magestronghold_eet/itm/psPot01.itm~ ~override/psPot01.itm~
+    SAY NAME1 @201
+    SAY NAME2 @202
+    SAY DESC @203
+
+  COPY ~magestronghold_eet/itm/psMade01.itm~ ~override/psMade01.itm~
+    SAY NAME1 @204
+    SAY NAME2 @204
+    SAY UNIDENTIFIED_DESC @205
+    SAY DESC @206
+
+  COPY ~magestronghold_eet/itm/psMade02.itm~ ~override/psMade02.itm~
+    SAY NAME1 @204
+    SAY NAME2 @204
+    SAY UNIDENTIFIED_DESC @205
+    SAY DESC @207
+
+  COPY ~magestronghold_eet/itm/psMade03.itm~ ~override/psMade03.itm~
+    SAY NAME1 @204
+    SAY NAME2 @208
+    SAY UNIDENTIFIED_DESC @209
+    SAY DESC @210
+
+  COPY ~magestronghold_eet/itm/psMade04.itm~ ~override/psMade04.itm~
+    SAY NAME1 @211
+    SAY NAME2 @212
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @214
+
+  COPY ~magestronghold_eet/itm/psMade05.itm~ ~override/psMade05.itm~
+    SAY NAME1 @211
+    SAY NAME2 @212
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @215
+
+  COPY ~magestronghold_eet/itm/psMade06.itm~ ~override/psMade06.itm~
+    SAY NAME1 @211
+    SAY NAME2 @216
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @217
+
+  COPY ~magestronghold_eet/itm/psMade07.itm~ ~override/psMade07.itm~
+    SAY NAME1 @211
+    SAY NAME2 @218
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @219
+
+  COPY ~magestronghold_eet/itm/psMade08.itm~ ~override/psMade08.itm~
+    SAY NAME1 @211
+    SAY NAME2 @218
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @220
+
+  COPY ~magestronghold_eet/itm/psMade09.itm~ ~override/psMade09.itm~
+    SAY NAME1 @211
+    SAY NAME2 @218
+    SAY UNIDENTIFIED_DESC @213
+    SAY DESC @221
+
+  COPY ~magestronghold_eet/itm/psMade10.itm~ ~override/psMade10.itm~
+    SAY NAME1 @82
+    SAY NAME2 @222
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @223
+
+  COPY ~magestronghold_eet/itm/psMade11.itm~ ~override/psMade11.itm~
+    SAY NAME1 @82
+    SAY NAME2 @224
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @225
+
+  COPY ~magestronghold_eet/itm/psMade12.itm~ ~override/psMade12.itm~
+    SAY NAME1 @82
+    SAY NAME2 @226
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @227
+
+  COPY ~magestronghold_eet/itm/psMade13.itm~ ~override/psMade13.itm~
+    SAY NAME1 @82
+    SAY NAME2 @228
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @229
+
+  COPY ~magestronghold_eet/itm/psMade14.itm~ ~override/psMade14.itm~
+    SAY NAME1 @82
+    SAY NAME2 @230
+    SAY UNIDENTIFIED_DESC @84
+    SAY DESC @231
+
+  COPY ~magestronghold_eet/itm/psMade15.itm~ ~override/psMade15.itm~
+    SAY NAME1 @232
+    SAY NAME2 @233
+    SAY UNIDENTIFIED_DESC @234
+    SAY DESC @235
+
+  COPY ~magestronghold_eet/itm/psMade16.itm~ ~override/psMade16.itm~
+    SAY NAME1 @108
+    SAY NAME2 @236
+    SAY UNIDENTIFIED_DESC @237
+    SAY DESC @238
+
+  COPY ~magestronghold_eet/itm/psMade17.itm~ ~override/psMade17.itm~
+    SAY NAME1 @108
+    SAY NAME2 @239
+    SAY UNIDENTIFIED_DESC @237
+    SAY DESC @240
+
+  COPY ~magestronghold_eet/itm/psMade18.itm~ ~override/psMade18.itm~
+    SAY NAME1 @79
+    SAY NAME2 @241
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @242
+
+  COPY ~magestronghold_eet/itm/psMade19.itm~ ~override/psMade19.itm~
+    SAY NAME1 @102
+    SAY NAME2 @243
+    SAY UNIDENTIFIED_DESC @112
+    SAY DESC @244
+
+  COPY ~magestronghold_eet/itm/psMade20.itm~ ~override/psMade20.itm~
+    SAY NAME1 @102
+    SAY NAME2 @245
+    SAY UNIDENTIFIED_DESC @112
+    SAY DESC @246
+
+  COPY ~magestronghold_eet/itm/psMade21.itm~ ~override/psMade21.itm~
+    SAY NAME1 @95
+    SAY NAME2 @247
+    SAY UNIDENTIFIED_DESC @97
+    SAY DESC @248
+
+  COPY ~magestronghold_eet/itm/psMade22.itm~ ~override/psMade22.itm~
+    SAY NAME1 @181
+    SAY NAME2 @249
+    SAY UNIDENTIFIED_DESC @183
+    SAY DESC @250
+
+  COPY ~magestronghold_eet/itm/psRobe01.itm~ ~override/psRobe01.itm~
+    SAY NAME1 @181
+    SAY NAME2 @251
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @252
+
+  COPY ~magestronghold_eet/itm/psRobe02.itm~ ~override/psRobe02.itm~
+    SAY NAME1 @181
+    SAY NAME2 @253
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @254
+
+  COPY ~magestronghold_eet/itm/psRobe03.itm~ ~override/psRobe03.itm~
+    SAY NAME1 @181
+    SAY NAME2 @255
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @256
+
+  COPY ~magestronghold_eet/itm/psRobe04.itm~ ~override/psRobe04.itm~
+    SAY NAME1 @181
+    SAY NAME2 @257
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @258
+
+  COPY ~magestronghold_eet/itm/psMade23.itm~ ~override/psMade23.itm~
+    SAY NAME1 @131
+    SAY NAME2 @259
+    SAY UNIDENTIFIED_DESC @260
+    SAY DESC @261
+
+  COPY ~magestronghold_eet/itm/psMade24.itm~ ~override/psMade24.itm~
+    SAY NAME1 @262
+    SAY NAME2 @263
+    SAY UNIDENTIFIED_DESC @264
+    SAY DESC @265
+
+  COPY ~magestronghold_eet/itm/psMade25.itm~ ~override/psMade25.itm~
+    SAY NAME1 @266
+    SAY NAME2 @267
+    SAY UNIDENTIFIED_DESC @268
+    SAY DESC @269
+
+  COPY ~magestronghold_eet/itm/psMade26.itm~ ~override/psMade26.itm~
+    SAY NAME1 @262
+    SAY NAME2 @270
+    SAY UNIDENTIFIED_DESC @264
+    SAY DESC @271
+
+  COPY ~magestronghold_eet/itm/psMade27.itm~ ~override/psMade27.itm~
+    SAY NAME1 @272
+    SAY NAME2 @273
+    SAY UNIDENTIFIED_DESC @274
+    SAY DESC @275
+
+  COPY ~magestronghold_eet/itm/psMade28.itm~ ~override/psMade28.itm~
+    SAY NAME1 @272
+    SAY NAME2 @276
+    SAY UNIDENTIFIED_DESC @274
+    SAY DESC @277
+
+  COPY ~magestronghold_eet/itm/psMade29.itm~ ~override/psMade29.itm~
+    SAY NAME1 @278
+    SAY NAME2 @279
+    SAY UNIDENTIFIED_DESC @280
+    SAY DESC @281
+
+  COPY ~magestronghold_eet/itm/psMade30.itm~ ~override/psMade30.itm~
+    SAY NAME1 @282
+    SAY NAME2 @283
+    SAY UNIDENTIFIED_DESC @284
+    SAY DESC @285
+
+  COPY ~magestronghold_eet/itm/psMade31.itm~ ~override/psMade31.itm~
+    SAY NAME1 @286
+    SAY NAME2 @287
+    SAY UNIDENTIFIED_DESC @288
+    SAY DESC @289
+
+  COPY ~magestronghold_eet/itm/psMade32.itm~ ~override/psMade32.itm~
+    SAY NAME1 @187
+    SAY NAME2 @290
+    SAY UNIDENTIFIED_DESC @291
+    SAY DESC @292
+
+  COPY ~magestronghold_eet/itm/psMade33.itm~ ~override/psMade33.itm~
+    SAY NAME1 @187
+    SAY NAME2 @293
+    SAY UNIDENTIFIED_DESC @294
+    SAY DESC @295
+
+  COPY ~magestronghold_eet/itm/psSPL10.itm~ ~override/psSPL10.itm~
+    SAY NAME1 @82
+    SAY NAME2 @314
+    SAY UNIDENTIFIED_DESC @315
+
+  COPY ~magestronghold_eet/itm/psRobe05.itm~ ~override/psRobe05.itm~
+    SAY NAME1 @181
+    SAY NAME2 @332
+    SAY UNIDENTIFIED_DESC @183
+    SAY DESC @333
+
+  COPY ~magestronghold_eet/itm/psCre05.itm~ ~override/psCre05.itm~
+    SAY NAME1 @175
+    SAY NAME2 @176
+
+  COPY ~magestronghold_eet/itm/psKey.itm~ ~override/psKey.itm~
+    SAY NAME1 @334
+    SAY NAME2 @334
+    SAY UNIDENTIFIED_DESC @335
+    SAY DESC @335
+
+  COPY ~magestronghold_eet/itm/psPot02.itm~ ~override/psPot02.itm~
+    SAY NAME1 @338
+    SAY NAME2 @338
+    SAY UNIDENTIFIED_DESC @339
+    SAY DESC @340
+
+  COPY ~magestronghold_eet/itm/psCre06.itm~ ~override/psCre06.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psBadge.itm~ ~override/psBadge.itm~
+    SAY NAME1 @79
+    SAY NAME2 @80
+    SAY UNIDENTIFIED_DESC @80
+    SAY DESC @81
+
+  COPY ~magestronghold_eet/itm/psAmul01.itm~ ~override/psAmul01.itm~
+    SAY NAME1 @108
+    SAY NAME2 @341
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @342
+
+  COPY ~magestronghold_eet/itm/psAmul02.itm~ ~override/psAmul02.itm~
+    SAY NAME1 @75
+    SAY NAME2 @76
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @78
+
+  COPY ~magestronghold_eet/itm/psAmul03.itm~ ~override/psAmul03.itm~
+    SAY NAME1 @108
+    SAY NAME2 @109
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @110
+
+  COPY ~magestronghold_eet/itm/psAmul04.itm~ ~override/psAmul04.itm~
+    SAY NAME1 @108
+    SAY NAME2 @561
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @562
+
+  COPY ~magestronghold_eet/itm/psAmul05.itm~ ~override/psAmul05.itm~
+    SAY NAME1 @108
+    SAY NAME2 @593
+    SAY UNIDENTIFIED_DESC @77
+    SAY DESC @594
+
+  COPY ~magestronghold_eet/itm/psCre07.itm~ ~override/psCre07.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psCre08.itm~ ~override/psCre08.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psCre09.itm~ ~override/psCre09.itm~
+    SAY NAME1 @88
+    SAY NAME2 ~~
+    SAY UNIDENTIFIED_DESC @343
+    SAY DESC ~~
+
+  COPY ~magestronghold_eet/itm/psCre10.itm~ ~override/psCre10.itm~
+    SAY NAME1 @88
+
+  COPY ~magestronghold_eet/itm/psPot03.itm~ ~override/psPot03.itm~
+    SAY NAME1 @201
+    SAY NAME2 @344
+    SAY UNIDENTIFIED_DESC @345
+    SAY DESC @346
+
+  COPY ~magestronghold_eet/itm/psPot04.itm~ ~override/psPot04.itm~
+    SAY NAME1 @201
+    SAY NAME2 @347
+    SAY UNIDENTIFIED_DESC @345
+    SAY DESC @348
+
+   COPY ~magestronghold_eet/itm/sppsbta.itm~ ~override/sppsbta.itm~
+    SAY NAME1 @127
+    SAY NAME2 @383
+    SAY DESC @384
+
+  COPY ~magestronghold_eet/itm/sppsdma.itm~ ~override/sppsdma.itm~
+    SAY NAME1 @127
+    SAY NAME2 @385
+    SAY DESC @386
+
+  COPY ~magestronghold_eet/itm/sppsmfh.itm~ ~override/sppsmfh.itm~
+    SAY NAME1 @387
+    SAY NAME2 @387
+    SAY UNIDENTIFIED_DESC @388
+    SAY DESC @389
+
+  COPY ~magestronghold_eet/itm/sppsmoh.itm~ ~override/sppsmoh.itm~
+    SAY NAME1 @127
+    SAY NAME2 @387
+    SAY DESC @390
+
+  COPY ~magestronghold_eet/itm/sppsmsr.itm~ ~override/sppsmsr.itm~
+    SAY NAME1 @127
+    SAY NAME2 @391
+    SAY DESC @392
+
+  COPY ~magestronghold_eet/itm/sppsobb.itm~ ~override/sppsobb.itm~
+    SAY NAME1 @127
+    SAY NAME2 @393
+    SAY DESC @394
+
+  COPY ~magestronghold_eet/itm/sppsoif.itm~ ~override/sppsoif.itm~
+    SAY NAME1 @127
+    SAY NAME2 @395
+    SAY DESC @396
+
+  COPY ~magestronghold_eet/itm/sppstpa.itm~ ~override/sppstpa.itm~
+    SAY NAME1 @127
+    SAY NAME2 @397
+    SAY DESC @398
+
+  COPY ~magestronghold_eet/itm/Wa2robe.itm~ ~override/Wa2robe.itm~
+    SAY NAME1 @181
+    SAY NAME2 @399
+    SAY UNIDENTIFIED_DESC @199
+    SAY DESC @400
+
+
+
+
+// Spell Files
+
+
+COPY ~magestronghold_eet/spl/SPCL650.spl~ ~override/SPCL650.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL199.spl~ ~override/SPCL199.spl~
+  SAY NAME1 @401
+  SAY UNIDENTIFIED_DESC @402
+
+COPY ~magestronghold_eet/spl/SPCL645.spl~ ~override/SPCL645.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL646.spl~ ~override/SPCL646.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL647.spl~ ~override/SPCL647.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL648.spl~ ~override/SPCL648.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL649.spl~ ~override/SPCL649.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/Psqsor.spl~ ~override/Psqsor.spl~
+  SAY NAME1 @18
+  SAY UNIDENTIFIED_DESC @18
+
+COPY ~magestronghold_eet/spl/SPCL651.spl~ ~override/SPCL651.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL652.spl~ ~override/SPCL652.spl~
+  SAY NAME1 @88
+
+COPY ~magestronghold_eet/spl/SPCL653.spl~ ~override/SPCL653.spl~
+  SAY NAME1 @298
+  SAY UNIDENTIFIED_DESC @299
+
+COPY ~magestronghold_eet/spl/SPCL654.spl~ ~override/SPCL654.spl~
+  SAY NAME1 @296
+  SAY UNIDENTIFIED_DESC @405
+
+COPY ~magestronghold_eet/spl/SPCL655.spl~ ~override/SPCL655.spl~
+  SAY NAME1 @302
+  SAY UNIDENTIFIED_DESC @406
+
+COPY ~magestronghold_eet/spl/SPCL656.spl~ ~override/SPCL656.spl~
+  SAY NAME1 @304
+  SAY UNIDENTIFIED_DESC @407
+
+COPY ~magestronghold_eet/spl/SPCL657.spl~ ~override/SPCL657.spl~
+  SAY NAME1 @300
+  SAY UNIDENTIFIED_DESC @301
+
+COPY ~magestronghold_eet/spl/SPCL658.spl~ ~override/SPCL658.spl~
+  SAY NAME1 @330
+  SAY UNIDENTIFIED_DESC @410
+
+COPY ~magestronghold_eet/spl/SPCL659.spl~ ~override/SPCL659.spl~
+  SAY NAME1 @324
+  SAY UNIDENTIFIED_DESC @411
+
+COPY ~magestronghold_eet/spl/SPCL660.spl~ ~override/SPCL660.spl~
+  SAY NAME1 @412
+  SAY UNIDENTIFIED_DESC @413
+
+COPY ~magestronghold_eet/spl/SPCL661.spl~ ~override/SPCL661.spl~
+  SAY NAME1 @322
+  SAY UNIDENTIFIED_DESC @414
+
+COPY ~magestronghold_eet/spl/SPCL662.spl~ ~override/SPCL662.spl~
+  SAY NAME1 @328
+  SAY UNIDENTIFIED_DESC @415
+
+COPY ~magestronghold_eet/spl/SPCL663.spl~ ~override/SPCL663.spl~
+  SAY NAME1 @416
+  SAY UNIDENTIFIED_DESC @417
+
+COPY ~magestronghold_eet/spl/SPCL664.spl~ ~override/SPCL664.spl~
+  SAY NAME1 @418
+
+COPY ~magestronghold_eet/spl/SPCL665.spl~ ~override/SPCL665.spl~
+  SAY NAME1 @419
+  SAY UNIDENTIFIED_DESC @411
+
+COPY ~magestronghold_eet/spl/SPCL666.spl~ ~override/SPCL666.spl~
+  SAY NAME1 @420
+  SAY UNIDENTIFIED_DESC @421
+
+COPY ~magestronghold_eet/spl/SPCL667.spl~ ~override/SPCL667.spl~
+  SAY NAME1 @88
+  SAY UNIDENTIFIED_DESC @422
+
+COPY ~magestronghold_eet/spl/SPCL668.spl~ ~override/SPCL668.spl~
+  SAY NAME1 @18
+  SAY UNIDENTIFIED_DESC @18
+
+COPY ~magestronghold_eet/spl/Spps20.spl~ ~override/Spps20.spl~
+  SAY NAME1 @381
+  SAY UNIDENTIFIED_DESC @382
+
+COPY ~magestronghold_eet/spl/Spps21.spl~ ~override/Spps21.spl~
+  SAY NAME1 @359
+  SAY UNIDENTIFIED_DESC @360
+
+COPY ~magestronghold_eet/spl/Spps22.spl~ ~override/Spps22.spl~
+  SAY NAME1 @351
+  SAY UNIDENTIFIED_DESC @352
+
+COPY ~magestronghold_eet/spl/SPPSaop.spl~ ~override/SPPSaop.spl~
+  SAY NAME1 @349
+  SAY UNIDENTIFIED_DESC @350
+
+COPY ~magestronghold_eet/spl/Sppsap1.spl~ ~override/Sppsap1.spl~
+  SAY NAME1 @428
+  SAY UNIDENTIFIED_DESC @429
+
+COPY ~magestronghold_eet/spl/Sppsap2.spl~ ~override/Sppsap2.spl~
+  SAY NAME1 @430
+  SAY UNIDENTIFIED_DESC @431
+
+COPY ~magestronghold_eet/spl/SPPSAP3.spl~ ~override/SPPSAP3.spl~
+  SAY NAME1 @432
+  SAY UNIDENTIFIED_DESC @429
+
+COPY ~magestronghold_eet/spl/SPPSBTA.spl~ ~override/SPPSBTA.spl~
+  SAY NAME1 @383
+  SAY UNIDENTIFIED_DESC @384
+
+COPY ~magestronghold_eet/spl/SPPSBTA2.spl~ ~override/SPPSBTA2.spl~
+  SAY NAME1 @383
+  SAY UNIDENTIFIED_DESC @384
+
+COPY ~magestronghold_eet/spl/SPPSCUT1.SPL~ ~override/SPPSCUT1.SPL~
+  SAY NAME1 @436
+
+COPY ~magestronghold_eet/spl/SPPSCUT2.SPL~ ~override/SPPSCUT2.SPL~
+  SAY NAME1 @437
+  SAY UNIDENTIFIED_DESC @438
+
+COPY ~magestronghold_eet/spl/SPPSDAP1.spl~ ~override/SPPSDAP1.spl~
+  SAY NAME1 @439
+  SAY UNIDENTIFIED_DESC @439
+
+COPY ~magestronghold_eet/spl/SPPSDMA.spl~ ~override/SPPSDMA.spl~
+  SAY NAME1 @385
+  SAY UNIDENTIFIED_DESC @386
+
+COPY ~magestronghold_eet/spl/spPSFor.spl~ ~override/spPSFor.spl~
+  SAY NAME1 @401
+  SAY UNIDENTIFIED_DESC @441
+
+COPY ~magestronghold_eet/spl/SPPSIRS.SPL~ ~override/SPPSIRS.SPL~
+  SAY NAME1 @355
+  SAY UNIDENTIFIED_DESC @356
+
+COPY ~magestronghold_eet/spl/SPPSKKK.spl~ ~override/SPPSKKK.spl~
+  SAY NAME1 @361
+  SAY UNIDENTIFIED_DESC @362
+
+COPY ~magestronghold_eet/spl/SPpsLi.spl~ ~override/SPpsLi.spl~
+  SAY NAME1 @445
+  SAY UNIDENTIFIED_DESC @446
+
+COPY ~magestronghold_eet/spl/SPpsLi2.spl~ ~override/SPpsLi2.spl~
+  SAY NAME1 @447
+  SAY UNIDENTIFIED_DESC @448
+
+COPY ~magestronghold_eet/spl/SPpsLi3.spl~ ~override/SPpsLi3.spl~
+  SAY NAME1 @449
+  SAY UNIDENTIFIED_DESC @450
+
+COPY ~magestronghold_eet/spl/SPPSMELH.SPL~ ~override/SPPSMELH.SPL~
+  SAY NAME1 @451
+  SAY UNIDENTIFIED_DESC @451
+
+COPY ~magestronghold_eet/spl/SPPSMELR.SPL~ ~override/SPPSMELR.SPL~
+  SAY NAME1 @432
+  SAY UNIDENTIFIED_DESC @451
+
+COPY ~magestronghold_eet/spl/SPPSMELS.SPL~ ~override/SPPSMELS.SPL~
+  SAY NAME1 @452
+  SAY UNIDENTIFIED_DESC @451
+
+COPY ~magestronghold_eet/spl/SPPSMFH.spl~ ~override/SPPSMFH.spl~
+  SAY NAME1 @387
+  SAY UNIDENTIFIED_DESC @390
+
+COPY ~magestronghold_eet/spl/Sppsmra.spl~ ~override/Sppsmra.spl~
+  SAY NAME1 @454
+  SAY UNIDENTIFIED_DESC @429
+
+COPY ~magestronghold_eet/spl/SPPSMSR.spl~ ~override/SPPSMSR.spl~
+  SAY NAME1 @391
+  SAY UNIDENTIFIED_DESC @392
+
+COPY ~magestronghold_eet/spl/SPPSMYS.SPL~ ~override/SPPSMYS.SPL~
+  SAY NAME1 @456
+  READ_LONG  0x64 "abil_off" ELSE 0
+  READ_SHORT 0x68 "abil_num" ELSE 0
+  READ_LONG  0x6a "fx_off" ELSE 0
+  FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+    READ_SHORT ("%abil_off%" + 0x1e + (0x28 * "%index%")) "abil_fx_num"
+    READ_SHORT ("%abil_off%" + 0x20 + (0x28 * "%index%")) "abil_fx_idx"
+    FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+      READ_SHORT ("%fx_off%" + (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+      PATCH_IF ("%opcode%" = 139) BEGIN
+        SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @457
+      END
+    END
+  END
+
+COPY ~magestronghold_eet/spl/Sppsnms.spl~ ~override/Sppsnms.spl~
+  SAY NAME1 @363
+  SAY UNIDENTIFIED_DESC @364
+
+COPY ~magestronghold_eet/spl/SPPSOBB.spl~ ~override/SPPSOBB.spl~
+  SAY NAME1 @393
+  SAY UNIDENTIFIED_DESC @394
+
+COPY ~magestronghold_eet/spl/SPPSOIF.spl~ ~override/SPPSOIF.spl~
+  SAY NAME1 @395
+  SAY UNIDENTIFIED_DESC @396
+
+COPY ~magestronghold_eet/spl/SPpsq1.spl~ ~override/SPpsq1.spl~
+  SAY NAME1 @296
+  SAY UNIDENTIFIED_DESC @297
+
+COPY ~magestronghold_eet/spl/SPpsq10.spl~ ~override/SPpsq10.spl~
+  SAY NAME1 @312
+  SAY UNIDENTIFIED_DESC @313
+
+COPY ~magestronghold_eet/spl/SPpsq11.spl~ ~override/SPpsq11.spl~
+  SAY NAME1 @412
+  SAY UNIDENTIFIED_DESC @463
+
+COPY ~magestronghold_eet/spl/SPpsq12.spl~ ~override/SPpsq12.spl~
+  SAY NAME1 @320
+  SAY UNIDENTIFIED_DESC @321
+
+COPY ~magestronghold_eet/spl/SPpsq13.spl~ ~override/SPpsq13.spl~
+  SAY NAME1 @322
+  SAY UNIDENTIFIED_DESC @323
+
+COPY ~magestronghold_eet/spl/SPpsq14.spl~ ~override/SPpsq14.spl~
+  SAY NAME1 @324
+  SAY UNIDENTIFIED_DESC @325
+
+COPY ~magestronghold_eet/spl/SPpsq15.spl~ ~override/SPpsq15.spl~
+  SAY NAME1 @326
+  SAY UNIDENTIFIED_DESC @327
+
+COPY ~magestronghold_eet/spl/SPpsq16.spl~ ~override/SPpsq16.spl~
+  SAY NAME1 @328
+  SAY UNIDENTIFIED_DESC @329
+
+COPY ~magestronghold_eet/spl/SPpsq17.spl~ ~override/SPpsq17.spl~
+  SAY NAME1 @330
+  SAY UNIDENTIFIED_DESC @331
+
+COPY ~magestronghold_eet/spl/SPpsq18.spl~ ~override/SPpsq18.spl~
+  SAY NAME1 @471
+  SAY UNIDENTIFIED_DESC @471
+
+COPY ~magestronghold_eet/spl/SPpsq19.spl~ ~override/SPpsq19.spl~
+  SAY NAME1 @375
+  SAY UNIDENTIFIED_DESC @376
+
+COPY ~magestronghold_eet/spl/SPpsq2.spl~ ~override/SPpsq2.spl~
+  SAY NAME1 @296
+  SAY UNIDENTIFIED_DESC @297
+
+COPY ~magestronghold_eet/spl/SPpsq20.spl~ ~override/SPpsq20.spl~
+  SAY NAME1 @371
+  SAY UNIDENTIFIED_DESC @372
+
+COPY ~magestronghold_eet/spl/SPpsq21.spl~ ~override/SPpsq21.spl~
+  SAY NAME1 @357
+  SAY UNIDENTIFIED_DESC @358
+
+COPY ~magestronghold_eet/spl/SPpsq22.spl~ ~override/SPpsq22.spl~
+  SAY NAME1 @373
+  SAY UNIDENTIFIED_DESC @374
+
+COPY ~magestronghold_eet/spl/SPpsq23.spl~ ~override/SPpsq23.spl~
+  SAY NAME1 @477
+  SAY UNIDENTIFIED_DESC @478
+
+COPY ~magestronghold_eet/spl/SPpsq24.spl~ ~override/SPpsq24.spl~
+  SAY NAME1 @479
+  SAY UNIDENTIFIED_DESC @480
+
+COPY ~magestronghold_eet/spl/SPpsq25.spl~ ~override/SPpsq25.spl~
+  SAY NAME1 @481
+  SAY UNIDENTIFIED_DESC @482
+
+COPY ~magestronghold_eet/spl/SPpsq26.spl~ ~override/SPpsq26.spl~
+  SAY NAME1 @483
+  SAY UNIDENTIFIED_DESC @484
+
+COPY ~magestronghold_eet/spl/SPpsq27.spl~ ~override/SPpsq27.spl~
+  SAY NAME1 @365
+  SAY UNIDENTIFIED_DESC @366
+
+COPY ~magestronghold_eet/spl/SPpsq28.spl~ ~override/SPpsq28.spl~
+  SAY NAME1 @166
+  SAY UNIDENTIFIED_DESC @486
+
+COPY ~magestronghold_eet/spl/SPpsq29.spl~ ~override/SPpsq29.spl~
+  SAY NAME1 @487
+  SAY UNIDENTIFIED_DESC @488
+
+COPY ~magestronghold_eet/spl/SPpsq3.spl~ ~override/SPpsq3.spl~
+  SAY NAME1 @298
+  SAY UNIDENTIFIED_DESC @299
+
+COPY ~magestronghold_eet/spl/SPpsq4.spl~ ~override/SPpsq4.spl~
+  SAY NAME1 @300
+  SAY UNIDENTIFIED_DESC @301
+
+COPY ~magestronghold_eet/spl/SPpsq5.spl~ ~override/SPpsq5.spl~
+  SAY NAME1 @302
+  SAY UNIDENTIFIED_DESC @303
+
+COPY ~magestronghold_eet/spl/SPpsq6.spl~ ~override/SPpsq6.spl~
+  SAY NAME1 @304
+  SAY UNIDENTIFIED_DESC @305
+
+COPY ~magestronghold_eet/spl/SPpsq7.spl~ ~override/SPpsq7.spl~
+  SAY NAME1 @306
+  SAY UNIDENTIFIED_DESC @307
+
+COPY ~magestronghold_eet/spl/SPpsq8.spl~ ~override/SPpsq8.spl~
+  SAY NAME1 @308
+  SAY UNIDENTIFIED_DESC @309
+  READ_LONG  0x64 "abil_off" ELSE 0
+  READ_SHORT 0x68 "abil_num" ELSE 0
+  READ_LONG  0x6a "fx_off" ELSE 0
+  FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+    READ_SHORT ("%abil_off%" + 0x1e + (0x28 * "%index%")) "abil_fx_num"
+    READ_SHORT ("%abil_off%" + 0x20 + (0x28 * "%index%")) "abil_fx_idx"
+    FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+      READ_SHORT ("%fx_off%" + (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+      PATCH_IF ("%opcode%" = 139) BEGIN
+        SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @496
+      END
+    END
+  END
+
+COPY ~magestronghold_eet/spl/SPpsq9.spl~ ~override/SPpsq9.spl~
+  SAY NAME1 @310
+  SAY UNIDENTIFIED_DESC @311
+  READ_LONG  0x64 "abil_off" ELSE 0
+  READ_SHORT 0x68 "abil_num" ELSE 0
+  READ_LONG  0x6a "fx_off" ELSE 0
+  FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+    READ_SHORT ("%abil_off%" + 0x1e + (0x28 * "%index%")) "abil_fx_num"
+    READ_SHORT ("%abil_off%" + 0x20 + (0x28 * "%index%")) "abil_fx_idx"
+    FOR (index1 = 0; index1 < abil_fx_num; index1 = index1 + 1) BEGIN
+      READ_SHORT ("%fx_off%" + (("%abil_fx_idx%" + "%index1%") * 0x30)) "opcode"
+      PATCH_IF ("%opcode%" = 139) BEGIN
+        SAY ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index1%") * 0x30)) @499
+      END
+    END
+  END
+
+COPY ~magestronghold_eet/spl/Sppsrey.spl~ ~override/Sppsrey.spl~
+  SAY NAME1 @367
+  SAY UNIDENTIFIED_DESC @368
+
+COPY ~magestronghold_eet/spl/sppsshh.spl~ ~override/sppsshh.spl~
+  SAY NAME1 @369
+  SAY UNIDENTIFIED_DESC @370
+
+COPY ~magestronghold_eet/spl/SPPSTPA.spl~ ~override/SPPSTPA.spl~
+  SAY NAME1 @397
+  SAY UNIDENTIFIED_DESC @398
+
+COPY ~magestronghold_eet/spl/SPPSTYS.SPL~ ~override/SPPSTYS.SPL~
+  SAY NAME1 @379
+  SAY UNIDENTIFIED_DESC @380
+
+COPY ~magestronghold_eet/spl/SPPSTYT.SPL~ ~override/SPPSTYT.SPL~
+  SAY NAME1 @377
+  SAY UNIDENTIFIED_DESC @378
+
+COPY ~magestronghold_eet/spl/Spsq126.spl~ ~override/Spsq126.spl~
+  SAY NAME1 @353
+  SAY UNIDENTIFIED_DESC @354
+
+COPY ~magestronghold_eet/spl/SPWI998.SPL~ ~override/SPWI998.SPL~
+  SAY NAME1 @507
+  SAY UNIDENTIFIED_DESC @508
+
+COPY ~magestronghold_eet/spl/psBlur.SPL~ ~override/psBlur.SPL~
+  SAY NAME1 @2
+  SAY UNIDENTIFIED_DESC @2
+
+ COPY ~magestronghold_eet/itm/sppsbta.itm~ ~override/sppsbta.itm~
+    SAY NAME1 @127
+    SAY NAME2 @383
+    SAY DESC @384
+ COPY ~magestronghold_eet/itm/sppsdma.itm~ ~override/sppsdma.itm~
+    SAY NAME1 @127
+    SAY NAME2 @385
+    SAY DESC @386
+ COPY ~magestronghold_eet/itm/sppsmoh.itm~ ~override/sppsmoh.itm~
+    SAY NAME1 @127
+    SAY NAME2 @387
+    SAY DESC @390
+ COPY ~magestronghold_eet/itm/sppsmsr.itm~ ~override/sppsmsr.itm~
+    SAY NAME1 @127
+    SAY NAME2 @391
+    SAY DESC @392
+ COPY ~magestronghold_eet/itm/sppsoif.itm~ ~override/sppsoif.itm~
+    SAY NAME1 @127
+    SAY NAME2 @395
+    SAY DESC @396
+ COPY ~magestronghold_eet/itm/sppstpa.itm~ ~override/sppstpa.itm~
+    SAY NAME1 @127
+    SAY NAME2 @397
+    SAY DESC @398
+
+ COPY ~magestronghold_eet/spl/Spps20.spl~ ~override/Spps20.spl~
+  SAY NAME1 @381
+  SAY UNIDENTIFIED_DESC @382
+
+ COPY ~magestronghold_eet/spl/Spps21.spl~ ~override/Spps21.spl~
+  SAY NAME1 @359
+  SAY UNIDENTIFIED_DESC @360
+
+ COPY ~magestronghold_eet/spl/Spps22.spl~ ~override/Spps22.spl~
+  SAY NAME1 @351
+  SAY UNIDENTIFIED_DESC @352
+
+COPY ~magestronghold_eet/spl/SPPSaop.spl~ ~override/SPPSaop.spl~
+  SAY NAME1 @349
+  SAY UNIDENTIFIED_DESC @350
+
+COPY ~magestronghold_eet/spl/SPPSBTA.spl~ ~override/SPPSBTA.spl~
+  SAY NAME1 @383
+  SAY UNIDENTIFIED_DESC @384
+
+COPY ~magestronghold_eet/spl/SPPSDMA.spl~ ~override/SPPSDMA.spl~
+  SAY NAME1 @385
+  SAY UNIDENTIFIED_DESC @386
+
+COPY ~magestronghold_eet/spl/SPPSIRS.SPL~ ~override/SPPSIRS.SPL~
+  SAY NAME1 @355
+  SAY UNIDENTIFIED_DESC @356
+
+COPY ~magestronghold_eet/spl/SPPSKKK.spl~ ~override/SPPSKKK.spl~
+  SAY NAME1 @361
+  SAY UNIDENTIFIED_DESC @362
+
+COPY ~magestronghold_eet/spl/SPPSMFH.spl~ ~override/SPPSMFH.spl~
+  SAY NAME1 @387
+  SAY UNIDENTIFIED_DESC @390
+
+COPY ~magestronghold_eet/spl/SPPSMSR.spl~ ~override/SPPSMSR.spl~
+  SAY NAME1 @391
+  SAY UNIDENTIFIED_DESC @392
+
+COPY ~magestronghold_eet/spl/SPPSOIF.spl~ ~override/SPPSOIF.spl~
+  SAY NAME1 @395
+  SAY UNIDENTIFIED_DESC @396
+
+COPY ~magestronghold_eet/spl/SPpsq1.spl~ ~override/SPpsq1.spl~
+  SAY NAME1 @296
+  SAY UNIDENTIFIED_DESC @297
+
+COPY ~magestronghold_eet/spl/SPpsq10.spl~ ~override/SPpsq10.spl~
+  SAY NAME1 @312
+  SAY UNIDENTIFIED_DESC @313
+
+COPY ~magestronghold_eet/spl/SPpsq13.spl~ ~override/SPpsq13.spl~
+  SAY NAME1 @322
+  SAY UNIDENTIFIED_DESC @323
+
+COPY ~magestronghold_eet/spl/SPpsq15.spl~ ~override/SPpsq15.spl~
+  SAY NAME1 @326
+  SAY UNIDENTIFIED_DESC @327
+
+COPY ~magestronghold_eet/spl/SPpsq17.spl~ ~override/SPpsq17.spl~
+  SAY NAME1 @330
+  SAY UNIDENTIFIED_DESC @331
+
+COPY ~magestronghold_eet/spl/SPpsq2.spl~ ~override/SPpsq2.spl~
+  SAY NAME1 @296
+  SAY UNIDENTIFIED_DESC @297
+
+COPY ~magestronghold_eet/spl/SPpsq20.spl~ ~override/SPpsq20.spl~
+  SAY NAME1 @371
+  SAY UNIDENTIFIED_DESC @372
+
+COPY ~magestronghold_eet/spl/SPpsq21.spl~ ~override/SPpsq21.spl~
+  SAY NAME1 @357
+  SAY UNIDENTIFIED_DESC @358
+
+COPY ~magestronghold_eet/spl/SPpsq27.spl~ ~override/SPpsq27.spl~
+  SAY NAME1 @365
+  SAY UNIDENTIFIED_DESC @366
+
+COPY ~magestronghold_eet/spl/SPpsq3.spl~ ~override/SPpsq3.spl~
+  SAY NAME1 @298
+  SAY UNIDENTIFIED_DESC @299
+
+COPY ~magestronghold_eet/spl/SPpsq4.spl~ ~override/SPpsq4.spl~
+  SAY NAME1 @300
+  SAY UNIDENTIFIED_DESC @301
+
+COPY ~magestronghold_eet/spl/SPpsq7.spl~ ~override/SPpsq7.spl~
+  SAY NAME1 @306
+  SAY UNIDENTIFIED_DESC @307
+
+COPY ~magestronghold_eet/spl/SPpsq8.spl~ ~override/SPpsq8.spl~
+  SAY NAME1 @308
+  SAY UNIDENTIFIED_DESC @309
+
+COPY ~magestronghold_eet/spl/SPpsq9.spl~ ~override/SPpsq9.spl~
+  SAY NAME1 @310
+  SAY UNIDENTIFIED_DESC @311
+
+COPY ~magestronghold_eet/spl/Sppsrey.spl~ ~override/Sppsrey.spl~
+  SAY NAME1 @367
+  SAY UNIDENTIFIED_DESC @368
+
+COPY ~magestronghold_eet/spl/sppsshh.spl~ ~override/sppsshh.spl~
+  SAY NAME1 @369
+  SAY UNIDENTIFIED_DESC @370
+
+COPY ~magestronghold_eet/spl/SPPSTPA.spl~ ~override/SPPSTPA.spl~
+  SAY NAME1 @397
+  SAY UNIDENTIFIED_DESC @398
+
+COPY ~magestronghold_eet/spl/SPPSTYS.SPL~ ~override/SPPSTYS.SPL~
+  SAY NAME1 @379
+  SAY UNIDENTIFIED_DESC @380
+
+COPY ~magestronghold_eet/spl/SPPSTYT.SPL~ ~override/SPPSTYT.SPL~
+  SAY NAME1 @377
+  SAY UNIDENTIFIED_DESC @378
+
+COPY ~magestronghold_eet/spl/Spsq126.spl~ ~override/Spsq126.spl~
+  SAY NAME1 @353
+  SAY UNIDENTIFIED_DESC @354
+
+// Compiling
+
+COMPILE ~magestronghold_eet/dlg~  // Full dialogs
+     ~magestronghold_eet/baf~  // Full Scripts
+
+COMPILE ~magestronghold_eet/baf/psCut41.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut42.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut43.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut44.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut45.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut46.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut47.baf~
+USING ~magestronghold_eet/english/ar0900.tra~
+
+COMPILE ~magestronghold_eet/baf/psCut39.baf~
+USING ~magestronghold_eet/english/ar0300.tra~
+
+// Extending existing scripts and possibly existing scripts
+
+EXTEND_TOP    ~AR0410.bcs~  ~magestronghold_eet/snip/psAR0410.baf~
+EXTEND_TOP    ~AR0411.bcs~  ~magestronghold_eet/snip/psAR0411.baf~
+EXTEND_TOP    ~AR0419.bcs~  ~magestronghold_eet/snip/AR0419.baf~
+EXTEND_TOP    ~AR0500.bcs~  ~magestronghold_eet/snip/psAR0500.baf~
+EXTEND_TOP    ~AR0700.bcs~  ~magestronghold_eet/snip/psAR0700.baf~
+USING ~magestronghold_eet/english/AR0700.tra~
+EXTEND_TOP    ~AR0709.bcs~  ~magestronghold_eet/snip/psAR0709.baf~
+EXTEND_TOP    ~AR1000.bcs~  ~magestronghold_eet/snip/psAR1000.baf~
+EXTEND_TOP    ~AR1002.bcs~  ~magestronghold_eet/snip/psAR1002.baf~
+EXTEND_TOP    ~FURNACE2.bcs~  ~magestronghold_eet/snip/sFurnace.baf~
+EXTEND_TOP    ~ar0900.bcs~  ~magestronghold_eet/snip/psAR0900.baf~
+
+
+////////////////////////////////////////////////////////
+// Appending the Projectl.IDS
+//COPY_EXISTING ~Projectl.IDS~ ~override/Projectl.IDS~
+////////////////////////////////////////////////////////
+ADD_PROJECTILE  ~magestronghold_eet/misc/PSQSORB.PRO~
+COPY ~magestronghold_eet/spl/SPPSCUT4.SPL~ ~override/SPPSCUT4.SPL~
+  SAY NAME1 @452
+  SAY UNIDENTIFIED_DESC @532
+  WRITE_SHORT   0x98 ~%PSQSORB%~
+
+//ADD_PROJECTILE  ~magestronghold_eet/misc/PSQSORB.PRO~
+COPY ~magestronghold_eet/spl/SPPSMELS.SPL~ ~override/SPPSMELS.SPL~
+  SAY NAME1 @452
+  SAY UNIDENTIFIED_DESC @451
+  WRITE_SHORT   0x98 ~%PSQSORB%~
+
+ADD_PROJECTILE  ~magestronghold_eet/misc/FIREBLGR.PRO~
+COPY ~magestronghold_eet/spl/SPPSCUT1.SPL~ ~override/SPPSCUT1.SPL~
+  SAY NAME1 @436
+  WRITE_SHORT   0x98 ~%FIREBLGR%~
+
+//ADD_PROJECTILE  ~magestronghold_eet/misc/FIREBLGR.PRO~
+COPY ~magestronghold_eet/spl/SPpsq27.spl~ ~override/SPpsq27.spl~
+  SAY NAME1 @365
+  SAY UNIDENTIFIED_DESC @366
+  WRITE_SHORT   0x98 ~%FIREBLGR%~
+
+ACTION_IF FILE_EXISTS ~script compiler/AICOMPILE.exe~
+THEN BEGIN
+  COPY_EXISTING + ~Projectl.IDS~   ~script compiler~
+END
+
+
+

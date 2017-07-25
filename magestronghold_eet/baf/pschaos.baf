@@ -1,0 +1,89 @@
+IF
+	Global("psChaosToggleForSomething","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("psChaosToggleForSomething","LOCALS",1)
+		SetGlobalTimer("psChaosTimerForSomething","LOCALS",40)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("psChaosTimerForSomething","LOCALS")
+THEN
+	RESPONSE #100
+		AttackReevaluate(ThirdNearest([PC]),10)
+	RESPONSE #100
+		AttackReevaluate(SecondNearest([PC]),10)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #5
+		Polymorph(SPIDER_HUGE)
+		Wait(1)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+	RESPONSE #5
+		Polymorph(WOLF_SHADOW)
+		Wait(1)
+		ForceSpell(LastSeenBy(Myself),WIZARD_SPHERE_OF_CHAOS)
+	RESPONSE #5
+		Polymorph(LICH)
+		ForceSpell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+	RESPONSE #5
+		Polymorph(MINDFLAYER)
+		ForceSpell(Myself,WIZARD_COLOR_SPRAY)
+		ForceSpell(LastSeenBy(Myself),WIZARD_IMPRISONMENT)
+	RESPONSE #5
+		Polymorph(BEHOLDER)
+		ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+		ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
+		ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
+	RESPONSE #5
+		Polymorph(OTYUGH)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_POISON)
+	RESPONSE #5
+		Polymorph(FIRE_RING)
+		ApplySpell(Myself,0)
+		ApplySpell(Myself,0)
+	RESPONSE #5
+		Polymorph(GOLEM_IRON)
+		ReallyForceSpell(LastSeenBy(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+		ForceSpell(LastSeenBy(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+	RESPONSE #5
+		Polymorph(SHAMBLING_MOUND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_ENTANGLE)
+		ForceSpell(Myself,CLERIC_HEAL)
+	RESPONSE #5
+		Polymorph(FIRE_RING)
+		ForceSpell(LastSeenBy(Myself),0)
+	RESPONSE #5
+		Polymorph(FIRE_RING)
+		ForceSpell(LastSeenBy(Myself),0)
+		ReallyForceSpell(LastSeenBy(Myself),WIZARD_FIREBALL)
+	RESPONSE #5
+		Polymorph(DEATH_KNIGHT)
+		ReallyForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ForceSpell(LastSeenBy(Myself),WIZARD_SPHERE_OF_CHAOS)
+	RESPONSE #5
+		Polymorph(TANARRI)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_FEAR)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_STUN)
+	RESPONSE #5
+		Polymorph(SIRINE)
+		ForceSpell(LastSeenBy(Myself),WIZARD_DOMINATION)
+		ForceSpell(LastSeenBy(Myself),WIZARD_CONFUSION)
+	RESPONSE #5
+		Polymorph(FIRE_RING)
+		ForceSpell(LastSeenBy(Myself),0)
+		ForceSpell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+	RESPONSE #5
+		Polymorph(FIRE_RING)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+END
+
+
+

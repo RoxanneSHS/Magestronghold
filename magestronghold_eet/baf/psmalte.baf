@@ -1,0 +1,89 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psSpellupToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_TIME_STOP)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FLESH_TO_STONE)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+		ForceSpell(Myself,WIZARD_SHADOW_DOOR)
+		SetGlobal("psSpellupToggle","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Tenser","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_TENSERS_TRANSFORMATION)
+		SetGlobal("Tenser","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Timey2","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_TIME_STOP)
+		SetGlobal("Timey2","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+		ForceSpell(NearestEnemyOf(Myself),4658)
+		Wait(1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FLESH_TO_STONE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_SLOW)
+		Wait(1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpellPoint([418.1011],WIZARD_DIMENSION_DOOR)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_BURNING_HANDS)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_BURNING_HANDS)
+		Continue()
+END
+
+
+

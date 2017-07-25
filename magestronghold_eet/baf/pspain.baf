@@ -1,0 +1,52 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Magicy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+		ApplySpell(Myself,WIZARD_IMPROVED_MANTLE)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_FIRE)
+		SetGlobal("Magicy","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Doomy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),PAIN)
+		SetGlobal("Doomy","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),10)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+THEN
+	RESPONSE #50
+		ForceSpell(NearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+		Continue()
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+		Continue()
+END
+
+IF
+	Global("psGovtBuildingSpawnCounter","GLOBAL",2)
+	Global("psRetrieveSpellKeyCounter","GLOBAL",3)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+
+

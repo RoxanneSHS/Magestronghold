@@ -1,0 +1,88 @@
+IF
+	Global("psFinalQuestToKillMelCounter", "GLOBAL", 7)		//Re-activates the various .cre's if Mel is toast
+	Global("psReactivateAR1000", "AR1000", 0)
+THEN
+	RESPONSE #100
+		SetGlobal("psReactivateAR1000", "AR1000", 1)
+		Activate("vvamn1")		//The three stupid soldiers at start
+		Activate("vvamn2")
+		Activate("vvamn3")
+		Activate("Madeen")		//On the offchance you haven't talked to him
+		Activate("gbegg01")		//The beggar who asks for a gold
+
+        Continue()     // existing area scripts contain OnCreation
+END
+
+IF
+	Global("psTeosNotAccepted", "GLOBAL", 1)
+	Global("psTeosSpawnedInGovernmentToggle", "GLOBAL", 0)
+THEN
+	RESPONSE #100
+		SetGlobal("psTeosSpawnedInGovernmentToggle", "GLOBAL", 1)
+		CreateCreatureDoor("psTeos", [2784.976], 0)
+        Continue()     // existing area scripts contain OnCreation
+END
+
+IF
+	Global("psTeosNotAccepted", "GLOBAL", 4)
+	Global("psTeosSpawnedInGovernmentToggle", "GLOBAL", 1)
+THEN
+	RESPONSE #100
+		SetGlobal("psTeosSpawnedInGovernmentToggle", "GLOBAL", 2)
+		ActionOverride("psTeos", DestroySelf())
+        Continue()     // existing area scripts contain OnCreation
+END
+
+IF
+	Global("psRetrieveSpellKeyCounter","GLOBAL",1)
+	Global("psGovernmentDistrictSpawnToggle","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Explore()
+		SetGlobal("psGovernmentDistrictSpawnToggle","GLOBAL",1)
+		DayNight(MIDNIGHT)
+		Weather(RAIN)
+		Deactivate("vvamn1")		//The three stupid soldiers at start
+		Deactivate("vvamn2")
+		Deactivate("vvamn3")
+		Deactivate("Madeen")		//On the offchance you haven't talked to him
+		Deactivate("gbegg01")		//The beggar who asks for a gold
+
+		CreateCreature("psPain",[2816.1242],0) // Pain Elemental
+		CreateCreature("psPain",[2669.1242],0) // Pain Elemental
+		CreateCreature("psPain",[2671.1341],0) // Pain Elemental
+		CreateCreature("psPain",[2841.1372],0) // Pain Elemental
+		CreateCreature("psPain",[2418.663],0) // Pain Elemental
+		CreateCreature("psPain",[2187.953],0) // Pain Elemental
+		CreateCreature("psPain",[1240.1391],0) // Pain Elemental
+		CreateCreature("psPain",[1995.1671],0) // Pain Elemental
+		CreateCreature("psPain",[2375.2330],0) // Pain Elemental
+		CreateCreature("psPain",[3310.2178],0) // Pain Elemental
+		CreateCreature("psPain",[3549.1667],0) // Pain Elemental
+		CreateCreature("psPain",[3610.1236],0) // Pain Elemental
+		CreateCreature("psPain",[2868.673],0) // Pain Elemental
+		CreateCreature("psHag",[3086.1034],0) // Night Hag
+		CreateCreature("psPNight",[2968.1042],0) // Planar Knight
+		CreateCreature("psPNight",[3091.1131],0) // Planar Knight
+        Continue()     // existing area scripts contain OnCreation
+END
+
+IF
+	Global("psRetrieveSpellKeyCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player2,CLERIC_CALL_LIGHTNING)
+		Wait(20)
+		ReallyForceSpell(Player3,CLERIC_CALL_LIGHTNING)
+		Wait(20)
+		ReallyForceSpell(Player4,CLERIC_CALL_LIGHTNING)
+		Wait(20)
+		ReallyForceSpell(Player5,CLERIC_CALL_LIGHTNING)
+		Wait(20)
+		ReallyForceSpell(Player6,CLERIC_CALL_LIGHTNING)
+		Wait(20)
+        Continue()     // existing area scripts contain OnCreation
+END
+
+
+

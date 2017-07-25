@@ -1,0 +1,91 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		StartCutSceneMode()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psKOrd01")
+		Attack("psMel")
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psKOrd02")
+		Attack("psMel")
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ForceSpell("psKOrd05",WIZARD_DISINTEGRATE_IGNORE_RESISTANCE)
+		ActionOverride("psKOrd05",DisplayStringHead(Myself,30142)) // Nooo!  PLEEEEAAAASSSE!!
+		ForceSpellPoint([623.467],PHASE_SPIDER_TELEPORT)
+		Wait(2)
+		DisplayStringHead(Myself,16411) // Ha ha ha!
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psKOrd03")
+		ForceSpell(Myself,CLERIC_STRENGTH_OF_ONE)
+		SmallWait(5)
+		ForceSpell(Myself,CLERIC_DEFENSIVE_HARMONY)
+		SmallWait(5)
+		ForceSpell(Myself,CLERIC_RESIST_FIRE)
+		SmallWait(5)
+		ForceSpell("psMel",CLERIC_FLAME_STRIKE)
+		Wait(2)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psKOrd04")
+		ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)
+		SmallWait(2)
+		ForceSpell("psMel",CLERIC_CALL_LIGHTNING)
+		SmallWait(2)
+		ForceSpell(Myself,CLERIC_CHANT)
+		SmallWait(2)
+		ForceSpell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ReallyForceSpell("psKOrd01",WIZARD_FIREBALL)
+		ForceSpell("psKOrd01",WIZARD_DISPEL_MAGIC_VISUALS_ONLY)
+		ForceSpell("psKOrd01",CUTSCENE_POWERWORD_KILL)
+		Wait(3)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ForceSpell("psKOrd04",WIZARD_POWER_WORD_STUN)
+		ForceSpellPoint([444.553],PHASE_SPIDER_TELEPORT)
+		Wait(2)
+		ForceSpellRES("SPpscut4","psKOrd04")
+		ForceSpell("psKOrd04",WIZARD_FINGER_OF_DEATH_IGNORE_RESISTANCE)
+		StartCutScene("psCut16")
+END

@@ -1,0 +1,31 @@
+IF
+	See("psGith1")
+THEN
+	RESPONSE #100
+		Attack("psGith1")
+		Continue()
+END
+
+IF
+	See("psGith2")
+THEN
+	RESPONSE #100
+		Attack("psGith2")
+		Continue()
+END
+
+IF
+	See("psGithCa")
+THEN
+	RESPONSE #100
+		Attack("psGithCa")
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+		Continue()
+END

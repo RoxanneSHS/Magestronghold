@@ -1,0 +1,15 @@
+IF
+	TRUE()
+THEN
+	RESPONSE #100
+		CutSceneID("psDemi")
+		Wait(1)
+		ReallyForceSpell("psPeas1",WIZARD_BIGBYS_CRUSHING_HAND)
+		Wait(2)
+		ReallyForceSpell("psPeas2",WIZARD_DISINTEGRATE_IGNORE_RESISTANCE)
+		Wait(2)
+		ReallyForceSpell("psPeas3",WIZARD_FLESH_TO_STONE_IGNORE_RESISTANCE)
+		Wait(2)
+		ReallyForceSpell("psPeas3",SURE_STONE_SHATTER)
+		EndCutSceneMode()
+END

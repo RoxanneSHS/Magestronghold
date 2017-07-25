@@ -1,0 +1,126 @@
+IF
+	See("psTanaUD")
+THEN
+	RESPONSE #100
+		Attack("psTanaUD")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTanaUD", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTanaUD")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTanaUD", TANARI_DEATH_GAZE)
+		Attack("psTanaUD")
+		Continue()
+END
+IF
+	See("psTana01")
+THEN
+	RESPONSE #100
+		Attack("psTana01")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana01", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTana01")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana01", TANARI_DEATH_GAZE)
+		Attack("psTana01")
+		Continue()
+END
+
+IF
+	See("psTana02")
+THEN
+	RESPONSE #100
+		Attack("psTana02")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana02", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTana02")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana02", TANARI_DEATH_GAZE)
+		Attack("psTana02")
+		Continue()
+END
+
+IF
+	See("psTana03")
+THEN
+	RESPONSE #100
+		Attack("psTana03")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana03", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTana03")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana03", TANARI_DEATH_GAZE)
+		Attack("psTana03")
+		Continue()
+END
+
+IF
+	See("psTana04")
+THEN
+	RESPONSE #100
+		Attack("psTana04")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana04", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTana04")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTana04", TANARI_DEATH_GAZE)
+		Attack("psTana04")
+		Continue()
+END
+
+IF
+	See("psTanaL")
+THEN
+	RESPONSE #100
+		Attack("psTanaL")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTanaL", TANARI_VAMPIRIC_TOUCH)
+		Attack("psTanaL")
+		Continue()
+	RESPONSE #10
+		ReallyForceSpell("psTanaL", TANARI_DEATH_GAZE)
+		Attack("psTanaL")
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(myself))
+	RESPONSE #10
+		ReallyForceSpell(NearestEnemyOf(myself), TANARI_VAMPIRIC_TOUCH)
+		Attack(NearestEnemyOf(myself))
+	RESPONSE #10
+		ReallyForceSpell(NearestEnemyOf(myself), TANARI_DEATH_GAZE)
+		Attack(NearestEnemyOf(myself))
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(myself))
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself), TANARI_PARALYZE)
+		Continue()
+END
+
+IF
+	RandomNum(6, 1)
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(myself), WIZARD_DELAYED_BLAST_FIREBALL)
+		Continue()
+END

@@ -1,0 +1,23 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		MoveViewPoint([1000.998],INSTANT)
+		FadeFromColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,MoveToPoint([648.761]))
+		ActionOverride(Player2,MoveToPoint([592.865]))
+		ActionOverride(Player3,MoveToPoint([673.854]))
+		ActionOverride(Player4,MoveToPoint([732.833]))
+		ActionOverride(Player5,MoveToPoint([758.789]))
+		ActionOverride(Player6,MoveToPoint([777.717]))
+		ActionOverride("psElmin",MoveToPoint([579.722]))
+		MoveViewPoint([494.651],VERY_FAST)
+		Wait(5)
+		EndCutSceneMode()
+		ActionOverride("psMel",StartDialogueNoSet("psElmin"))
+END
+
+
+

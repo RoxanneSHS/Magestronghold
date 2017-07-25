@@ -1,0 +1,11 @@
+IF
+	Global("psFurnaceToggle","GLOBAL",0)
+	Range(Player1,12)
+THEN
+	RESPONSE #100
+		SetGlobal("psFurnaceToggle","GLOBAL",1)
+		ActionOverride("psFurn",StartDialogueNoSet(Player1))
+END
+
+
+

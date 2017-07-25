@@ -1,0 +1,38 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ScreenShake([20.20],10)
+		ActionOverride("psSPTar1",ReallyForceSpell(Myself,4648))
+		ActionOverride("psSPTar3",ReallyForceSpell(Myself,4648))
+		ActionOverride("psSPTar5",ReallyForceSpell(Myself,4648))
+		ActionOverride("psSPTar2",ReallyForceSpell(Myself,4648))
+		ActionOverride("psSPTar4",ReallyForceSpell(Myself,4648))
+		ActionOverride("psSPTar1",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar3",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar5",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar2",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar4",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar1",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar3",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar5",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar2",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar4",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar1",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar3",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar5",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar2",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psSPTar4",ReallyForceSpell(Player1,BEHOLDER_BLAST_VISUAL2))
+		ActionOverride("psMel",ReallyForceSpell(Player1,4667))
+		CreateVisualEffect("SPCALLLI",[822.659])
+		CreateVisualEffect("SPCALLLI",[958.743])
+		CreateVisualEffect("SPCALLLI",[908.851])
+		CreateVisualEffect("SPCALLLI",[716.851])
+		CreateVisualEffect("SPCALLLI",[669.731])
+		StartCutScene("psCut27")
+END
+
+
+

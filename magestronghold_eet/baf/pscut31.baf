@@ -1,0 +1,77 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp1")
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    ForceSpell(Myself,4650)
+    ForceSpell(Myself,FLASHY_DEATH_1)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp2")
+    ForceSpell(Myself,FLASHY_2)
+    Wait(1)
+    Polymorph(COW)
+    Wait(3)
+    DisplayStringHead(Myself,1450)
+    Polymorph(HORSE)
+    Wait(2)
+    ApplySpell(Myself,CUTSCENE_POWERWORD_KILL)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp3")
+    ForceSpell(Myself,CUTSCENE_SPELLSTRIKE)
+    ForceSpell("psAdv02",WIZARD_MAGIC_MISSILE)
+    Wait(1)
+    ForceSpell(Myself,CUTSCENE_DAMAGE_1)
+    Wait(2)
+    ForceSpell(Myself,FLASHY_DEATH_YEAH)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp4")
+    ForceSpell(Myself,WIZARD_CHAOS_VISUALS_ONLY)
+    Wait(1)
+    ForceSpell(Myself,WIZARD_MELF_ACID_ARROW)
+    ForceSpell(Myself,WIZARD_DISINTEGRATE_IGNORE_RESISTANCE)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp5")
+    DisplayStringHead(Myself,820)
+    Wait(2)
+    ReallyForceSpell("psAdv05",WIZARD_CHAOS_VISUALS_ONLY)
+    ApplySpell("psAdv05",WISH_RABBIT)
+    ReallyForceSpell(Myself,CLERIC_FLAME_STRIKE)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("psAdApp6")
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    Wait(1)
+    ForceSpell(Myself,FLASHY_3)
+    DisplayStringHead(Myself,407)
+    ForceSpell(Myself,CUTSCENE_POWERWORD_KILL)
+    SetGlobal("psAppsDead","GLOBAL",1)
+    ActionOverride("psAdv01",StartDialogNoSet(Player1))
+END
+

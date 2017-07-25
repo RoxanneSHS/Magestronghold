@@ -1,0 +1,13 @@
+If
+	True()
+Then
+	Response #100
+		CutSceneID(Player1)
+		ClearAllActions()
+		
+		DisplayStringHead("psTeos", @616)
+		ActionOverride("psBelle", ForceSpell("psTeos", WIZARD_DISINTEGRATE_IGNORE_RESISTANCE))
+		DisplayStringHead("psBelle", @617)
+		Wait(4)
+		ActionOverride("psBelle", StartDialogNoSet(Player1))
+End

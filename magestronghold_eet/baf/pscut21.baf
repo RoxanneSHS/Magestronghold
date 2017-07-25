@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		LeaveAreaLUA("AR0410","",[599.691],2)
+		ActionOverride(Player2,LeaveAreaLUA("AR0410","",[699.742],2))
+		ActionOverride(Player3,LeaveAreaLUA("AR0410","",[699.742],2))
+		ActionOverride(Player4,LeaveAreaLUA("AR0410","",[817.632],0))
+		ActionOverride(Player5,LeaveAreaLUA("AR0410","",[691.548],4))
+		ActionOverride(Player6,LeaveAreaLUA("AR0410","",[603.612],2))
+END
+
+
+

@@ -1,0 +1,33 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psKOrd03")
+		MoveToPoint([543.377])
+		ForceSpell(Myself,CLERIC_PHYSICAL_MIRROR)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ForceSpell("psKOrd02",WIZARD_CONTAGION)
+		SmallWait(1)
+		ForceSpell("psKOrd02",WIZARD_FLESH_TO_STONE_IGNORE_RESISTANCE)
+		Wait(1)
+		ForceSpell("psKOrd02",SURE_STONE_SHATTER)
+		ActionOverride("psKOrd033",DisplayStringHead(Myself,26536)) // Nooo! Gotta run! Gotta get away!
+		SmallWait(2)
+		ActionOverride("psKOrd03",MoveToPoint([855.161]))
+		Wait(1)
+		DisplayStringHead(Myself,4475) //  Die, insolent whelps!
+		ForceSpell("psKOrd03",TRANSFORMATION_DEATH)
+		Wait(1)
+		SetGlobal("psMelKilledKnights", "GLOBAL", 1)
+		StartDialogueNoSet(Player1)
+END
+
+
+

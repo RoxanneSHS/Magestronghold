@@ -1,0 +1,98 @@
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_INVISIBILITY)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_ILLUSION)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FAR_SIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_SIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_INVISIBILITY)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_ILLUSION)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FAR_SIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_SIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_INVISIBILITY)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DETECT_ILLUSION)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FAR_SIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_SIGHT)
+		Continue()
+END
+
+
+

@@ -1,0 +1,29 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		MultiPlayerSync()
+		CutSceneId(Player1)
+		OpenDoor("Door0400")
+		Wait(1)
+		CreateCreature("psFanat1",[3192.2887],4)
+		ActionOverride("psFanat1",MoveToPoint([2940.2809]))
+		Wait(1)
+		CreateCreature("psFanat2",[3192.2887],4)
+		ActionOverride("psFanat2",MoveToPoint([2999.2772]))
+		Wait(1)
+		CreateCreature("psFanat3",[3192.2887],4)
+		ActionOverride("psFanat3",MoveToPoint([3048.2739]))
+		Wait(1)
+		CreateCreature("psFanat4",[3192.2887],4)
+		ActionOverride("psFanat4",MoveToPoint([3084.2688]))
+		Wait(1)
+		CreateCreature("psFanat5",[3192.2887],4)
+		ActionOverride("psFanat5",MoveToPoint([3131.2608]))
+		Wait(2)
+		ActionOverride("psFanat1",StartDialogueNoSet(Player1))
+END
+
+
+

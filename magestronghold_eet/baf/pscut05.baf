@@ -1,0 +1,23 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		StartCutSceneMode()
+		Wait(1)
+		CreateVisualEffect("SPDIMNDR",[531.742])
+		CreateVisualEffect("SPDIMNDR",[410.710])
+		CreateVisualEffect("SPDIMNDR",[607.567])
+		CreateVisualEffect("SPDIMNDR",[634.691])
+		Wait(2)
+		CreateCreature("psKhel",[531.742],0) // Khelben
+		CreateCreature("psPrst1",[410.710],0)
+		CreateCreature("psPrst2",[607.567],0)
+		CreateCreature("psPrst3",[634.691],0)
+		EndCutSceneMode()
+		SetGlobal("psChosenDead", "GLOBAL", 1)		
+		ActionOverride("psKhel",StartDialogueNoSet(Player1))
+END
+
+
+

@@ -1,0 +1,50 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		StartCutSceneMode()
+		DestroyItem("psCre08")
+		ApplySpell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+		CreateVisualEffectObject("SPUSEANY",Myself)
+		DisplayStringHead(Myself,8549) // Die, you bastard!
+		ForceSpellRES("sppsmelr","lordA")
+		ReallyForceSpellPointRES("sppsmelr",[2080.1755])
+		ReallyForceSpellPointRES("sppsmelr",[2118.1755])
+		ForceSpellRES("sppsmelr","lordA")
+		ForceSpellRES("SPPSCUT2","lordA")
+		ForceSpell("lordA",FLASHY_DEATH_1)
+		ForceSpellRES("SPpscut4","lordA")
+		ForceSpell("lordA",FLASHY_DEATH_3)
+		ForceSpell("lordA",WIZARD_DISINTEGRATE)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psLordAo")
+		StartCutSceneMode()
+		ForceSpellRES("SPpscut1","psMel")
+		CreateVisualEffect("HELLOLY",[1937.1455])
+		CreateVisualEffect("HELLOLY",[2251.1455])
+		CreateVisualEffect("HELLOLY",[1951.1577])
+		CreateVisualEffect("HELLOLY",[2220.1577])
+		ActionOverride("psMel",ReallyForceSpellPointRES("SPpscut3",[1937.1455]))
+		ActionOverride("psMel",ReallyForceSpellPointRES("SPpscut3",[2251.1455]))
+		ActionOverride("psMel",ReallyForceSpellPointRES("SPpscut3",[1951.1577]))
+		ActionOverride("psMel",ReallyForceSpellPointRES("SPpscut3",[2220.1577]))
+		ActionOverride("psMel",DisplayStringHead(Myself,31332)) // NOOOO!!
+		SmallWait(5)
+		CreateVisualEffectObject("SPWHIRL","psMel")
+		Wait(1)
+		ReallyForceSpell("psMel",CUTSCENE_POWERWORD_KILL)
+		CreateVisualEffectObject("SPDEATH3","psMel")
+		CreateVisualEffectObject("SPBASEWT",Myself)
+		Wait(1)
+		StartDialogueNoSet("psLordAo")
+		EndCutSceneMode()
+END
+
+
+

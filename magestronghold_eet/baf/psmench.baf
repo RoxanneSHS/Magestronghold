@@ -1,0 +1,120 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psSpellupToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(NearestEnemyOf(Myself),WIZARD_DOMINATION)
+		ApplySpell(SecondNearestEnemyOf(Myself),WIZARD_DOMINATION)
+		ApplySpell(ThirdNearestEnemyOf(Myself),WIZARD_CONFUSION)
+		ApplySpell(FourthNearestEnemyOf(Myself),WIZARD_CONFUSION)
+		ApplySpell(FifthNearestEnemyOf(Myself),WIZARD_CONFUSION)
+		ApplySpell(SixthNearestEnemyOf(Myself),WIZARD_CONFUSION)
+		SetGlobal("psSpellupToggle","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_EMOTION_HOPELESSNESS)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_DIRE_CHARM)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Dominy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_DOMINATION)
+		ForceSpell(Myself,WIZARD_SIMULACRUM)
+		SetGlobal("Dominy","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FEEBLEMIND)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_CHAOS)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_DOMINATION)
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_DOMINATION)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_SLEEP)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_SLEEP)
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_EMOTION_HOPELESSNESS)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FEEBLEMIND)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_CHAOS)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_DOMINATION)
+		ForceSpell(Myself,WIZARD_MISLEAD)
+		Continue()
+END
+
+
+

@@ -1,0 +1,33 @@
+IF
+	GlobalLT("psThirdSplitCounter", "GLOBAL", 7)
+	HPLT(Myself, 100)
+	Global("psThirdSplit", "LOCALS", 0)
+THEN
+	RESPONSE #100
+		SetGlobal("psThirdSplit", "LOCALS", 1)
+		IncrementGlobal("psThirdSplitCounter", "GLOBAL", 1)
+		ApplySpellRes("psBlur", Myself)
+		Wait(1)
+		CreateCreatureObject("psSplit3", Myself, 0, 0, 0)
+END
+
+IF
+	GlobalLT("psFourthSplitCounter", "GLOBAL", 15)
+	HPLT(Myself, 50)
+	Global("psFourthSplit", "LOCALS", 0)
+THEN
+	RESPONSE #100
+		SetGlobal("psFourthSplit", "LOCALS", 1)
+		IncrementGlobal("psFourthSplitCounter", "GLOBAL", 1)
+		ApplySpellRes("psBlur", Myself)
+		Wait(1)
+		CreateCreatureObject("psSplit4", Myself, 0, 0, 0)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(LastSeenBy)
+		Continue()
+END

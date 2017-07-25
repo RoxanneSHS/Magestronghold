@@ -1,0 +1,1892 @@
+@0    = ~Expanded Mage Stronghold EET~
+@1    = ~TOB Required~
+@2    = ~Planar Sphere~
+@3    = ~Test Dummy~
+@4    = ~Teos~
+@5    = ~Apprentice~
+@6    = ~Tutor~
+@7    = ~Narrator~
+@8    = ~Priest Of Mystra~
+@9    = ~Priest of Mystra~
+@10   = ~Magic Elemental~
+@11   = ~Lord Ao~
+@12   = ~Melanthium~
+@13   = ~Prime Material Portal~
+@14   = ~Mystra~
+@15   = ~Cowled Wizard~
+@16   = ~Nightmare~
+@17   = ~Kinetic Knife~
+@18   = ~Sorcery~
+@19   = ~Adventurer~
+@20   = ~Red Wizard~
+@21   = ~Vecna's Shade~
+@22   = ~Baby Wyvern~
+@23   = ~Modron~
+@24   = ~Enslaved Solar~
+@25   = ~Marilith~
+@26   = ~Servant of Chaos~
+@27   = ~Baatezu~
+@28   = ~Glabrezu~
+@29   = ~Knight of the Order~
+@30   = ~Fanatic~
+@31   = ~Helmed Horror~
+@32   = ~Degrodel~
+@33   = ~Broom~
+@34   = ~Demon~
+@35   = ~Wielter~
+@36   = ~Examiner~
+@37   = ~Melicamp~
+@38   = ~Thalantyr~
+@39   = ~Greater Nightmare~
+@40   = ~Dream~
+@41   = ~Planar Portal~
+@42   = ~Fear~
+@43   = ~Elminster~
+@44   = ~Pain Elemental~
+@45   = ~Night Hag~
+@46   = ~Planar Knight~
+@47   = ~Spell Globe~
+@48   = ~Magic~
+@49   = ~Divination~
+@50   = ~Illusion~
+@51   = ~Abjuration~
+@52   = ~Alteration~
+@53   = ~Necromancy~
+@54   = ~Conjuration~
+@55   = ~Enchantment~
+@56   = ~Invocation~
+@57   = ~Portal~
+@58   = ~Lady of Pain~
+@59   = ~Prison Portal~
+@60   = ~Demilich~
+@61   = ~Peasant~
+@62   = ~Demon Prince~
+@63   = ~Furnace~
+@64   = ~Inchantra~
+@65   = ~Cowled Enforcer~
+@66   = ~Puddle of Slime~
+@67   = ~Storm~
+@68   = ~Inferno~
+@69   = ~Vortel~
+@70   = ~Hobgoblin Elite~
+@71   = ~Magical Hammer~
+@72   = ~Skeleton~
+@73   = ~Giant Spider~
+@74   = ~Wraith~
+@75   = ~Black Amulet~
+@76   = ~The Necromancers Rage~
+@77   = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain.  The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.  ~
+@78   = ~The Necromancers Rage
+  Before the Time of Troubles, a powerful Thayan Red Wizard spent many years specializing and studying the art of Necromancy. Finally he made his bid for power within Thay and many wizards fell before his skill. However, as he neared his goal of domination of Thay, he was challenged by a powerful illusionist. They battled for nearly a hour. The illusionist wove many deceiving spells about himself. The necromancer had no knowledge of illusion, and so could not pierce them. He was forced to concede. As he left he cursed necromancy and vowed never to use it again. The final spell he cast was to create this amulet that destroyed necromantic magic - his final revenge on that spell school.
+
+  STATISTICS
+  
+  Abilities: +5 Bonus to all saves vs. death
+  Wearer immune to all necromantic magic~
+@79   = ~Silver Amulet~
+@80   = ~Cowled Wizard Badge~
+@81   = ~This badge signifies you as an honorary member of the Cowled Wizards. It is carried by the most important cowled wizards to protect them from the magically insane. The badge grants many protections and allows the wearer to cast Contingency and Minor Spell Sequencer once every day.
+
+  STATISTICS
+  While Equipped:
+  1 extra wizard spell at 1st, 2nd and 3rd level.
+   Vocalize
+   Immunity to Level Drain~
+@82   = ~Ring~
+@83   = ~Red Wizard Ring~
+@84   = ~A ring is a small band of precious metal that is used as jewelry.  Some rare rings have had enchantments placed upon them that confer various magical abilities.  These rings are highly sought after, especially by those of the adventuring profession.~
+@85   = ~This is a ring made by the Red Wizards of Thay. It is given to wizards preforming a task of supposed national importance. It is very rare to find this ring in the possession of anyone but a Red Wizard.
+  STATISTICS:
+  Grants 50%  fire resistance
+  Increases spell casting speed by 2~
+@86   = ~Artifact~
+@87   = ~The Artifact sits ominously in your hand. Its black, warped surface seems to throb slightly with barely-contained energy. It is plain to see that this object contains vast magical power.~
+@88   = ~<No Text>~
+@89   = ~Black Blade of Disaster~
+@90   = ~Two-Handed Sword~
+@91   = ~Pains Shard +6~
+@92   = ~The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. 
+  
+  STATISTICS:
+  
+  Damage:  1D10
+  Damage type:  slashing
+  Weight: 15
+  Speed Factor: 10
+  Proficiency Type: Two Handed sword
+  Type:  2-handed
+  Requires: 14 Strength~
+@93   = ~Pain's Shard +6
+  This blade sparkles with magical energy as you draw it through the air. It seems to almost cut through the Planes themselves, leaving a blackness in its wake. This blade once adorned the Lady of Pain, the powerful ruler of Sigil, but was given to you by her for your great service. It protects from many things, including cold and instant death, as well as granting magic resistance and regeneration. When it strikes a target, there is a good chance that the target will be wracked with incredible pain. The blade also anchors the wielder to their plane of existence, making them immune to Maze and Imprisonment spells.
+  So sharp is the blade that it cuts through reality itself. With each hit there is a small chance that the target will be thrown into another plane of existence. The sharpness of the blade also allows the wielder to cut through any magic that might hinder movement. Finally, the blade contains some of the power of the Lady. The wielder may access this power, allowing them to use the blade to cut through space and teleport to their desired location at will. It also allows them to cast the Banishment spell once a day, that flings one target into oblivion.  The blade cuts through magic as well and so with each hit the target may lose magic resistance or have physical spell protections removed.
+
+  EQUIPPED EFFECTS:
+  While equipped, this blade protects the wielder from all forms of instant death magic (disintegration and petrification)
+  +25% Magic Resistance 
+  Immune to Imprisonment and Maze spells
+  +2 to Armour Class
+
+  STATISTICS
+  Combat Abilities: With each hit there 50% chance that the target receives cumulative 1 point penalty to their THAC0 - Duration: 20 rounds
+  With each hit the target loses 5% magic resistance - Duration: 50 rounds
+  With each hit the target must make a save versus spells at -3 or be affected by terrible pain. The pain reduces their dexterity by 2 and lowers their saving throws by 2 - Duration: 20 rounds
+  With each hit there is a 10% chance that the target will be imprisoned in a outer planar reality, but is allowed a save versus death at +4
+  THAC0: +6 bonus
+  Damage: 1D8 +6
+  Damage type:  slashing
+  Weight:  10
+  Speed Factor: 6
+  Proficiency Type: Two handed sword
+  Type:  2-handed
+  Requires: 14 Strength~
+@94   = ~Ring of Free Action:  'Edventar's Gift'
+  This ring was given to the reef scavenger and hunter, known only as Edventar, by a group of aquatic elves who had long been his friends. His help in routing the "Pirate Queen", Yenandra of Dambrath, was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
+  
+  STATISTICS:
+  
+  Special:  The wearer is immune to everything, magical and otherwise, that affects mobility in any way. This includes haste and slow spells.~
+@95   = ~Quarterstaff~
+@96   = ~Staff of Sorcery~
+@97   = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length.  High quality quarterstaves are made of stout oak and are shod with metal at both ends.  The quarterstaff must be wielded with both hands.  
+  
+  STATISTICS:
+  
+  Damage:  1D6
+  Damage type:  crushing
+  Weight: 4
+  Speed Factor: 4
+  Proficiency Type: Staff
+  Type:  2-handed
+  Requires: 5 Strength~
+@98   = ~Staff of Sorcery +5
+  Most Staff of the Magi share powers in common. The more powerful staves, like the one famously owned by Khelben "Blackstaff" Arunsun are rare, and the property of powerful Archwizards. This staff however outdoes them all. Its twisted black surface seems to shine with no light, and yet at the same time all the colors of the rainbow. It is not composed of  any material you can name, but feels as if it is woven of solid mists. This staff is believed to have been created by the ArchSorcerer Melanthium, the most powerful being to have ever existed and notorious enemy of the Lady of Pain. He carried the staff merely because he felt that it was part of the image, so he only enchanted it with his lesser magics. Like the sorcerer himself, this staff is incredibly powerful. It increases the user's ability to cast spells, protects the user from lesser weapons and spells cast at the user, and allows the casting of powerful spells with a wave of the staff.
+STATISTICS
+  Armour Class: +4 bonus
+  Saving Throws: +4 bonus
+
+Equipped Abilities:
+  Protection from Petrification
+  Protection From Instant Death
+  Protection From Imprisonment
+  Protection From 1st to 3rd level spells.
+  Protection from Fear
+  Immunity to Normal and +1 Weapons.
+  Immunity to Level Drain
+  +15 Hit Points
+  Grants the user the ability to memorize one extra spell per level
+  
+  Abilities:
+  Five times a day the staff can unleash magical fireballs.
+  Once a day the power of the staff can be used to protect the user from all magic for half a minute. 
+  Improved Disintegration can be cast thrice a day. 
+  The staff can cast the Chain Contingency spell.
+  Combat Ability (each hit): Dispel Magic  
+  Will slay any extra planar creature with less then 4d10 hit points - they are allowed a save at -4.
+  THAC0: +5 bonus  
+  Damage:  1D6 +5
+  Damage type:  crushing
+  Weight: 4
+  Speed Factor: 4
+  Proficiency Type: Quarterstaff
+  Type:  2-handed
+  Requires: 5 Strength~
+@99   = ~Dispel Effects~
+@100  = ~Circlet of Infernal Shielding~
+@101  = ~Circlet of Infernal Shielding
+  This magical circlet feels hot to the touch and, as you place it on your finger, it flares with magic and a ring of fire springs up around you. This ring is believed to have been created many years ago by a mage studying fire elementals. Unfortunately, the protection provided by this ring grants did not save him when a stupid student released his fiery captives.
+  STATISTICS:
+  
+  Equipped Abilities:  
+  30% Cold Resistance
+  User affected with the Fire Shield (Red) spell.
+  ~
+@102  = ~Wand ~
+@103  = ~Stave of Jagged Lightning ~
+@104  = ~Wands are 1 1/4 feet long and slender.  They are made of ivory, bone, or wood and are usually tipped with something - metal, crystal, stone, etc.  They are fragile and tend to break easily. Because of this, they are often kept in cases.  
+  
+  Wands are powered by charges, each use costing one or more charges (depending on the item).  When a wand runs out of charges, it is consumed and destroyed.~
+@105  = ~Stave of Jagged Lightning 
+  The origin of this particular type of stave is unknown. Several exist, but so few that they are highly valued. This Stave was rediscovered recently when a group of pirates hijacked the floating ship of a Halruuan mage in Waterdeep. This was one of the items they "recovered", though what became of the mage is unknown. Originally possessing many charges, the stave has been used many times, and so many have been used. There are few left.
+
+  STATISTICS:
+  
+  Effect: Chain Lightning
+  Damage:  4D6 (save vs. wands for half)
+  Range:  100ft
+  
+  Effect: Call Lightning
+  Damage:  8D8 (save vs. wands for half)
+  Range:  110ft~
+@106  = ~Staff of the Battle Magi +4~
+@107  = ~Staff of the Battle Magi +4
+  Trelecar, a powerful fighter of Tethyr, discovered his magical ability half way through his adventuring career. After several years of training, he became a relatively powerful mage. However, he could not help but remember his fighting abilities, so he crafted this powerful staff that allowed him to use both his brawling talent and spellcasting skills.
+  The staff protects its holder in combat, and gives them increased strength and constitution, as well as giving them various other magical abilities. The staff's magic makes it do more damage then a staff would normally do.
+  
+  STATISTICS:
+  +2 Strength and Constitution.
+  -3 Base Armour Class
+  +10% Resistance to all forms of physical attack.
+  +5 Hit Points
+  Can cast Tenser's Transformation and Protection from Normal Missiles once a day.  
+  THACO: +4
+  Damage: 2D6 + 4
+  Damage Type: Crushing
+  Weight: 4
+  Speed Factor: 1
+  Proficiency Type: Quarterstaff
+  Type:  2-handed
+  Requires: 5 Strength~
+@108  = ~Amulet~
+@109  = ~Amulet of Advancing~
+@110  = ~Amulet of Advancing
+  Created with the blood of an Elder Orb, this item increases the mage's ability to memorize spells at a high level. Its creator, while an able forger of magical items, was too humane for his own good, and chose to steal the blood from the Elder Orb rather then kill it. The Elder Orb was slightly less caring about his "Live and Let Live" attitude. The teeth marks can still be seen on this amulet. 
+
+  STATISTICS:
+  Special:  Memorize one extra seventh level spell~
+@111  = ~Rod of Avarda Kedarva~
+@112  = ~Wands are 1 1/4 feet long and slender.  They are made of ivory, bone, or wood and are usually tipped with something - metal, crystal, stone, etc.  They are fragile and tend to break easily.  Because of this, they are often kept in cases.  
+  
+  Wands are powered by charges, each use costing one or more charges (depending on the item).  When a wand runs out of charges, it is consumed and destroyed.~
+@113  = ~Rod of Avarda Kedarva
+  Avarda Kedarva was a powerful Necromancer of Ancient Netheril. A vile Archmage, he wanted to destroy the magical city in which he resided. What he planned to do was unknown. However, the Rod came into his plan. The Rod is a powerful and terrible thing, originally gifted with many charges, but over time it has been used well, generally by the most evil characters in the Realms. It is now covered in burns, cracks and scars, but retains some of its original power. 
+  The Rod unleashes a powerful blast of magical energy that consumes the target in a blinding flash of green light. The target, if it cannot resist the magic, is instantly killed.
+ 
+  STATISTICS:
+  Effects: Kills target instantly unless save vs. death at -3
+  Range: 100
+  Area: 1 creature
+  Duration: Permanent~
+@114  = ~Bolt~
+@115  = ~Doom Bolt +3~
+@116  = ~Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+  
+  STATISTICS:
+  
+  Damage:  1D8
+  Damage type:  missile (piercing)
+  Weight:  0
+  Launcher:  Crossbow~
+@117  = ~This bolt makes you feel very uneasy as you hold it, filling you with a sense of almost impending doom. Around a thousand of these magical bolts were originally created to guard the High Temple of Bane. After the Time of Troubles, they spread throughout the Realms. They have been enchanted to hit more often and do more damage. 
+  
+  STATISTICS:
+  Damage: 1D8+3
+  THAC0: +3
+  Damage type: Missile (Piercing)
+  Special: Save vs. spell or be affected with Doom spell. 
+  Duration: Permanent
+  Weight: 0
+  Launcher: Crossbow~
+@118  = ~Doomed~
+@119  = ~Gloves~
+@120  = ~Gloves of Spell Weaving~
+@121  = ~These gloves are woven of absolute night and radiate power.~
+@122  = ~Gloves of Spell Weaving
+  These gloves crackle with magical energy. They are made of fine black material that seems to be woven from the void itself. These gloves were created by the Archsorcerer Melanthium, and seem to literally draw magic to them. When donned, the user's magical abilities are greatly increased. The speed of spell casting and its duration are affected, and the user's ability to cast spells is greatly improved. Oddly enough, they seem never to have been worn. Probably because it is unlikely that the Archsorcerer ever needed them. It also allows the user to drain power from a opponent or destroy magical barriers with a single wave of the user's hand.
+  
+  STATISTICS
+  Special Abilities: 
+  Spell-casting speed is increased and the spell speed factor is increased.
+  Also, the wearer is able to memorize 1 extra spell per level. 
+  They also increase the user's Intelligence and Wisdom by 1 point.
+  Cast Energy Drain and spell strike once a day.~
+@123  = ~Hourglass~
+@124  = ~Sands of Time~
+@125  = ~This small hourglass contains sparkling blue sands that continually flow from one bulb to the other. Strangely enough, the level of sand in each bulb never seems to change. If you stare hard enough, you can just see strange runes engraved on the side.~
+@126  = ~Sands of Time
+  Aoskar, the God of Portals that the Lady of Pain deposed from power, was placed in charge of the passage of time of many planes. When he and the Lady fought for power, it is believed the power with which he controlled time was shattered. As he fell, these the Sands of Time rained across Sigil. A resourceful Archmage in Sigil collected some of the sands, imprisoning them inside this hourglass. The sand in this hourglass appears to continually flow, no matter how much the hourglass is tilted or shaken. However, engraved on the side of the hour glass is a Word of Power that, when spoken, causes the sands to halt their passage, and stop the flow of time around the caster for a short time. 
+   
+  STATISTICS:  
+  Special Abilities (once per day): Stop the passage of time
+  ~
+@127  = ~Scroll~
+@128  = ~Scroll of Kaza~
+@129  = ~This scroll radiates energy, but of an evil nature. Caution is recommended.~
+@130  = ~This scroll is covered in strange twisted writings. It appears to be a translation from the Book of Kaza, which details in full how an advanced mage could transform themselves into a Lich, a powerful undead spellcaster. This spell scroll is strange in that, unlike other lich transformations, no long ritual is required, and the caster's dead form becomes the soul container. Beware, however! While the transformation into a Lich brings many benefits, it also has terrible consequences. Immortality takes a long time to get right.
+
+  Abilities:
+  User is transformed into a Lich, and gains the following abilities.
+  -2 to Dexterity
+  -4 to Charisma
+  +1 to Strength, Constitution and Intelligence 
+  Spell casting speed increased by one.
+  +10 Hit Points
+  One extra 1st-4th level spell
+  Fire does extra damage
+  +2 bonus to Saves vs Death and Spells.
+  Immunity to Cold
+  Immunity to Level Drain
+  Immunity to Instant Death 
+  Immunity to Poison
+  Immunity to Non-Magical Weapons
+  Immunity to Sleep
+  Immunity to Polymorph
+  +50% Piercing Resistance
+  +10% Resistance to all other forms of attack. 
+  +5%  Magic Resistance 
+  Alignment set to Neutral Evil
+  Infravision 
+  Party will loose 8 Reputation
+  Gains ability to Control Undead thrice a day. Also gains the ability to Lich Touch thrice a day, and the new Lich gets an Aura of Fear, so that any creature close enough to attack the character must make a Save vs Spells or run in fear.
+  Caster must be above 18th level, or the results could be disastrous. Be warned that healing spells will no longer affect the Lich. As such, the Lich must rely on their innate regeneration to protect themselves.~
+@131  = ~Large Shield~
+@132  = ~Rift Shield +5~
+@133  = ~This shield is a dull black, and appears completely inactive.  However, as you gaze at the surface for an instant, you think you catch a brief glance of a swirling mass of magical energy that seems somehow malevolent.  ~
+@134  = ~Rift Shield +5
+  As you gaze at the face of this dull black shield, its enchantment is not immediately apparent. However, as you touch it, a strange cold runs up your arm, and the face of the shield seems to distort and change. The shield face, when the shield is touched, becomes a twisting black portal to some other dimension. Objects may pass freely through the portal and are completely irretrievable, no doubt ending up floating in another plane of existence. Attacks made against the holder are severely hindered by the magical gate, and all missiles hitting the shield are absorbed into the rift. The shield however is strangely unnerving to anyone looking at its face, as an observer gets the distinct impression that something beyond the rift is staring back. 
+ 
+  STATISTICS:
+  Immunity to Missile Weapons
+  +10% Magic Resistance
+  -2 Charisma
+  +6 Armour Class
+  Weight: 3
+  Requires: 5 Strength~
+@135  = ~Shattered Tale +4~
+@136  = ~Two Handed Sword +4 - Shattered Tale
+  Though not originally magical, certain events led to the enchantment of this blade. It is known by the wisest sages that certain themes run throughout the history of all realities, and that they are engraved in the very substance of creation. One of the best know themes is the noble prince rescuing the beautiful princess from the wicked witch. In this case however something went horribly wrong. The prince had battled his way through hordes of undead and through the mandatory Field of Thorns. He faced the witch in single combat, slaying the foul creature with a stroke of this sword. He climbed the tower and entered the princess' chamber. In a fit of passion, they ran towards each other their arms outstretched... The prince tripped, knocking the princess through the open window onto the mangled thorns below. His sword came loose as he fell, skewering him through the chest and killing him instantly. The normal theme of things had been broken, and the power of the story shattered. Some of it passing into this blade, causing it to become a powerful weapon. The shard of story residing in the blade makes it the typical and somewhat clichéd weapon of happiness ever after.
+
+  STATISTICS:
+  +1 Charisma and Constitution.
+  User immune to particularly evil spells like Unholy Word, Doom and Unholy Blight
+  +5% Magic Resistance
+  However, the fact the story went wrong also resides in the blade, and gives -2 to Wisdom.
+  THAC0: +4 bonus, +6 vs Evil
+  Damage:  1D12 +4, +6 vs Evil
+  Damage type:  slashing
+  Weight:  11
+  Speed Factor: 6
+  Proficiency Type: Two handed sword 
+  Type:  2-handed
+  Requires: 14 Strength~
+@137  = ~Gem~
+@138  = ~Primus Gem~
+@139  = ~Within this gem floats a strange mist. As you gaze into it, numbers and symbols seem to float past your eyes, giving you a minor headache.~
+@140  = ~Primus Gem
+  This gem comes from the center of a Modron's body. The Modrons are strange mechanical beings who reside on the plane of Mechanus. These gems are found in the power center of the Modron's body, and are their link with the Plane of Mechanus. Hence it is rare to find one intact, as they are usually destroyed when the Modron is killed. By smashing the gem, the energy within can be released and absorbed, giving the user the benefit of a Modron's intelligence.
+
+  STATISTICS:
+  Intelligence:  Raised by 1 point permanently
+  Special:  The gem shatters upon use.
+  Usage:  Place into quick item slot~
+@141  = ~Intelligence has been raised by 1 permanently~
+@142  = ~Ioun Stone~
+@143  = ~Shadowy Black Ioun Stone~
+@144  = ~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.~
+@145  = ~Shadowy Black Ioun Stone:
+  It is believed that only around four of these ioun stones are still in existence. They have been banned by all magical organizations throughout Faerún because they promote extreme unrest among the magical community. These gems are easy to make, and cheap as well. However, the dispute arises from one of their creation components... the power of a mage. Unfortunately, a mage has to be killed in the creation of these items and so, as you might imagine, murders and assassinations were carried out right and left, until the magical community in general banned the construction of these stones, and destroyed all the stones they could find. Anyone found with this stone by a magical organization is likely to be heavily penalized. The stone's power deserves its reputation however, making its users magical abilities much stronger.  
+  
+  Abilities: 
+  Doubles first- and second-level spells.
+  Immunity to first-level spells
+  -1 Wisdom
+  Weight: 2~
+@146  = ~Cap~
+@147  = ~The Sage's Boon~
+@148  = ~This small, frayed cap sits on the head of the wearer. It looks as if it has seen a great deal of use.~
+@149  = ~The Sage's Boon
+  This cap has been used by sages for centuries to increases their normal thinking ability. While many learned frown on the use of such items, there is no doubt that this cap has seen much use, and many of its years were spent in the library at Candlekeep.
+  Abilities: 
+  Intelligence set to 19
+  Weight: 1~
+@150  = ~An odd book~
+@151  = ~How odd.~
+@152  = ~Odd, you can't seem to divine what exactly this book is for. It seems to be magical, and likely grants the user some sort of power, but what, you don't know.~
+@153  = ~Our Lady of Serenity~
+@154  = ~The Lady of Pain the ruler of the planar city of Sigil. Little is known about this powerful being and little is asked.  Those who ask to many questions are either mazed or flayed alive by the ladies blades. The lady is a woman of giant size who is seen floating through the city of Sigil, while her face is serene in appearance her head is surrounded by a ring of magical blades. The lady is as aforementioned a mystery she only exists apparently to protect Sigil and she will expel any god who attempts to enter it.  Her power must indeed be great as she is capable of keeping all the gods in all the planes from entering Sigil and as such you might think she would be worshiped as a god, but any who do worship her a instantly flayed, she rejects all forms of worship. The lady remains a mystery but a mystery that should not be investigated.  ~
+@155  = ~You turn and flee in terror, but not before the ghost brushes you with it's bony finger, numbing your body with the chill touch of the grave.~
+
+@157  = ~Earth Elemental Transformation~
+@158  = ~Textbook on Item Creation~
+@159  = ~This book is a quick and simple guide to the creation of magical items. It is somewhat limited in what items it describes, but it should give a mage plenty to do.
+  
+  Stage One: An item is first required to enchant. This varies, depending on the item being created.
+  To create:
+  A magical sword- An unenchanted long sword is required
+  A magical Spear- An unenchanted spear is required
+  A magical  ring- An unenchanted gold ring is required.
+  A magical amulet- An unenchanted gold amulet is required
+  A magical wand- An unenchanted wooden staff is required.
+  A magical staff-  An unenchanted wooden staff is required.
+  A magical shield-  An unenchanted large shield is required.
+  A set of magical robes-  An unenchanted piece of leather amour is required.
+  A magical suit of plate mail-  An unenchanted set of full plate mail is required.
+  A suit of magical leather amour-  An unenchanted piece of leather amour is required.
+  A magical axe-  An unenchanted axe is required.
+  
+  This Text details in full the process needed to create these items. However, a forge is needed to create them. Also the book makes perfectly clear that the power of items depends solely on the mage's ability.
+  Disclaimer: This process can be dangerous, and is attempted at your own risk. Also, this process is extremely tiring. It may take several days to recover.~
+@160  = ~Tutor's Ring~
+@161  = ~Tutor's Ring:
+  Used by tutors of new Cowled Wizards, these rings grant the tutors protection from some of the less gifted students, some of whose achievements consist of:
+- Opening portals to the lower planes
+- Causing all cucumbers in the area to spontaneously combust
+- Something to do with a lot of brooms (but that was never proven)
+  
+  STATISTICS:
+  +1 Armour Class
+  +3 Save vs Spells
+  +5% Magic Resistance
+  Casts Minor Globe of Invulnerability once/day.~
+@162  = ~Red Wizard Orders~
+@163  = ~Our contact will meet you in Athkatla. He will be waiting with the Artifact. Once you have it, kill him and return immediately. Avoid the attention of those fool Cowled Wizards at all costs, but if you are intercepted use all force necessary to return with the Artifact. On return, come straight to the Spell Chamber, and we can begin the Unlocking Ritual. On no account must you use spells that open up Planar Portals. They could well trigger the Artifact's defenses. Be warned - fail in this task, and your death shall be slow and painful.
+  Signed Zulkir 
+  (the note is torn at this point)~
+@164  = ~Ring of Free Action:  'Edventar's Gift'
+  This ring was given to the reef scavenger and hunter known only as Edventar, by a group of aquatic elves long his friends.  His help in routing the "Pirate Queen" Yenandra of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
+  
+  STATISTICS:
+  
+  Special:  The wearer is immune to everything,  magical and otherwise,  that affects mobility in any way.  This includes haste and slow spells.~
+@165  = ~Cloak~
+@166  = ~Vecna's Spectral Cloak~
+@167  = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.  ~
+@168  = ~Vecna's Spectral Cloak:
+  A garment forged and worn by the Archlich Vecna, a powerful Lich who managed to achieve demi-godhood on one of the outer planes. This cloak easily displays Vecna's powerful magical ability. The cloak is woven from material from the demiplane of shadows. It is totally black, and seems some how alive. The cloak grants the user powerful protections, and is reputed to be able to call shadows to aid the caster.
+
+  STATISTICS:
+  25% Magic Resistance
+  +50% Cold Resistance
+  +1 Armour Class
+  +2 Saving Throws
+  Immunity to Fear 
+  There is a small chance that, when attacked, a shadow will appear to aid the wearer.~
+@169  = ~Dusty Rod of Ust Terran~
+@170  = ~Dusty Rod of Ust Terran:
+  This rod hums with pent magic. Created on the plane of Baator by a powerful lesser demon lord, this wand's power is deadly. The wielder of the rod can point it at his desired target and speak the command word. On doing so, a disintegrating whirl shoots forth, disintegrating the target into a pile of dust.
+
+  STATISTICS:  
+  Effect: Thrice/day the rod can be used to instantaneously cast the Disintegrate spell. The target must make a Save vs Spell or be disintegrated
+  Range:  120 ft
+  Area:  1 creature~
+@171  = ~Eye~
+@172  = ~Eye Of Vecna~
+@173  = ~This eye looks old and rotten. However, when you look at it, you get the distinct impression that it's looking back.~
+@174  = ~Eye Of Vecna:
+  
+  Many tales are told of the Archlich Vecna. 
+  It is said that Vecna was one of the Planes' mightiest sorcerers, able to draw life from dust and send it back again, extinguish lives with a glance, and make the earth shudder beneath his touch. He was said to be so powerful that when the end of his life drew near, death refused to take him into its kingdom. 
+  And so Vecna died, yet lived on.
+  Abandoned by death, Vecna became the master of a vast kingdom on a prime world called Oerth. Neither kind nor just, Lord Vecna's rule was one of great horror and suffering, and it is said his reach was so great that even the Powers of Oerth feared to cross him, for fearing of drawing his eye.
+  Yet, while Vecna's gaze traveled ever outward in search of new conquests, he failed to see his own end when it came for him... in the form of his lieutenant, Kas. 
+  As was fitting for Vecna's left hand servant, the Archlich had fashioned a terrible weapon for his lieutenant as a symbol of his authority. Vecna made this weapon with such skill it is said that part of the sorcerer entered the blade, and it was this sliver of Vecna that gave the blade its life and its treacherous nature. Where once there was lifeless steel, there became thought, intent, and, perhaps most horrible of all, a voice. 
+  The sword whispered treacheries to the ambitious Kas, night upon night, month upon month, year upon year, until one night, the remains of Kas' discipline was seduced by the rippling edge of the blade. Convinced by his blade that he was Vecna's superior, Kas confronted his dread master upon his Dessicated Throne, and the two of them fought a terrible battle. 
+  During the battle, Kas was killed, but before he fell, his blade had dismembered his former master, scattering his remains so that no one may draw them together again. And so it has come to pass that pieces of Vecna have made their way across the Planes... one of these is the Eye of Vecna. It carries with it a bloody, violent history, so much so that many scholars refuse to speak of its treacheries, for fear the eye will come to them, seeking to add another victim to its bloody chronology.
+  The Eye of Vecna was instrumental in the extermination of the House of Hyeric, once the ruling dynasty in Nyrond. It is said to have been behind the sundering of the Conclave of Tyssis-on-the-Sea, which led to the three-cycle war that poisoned the seas of Malhatai and left the oceanic world barren of life. On the ashen Plane of Ghalentir, it possessed the gentle father of Sasaran, a babe with the potential to lead his suffering people from their shadowed lands to the Gates of Paradise... had not the eye drove Sasaran's father to murder his son as he lay sleeping in his crib. All these kingdoms, all these futures, the Eye of Vecna laid waste.
+  The Eye's powers are said to shift with each new owner, but one thing is certain: no good ever comes from whoever has the misfortune to possess it. It is destined to betray its wearer at a critical moment, failing him when he needs its power the most. 
+  Effects:
+  You can gouge out your normal eye and replace it with the eye of vecna (ouch). The effects will be permanent, and can never be reversed unless a replacement eye is found.
+   
+  Doubles all 1st Level Mage Spells
+  Doubles all 2nd Level Mage Spells
+  +10% Resistance to Magic
+  +2 Save vs. Death 
+  +2 Save Versus spell
+  Immunity to Power Word Kill.
+  -2 to Charisma
+  -2 to Base hit points
+  Weight: 0~
+@175  = ~Helmet~
+@176  = ~Undroppable helmet with no animation~
+@177  = ~Wand of Wonder~
+@178  = ~Wand of Wonder
+  Only those with a gambling streak dare use this wand in battle.  When triggered it is, at best, unpredictable and, at worst, suicidal.  The whimsical mage Malimak created it as a gift for a rival, though more as a prank than with hurtful intent.  The recipient's reaction is not known, though Malimak relocated shortly thereafter.  It should be used with caution, or not at all. 
+  
+  STATISTICS
+  
+  Special Abilities:  Random effects appear each time the wand is used.~
+@179  = ~Strength Modification~
+@180  = ~Stoneskin~
+@181  = ~Mage Robe~
+@182  = ~Robes of Chaos~
+@183  = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
+@184  = ~Robes of Chaos:
+  These robes are first believed to have appeared in the planes over a century ago. They came from the Plane of Pandemonium, and were first in possession of the mad wizard mayor of the town of Bedlam. However, it is not from this plane that robes gather their power. Sages believe that the robes are woven from the plane of Limbo itself, and that the plane, through these robes, is attempting to spread chaos through the multiverse. This theory is supported by the sheer immensity of power in these robes. Although records are hard to come by, it appears that the robes' abilities vary for each person wearing them, but that these powers will always maximize the person's ability to make chaos. The robes are themselves totally chaotic, varying in style, color, shape and transparency as you look at them. Wearing the robes is ill-advised to any mage, as they can simply vanish at any time, turn into a pit fiend, or catapult the wearer in a plane of eternal fire. The robes also surround the wearer with an aura of wild magic, meaning their spells sometimes become unreliable. Better known in planar magical circles as the Robes of "Oh my God, what's happening to me?!", these robes are certainly a magical curiosity and their immense power can make a wizard rival the Gods Themselves, or do distinctly unpleasant things to their spleen.  
+  
+  STATISTICS:
+  Armour Class: 1
+  Magic Resistance: 20%
+  Save versus Death:  +3 bonus
+  Immunity to Non-Magical Weapons.
+  User affected with Wild Magic.
+  Wearer receives a bonus to hit against all Lawful creatures.
+  Some short of physical protection, though the nature of the robes makes this impossible to determine.
+  Random Affects:
+  Most of the robes effects are completely random and chaotic. The robes may grant powerful immunities, or burn the user into nothingness.
+  Weight:  6~
+@185  = ~Steal Spell Scroll~
+@186  = ~This is the scroll given to you by the demon in the planar sphere. It needs to be cast near Wielter to steal the spell that will free the demon mages.~
+@187  = ~Battle Axe~
+@188  = ~Wizard Slayer +3~
+@189  = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe in particular appears to be very poorly made, and slightly smaller then the average battle axe.
+
+  STATISTICS:
+  Damage:  1D8
+  Damage type:  slashing
+  Weight: 7
+  Speed Factor: 7
+  Proficiency Type: Axe
+  Type:  1-handed~
+@190  = ~Wizard Slayer +3
+  Though many weapons have used the name Wizard Slayer over the eons, this can truly be said to live up to it. Runes on the axe hum with magic, making it deeply ironic that the axe is a bane to all who wield sorceries. The axe's origin and history are unknown, but there is no doubt that mages should fear this weapon above all others.
+
+  STATISTICS:
+  When struck, there is a 20% chance that the mage will lose one spell from his memory.
+  The axe has a bonus to hit against Mages.
+  The axe also grants 25% Magic Resistance.
+  Damage: 1D8 +3
+  THAC0: +3
+  Damage type:  slashing
+  Weight: 6
+  Speed Factor: 7
+  Proficiency Type: Axe
+  Type:  1-handed
+  Requires: 4 Strength~
+@191  = ~Fanatic's Ring~
+@192  = ~Fanatic's Ring:
+  This ring was created for a league of fanatics based in Amn who despise magic and seek to rid Faerún of mages at all costs. This ring appears to have been created by a powerful mage, though no doubt he met a grisly end at the hand of one of the fanatics. The ring allows the fighter to effectively battle mages while remaining safe. 
+  
+  
+  STATISTICS:
+  +3 to Save vs Spells
+  +5% Magic Resistance
+  Immunity to 1st- and 2nd-level spells
+  Immunity to Finger of Death and Power Word - Kill spells~
+@193  = ~Balduran's Ring~
+@194  = ~This ring seems very old, yet it obviously holds some sort of power.~
+@195  = ~Balduran's Ring:
+  The legendary explorer and adventurer Balduran, who founded the city of Baldur's Gate, wore this ring until his final voyage, when he left it in the possession of his next of kin. The ring, like most of Balduran's equipment, is heavily enchanted to protect the user. It is unknown why Balduran did not take the ring with him on his last trip (to, as you know, the Werewolf Island). It is believed, however, that Balduran wore so much magical equipment that the latent magic had some strange side effects.
+  
+  EFFECTS:
+  +1 Constitution
+  +1 Saving Throws
+  +10% Fire and Cold Resistances 
+  Immunity to Fireball and Lightning Bolt spells~
+@196  = ~This ring seems very old yet it obliviously holds some sort of power~
+@197  = ~Balduran's Ring:
+  The legendary explorer and adventurer Balduran, who founded the city of Baldur's Gate, wore this ring 'till his final voyage when he left it in the possession of his next of kin. The ring like most of Balduran's  equipment is heavily enchanted to protect the user. It is unknown why Balduran did not take the ring with him on his last trip. (To, as you know the werewolf island) It is believed however that Balduran wore so much magical equipment that the latent magic had some strange side effects.
+  
+  EFFECTS:
+  +1 to Constitution
+  +1 To all Saving throws
+  +10% Resistance to Fire and Cold  
+  Immunity to Fireball and Lightning Bolt Spells~
+@198  = ~Traveler's Robe~
+@199  = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
+@200  = ~This Mage Robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's arrow and from the jealous thief-mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveler's Robe can only be worn by mages. 
+  
+  STATISTICS:
+  Armor Class:  +1 bonus vs. missile weapons
+  Saving Throw:  +1 bonus vs. breath
+  Weight:  4~
+@201  = ~Potion~
+@202  = ~Potion of Innate Ability~
+@203  = ~A Potion of Innate Ability has powerful magics woven into its creation, such that when it's drunk in its entirety it bestows some form of magical ability onto the imbiber. This particular potion, by its markings, seems to bestow the Innate Ability called Forge Item.~
+@204  = ~Long Sword +1~
+@205  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  Abilities:
+  Damage:  1D8+1
+  THAC0 bonus: +1
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@206  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  Abilities:
+  25% Chance to stun for 10 seconds.
+  Damage:  1D8+1
+  THAC0 bonus: +1
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@207  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  Abilities:
+  Save Versus spells or take 10 magic damage.
+  Damage:  1D8+1
+  THAC0 bonus: +1
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@208  = ~Vorpal Long Sword +1~
+@209  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  Abilities:
+  Damage:  1D8+1
+  THAC0 bonus: +1
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@210  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  
+  
+  Abilities:
+  25% chance target will be instantly killed unless Save versus death. 
+  Damage:  1D8+1
+  THAC0 bonus: +1
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@211  = ~Long Sword~
+@212  = ~Long Sword +2~
+@213  = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+  
+  STATISTICS:
+  
+  Damage:  1D8
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 5
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength  ~
+@214  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  STATISTICS:
+  25% chance target will be stunned for 10 seconds
+  THACO:  +2 bonus
+  Damage:  1D8 +2
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 4
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@215  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  STATISTICS:
+  Save versus spells or take 10 magic damage
+  THACO:  +2 bonus
+  Damage:  1D8 +2
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 4
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@216  = ~ Vorpal Long Sword +2~
+@217  = ~This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  STATISTICS:
+  25% chance target will be instantly killed save versus death is allowed.
+  THACO:  +2 bonus
+  Damage:  1D8 +2
+  Damage type:  slashing
+  Weight: 4
+  Speed Factor: 4
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@218  = ~Long Sword +3~
+@219  = ~Long Sword +3:  
+  This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Damage:  1D8 +3
+  25% chance target will be stunned for 10 seconds
+  THACO:  +3 bonus
+  Damage type:  slashing
+  Weight: 3
+  Speed Factor: 3
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@220  = ~Long Sword +3:  
+  This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Damage:  1D8 +3
+  save versus spells or take 10 magical damage.
+  THACO:  +3 bonus
+  Damage type:  slashing
+  Weight: 3
+  Speed Factor: 3
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@221  = ~Long Sword +3:  
+  This Weapon  was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Damage:  1D8 +3
+  25% chance that target will be instantly slain unless save versus spells.
+  THACO:  +3 bonus
+  Damage type:  slashing
+  Weight: 3
+  Speed Factor: 3
+  Proficiency Type: Long Sword
+  Type:  1-handed
+  Requires: 6 Strength~
+@222  = ~Ring of Protection +2~
+@223  = ~Ring of Protection +2
+  This ring was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.  
+
+  STATISTICS:
+  Armor Class:  +2 bonus
+  Saving Throws:  +2 bonus~
+@224  = ~Ring of Magical Protection ~
+@225  = ~Ring of Magical Protection:
+This ring was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  STATISTICS:
+  +10 % Magic Resistance
+  Immunity to first level spells
+  Save versus spells: +2 bonus~
+@226  = ~ Ring of Wizardry~
+@227  = ~Ring of Wizardry:  
+  A powerful item  Forged by the Archmage  <CHARNAME>,  it allows the wearer to greatly increase their spell casting ability.
+  
+  STATISTICS:
+  Spells:  Doubles the number of 1st and 2nd level spells that may be memorized.~
+@228  = ~Ring of Energy~
+@229  = ~Ring of Energy:  
+This ring was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:  
+  Damage:  20 magical damage no save.
+  Range:  120 ft
+  Area: 1 creature~
+@230  = ~Ring of Defense~
+@231  = ~Ring of Defense :
+This ring was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+  
+  STATISTICS:
+  Grants total immunity to all non-magical weapons~
+@232  = ~Necklace~
+@233  = ~Amulet of Hardened Thought~
+@234  = ~A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metals, and adorned with gems.  A necklace is always worn on the neck and can be of any length.  ~
+@235  = ~Amulet of Hardened Thought
+This amulet was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  +2 to wisdom while equipped~
+@236  = ~Elemental Amulet~
+@237  = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties.  Only one amulet can be dangled from the neck at a time.  ~
+@238  = ~Elemental Amulet:
+This amulet was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  +25% Resistance to Fire, Ice and Lightning damage.~
+@239  = ~Amulet of Nullification~
+@240  = ~Amulet of Nullification:
+This ring was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Absorbs 10% of all physical attacks made against wearer.~
+@241  = ~Adventuring Amulet~
+@242  = ~Adventuring Amulet:
+This amulet was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS
+  Magic Resistance:  +10%
+  Immunity to Fear and Confusion
+  +20%  resistance to fire.~
+@243  = ~Wand of Apprenti~
+@244  = ~Wand of Apprenti:
+  This wand was created in the magical academy of <CHARNAME> and will randomly cast a variety of three spells, each from a separate elemental source.  It apparently has 50 charges.~
+@245  = ~Wand of Havoc~
+@246  = ~Wand of Havoc:
+This wand was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:  
+  Special Abilities:  Random offensive spell will be cast at enemy.~
+@247  = ~Staff of <CHARNAME>~
+@248  = ~Staff of <CHARNAME>:
+This staff was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Memorize one extra 1st-4th level spell.
+  Spell casting speed increased by one. 
+  THACO: +2 bonus
+  Damage: 1D6+2
+  Damage type:  crushing
+  Weight: 3
+  Speed Factor: 1
+  Proficiency Type: Quarterstaff
+  Type: 2-handed
+  Requires: 5 Strength~
+@249  = ~Robes of <CHARNAME>~
+@250  = ~Robes of <CHARNAME> 
+These robes were created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Armor Class: 5
+  Magic Resistance: 8%
+  Saving Throw: +1 bonus
+  Immunity to Poison
+  +5% to lightning Resistance
+  Weight:  6~
+@251  = ~Spell Robes~
+@252  = ~Spell Robes:
+  These robes are created by mages who wish to further their spell casting ability, these robes when donned allow the wearer to memorize more spells then they otherwise could.
+  
+  STATISTICS:
+  Gives one extra 8th level spell and two extra 7th level spells
+  Weight:  4~
+@253  = ~Robes of Shielding ~
+@254  = ~Robes of Shielding
+  These powerful robes are useful when battling any powerful magical being as they grant extraordinary protection from spells and all forms of magic. They only draw back however is that they make spell casting more difficult and grant no physical protection.
+
+  STATISTICS:
+  Immune to 1st to 3rd level spells
+  +15% magic resistance
+  +3 to save versus spells
+  spell casting speed decreased by 1. ~
+@255  = ~Barrier Robes~
+@256  = ~Barrier Robes:
+  The Barrier Robes are made by mages to protect them from physical attacks made against them. As such, they are heavy and cumbersome, but do their job well.
+  
+  STATISTICS:
+  Armor Class:  0
+  +25% resistance to Crushing attacks.
+  Dexterity decreased by 2
+  Weight: 10~
+@257  = ~Necromantic Robes~
+@258  = ~Necromantic Robes:
+  These robes protect the adventuring mage from one of the foes he is most likely to encounter on his travels... the undead. It grants him immunities that he will no doubt find useful while battling beasts of this nature. 
+  
+  STATISTICS:
+  Immunity to Level Drain
+  +2 Armour Class
+  +40% Cold Resistance
+  Immunity to movement-inhibiting spells and abilities
+  Weight:  3~
+@259  = ~Large Shield +2~
+@260  = ~A large shield inlaid with a golden griffin.  This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user.  It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times.  Naturally, this precludes use of the shield hand for anything but holding the body shield in place.  Strangely enough, this shield feels unusually light for its size.
+  
+  STATISTICS:
+  Armor Class Bonus: 1
+  Special:  +1 vs. Missile Weapons
+  Weight: 15
+  Requires: 10 Strength~
+@261  = ~Large Shield +2:
+  Created by a mage in the city of Athkatla, this shield grants the user very good protection against attack.
+  
+  STATISTICS:
+  Armor Class Bonus: 3
+  Special: +1 vs. Missile Weapons
+  Weight: 10
+  Requires: 10 Strength~
+@262  = ~Medium Shield~
+@263  = ~Shield of Force +3~
+@264  = ~A medium shield is carried in the same manner as a small shield.  Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield.  Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings.  A typical medieval shield resembles a triangle with one point facing downward. 
+  
+  STATISTICS:
+  Armor Class Bonus: 1
+  Weight: 7
+  Requires: 12 Strength~
+@265  = ~Shield of Force +3
+This shield was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Armor Class Bonus: 4
+  +15% resistance to crushing damage. 
+  Weight: 5
+  Requires: 15 Strength~
+@266  = ~Small Shield~
+@267  = ~Mirror Shield +2~
+@268  = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand.  Its light weight as compared to a medium shield permits the user to carry other items in that hand, although he cannot wield or carry another weapon.  
+  
+  STATISTICS:
+  Armor Class Bonus: 1
+  Special:  No  Missile Weapon Protection
+  Weight: 3
+  Requires: 4 Strength~
+@269  = ~Mirror Shield +2:
+This shield was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Ability:  Reflects 1st-4th level spells back at their caster.
+  Armor Class Bonus: 3
+  Weight: 2
+  Requires: 3 Strength~
+@270  = ~Auric Shield +1~
+@271  = ~Auric Shield +2
+  This shield is not, as its name might suggest, made of gold. This error in diction is obviously a result of its creator, <CHARNAME>, who made the shield to help their party battle their enemies. In this case, especially magical enemies. The reason for the incorrect name comes from the fact that an Aura of Antimagic hangs around the shield. This aura nullifies all but the most powerful of magics cast at the wielder. However, the wielder's own magic is also nullified. While the shield is equipped and it can only be removed with a remove curse spell.
+  
+  STATISTICS:
+  Armor Class Bonus: 2
+  Special: +20% magical resistance
+  Immunity to 1st to 5th level spells
+  User cannot cast any spells, innate or otherwise.
+  Cursed
+  Weight: 2
+  Requires: 12 Strength~
+@272  = ~Plate Mail Armor~
+@273  = ~Plate Mail +4~
+@274  = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. 
+  
+  STATISTICS:
+  Armour Class: 3
+  Weight: 50
+  Requires: 12 Strength~
+@275  = ~Plate Mail +4:
+This armor was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Armour Class: -1
+  +5%  resistance to all forms of physical attack 
+  Weight: 25
+  Requires: 15 Strength~
+@276  = ~Plate of Ethereality +2~
+@277  = ~Plate of Ethereality +2
+This plate was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Immune to non magical weapons
+  Saving Throws+1
+  Armour Class: 1
+  Weight: 3
+  Requires: 5 Strength
+  Requires: 15 Constitution~
+@278  = ~Full Plate Mail~
+@279  = ~Full Plate of <CHARNAME>~
+@280  = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+  
+  STATISTICS:
+  Armour Class: 1
+  Weight: 70
+  Requires: 15 Strength~
+@281  = ~Full plate armor is the best amour a warrior can buy, both in appearance and protection. Enchanted to be +4 amour, there is no doubt that this set of amour is mighty powerful. Forged in the city of Athkatla by the ArchMage <CHARNAME>, this magical plate grants massive protections from physical attacks. However, the enchantment obviously went a bit wrong, and as such the armor drains power from the wearer in return for the protections it grants, probably because it was intended for a fighter not a thinker. 
+
+  STATISTICS:
+  +18% resistance to all forms of attack
+  +3 to save versus death
+  Immunity to fear
+  -1 Wisdom, Intelligence and Charisma.
+  Armour Class: -3
+  Weight: 50
+  Requires: 15 Strength~
+@282  = ~Studded Leather~
+@283  = ~Studded Leather Armour of <CHARNAME> +5~
+@284  = ~Studded leather amour has little in common with normal leather amour. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place.  
+  
+  STATISTICS:
+  Armour Class: 7
+  Weight: 25
+  Requires: 6 Strength~
+@285  = ~This suit of armor was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  Abilities:
+  Armour Class: 2
+  +2 Save vs Spells
+  +2% Magic Resistance
+  Weight: 6
+  Requires: 6 Strength~
+@286  = ~Leather Armor~
+@287  = ~Fragrant Armor +5~
+@288  = ~This suit of leather amour is light and supple, and a pleasure to wear.
+  
+  STATISTICS:
+  Armour Class: 8
+  Weight: 15
+  Requires: 3 Strength~
+@289  = ~This suit of armor was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:
+  Immune to all magical "cloud" spells, such as Stinking Cloud, Cloudkill and Incendiary Cloud.
+  Armour Class: 3
+  Weight: 5
+  Requires: 3 Strength~
+@290  = ~Battle Axe +3~
+@291  = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end.  Battle axes are also called broad axes. 
+  
+  STATISTICS:
+  Damage:  1D8
+  Damage type:  slashing
+  Weight: 7
+  Speed Factor: 7
+  Proficiency Type: Axe
+  Type:  1-handed
+  Requires: 10 Strength~
+@292  = ~This axe was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+STATISTICS:
+  THAC0: +3 bonus
+  Damage: 1D8 +3
+  Damage type: Slashing
+  Weight: 5
+  Speed Factor: 5
+  Proficiency Type: Axe
+  Type: 1-handed
+  Requires: 10 Strength~
+@293  = ~Battle Axe +4~
+@294  = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end.  Battle axes are also called broad axes. 
+  
+  STATISTICS:
+  Damage: 1D8
+  Damage type: Slashing
+  Weight: 7
+  Speed Factor: 7
+  Proficiency Type: Axe
+  Type: 1-handed
+  Requires: 10 Strength~
+@295  = ~Battle Axe +4
+This huge axe was created by <CHARNAME> in <PRO_HISHER> Planar sphere in Amn.
+
+  STATISTICS:  
+  THAC0: +4 bonus 
+  Damage: 1D8 +4
+  10% chance target will be turned to stone - a Save vs Petrification is allowed. 
+  Damage type (melee): Slashing
+  Weight: 5
+  Speed Factor: 4
+  Proficiency Type: Axe
+  Type: 1-handed
+  Requires: 10 Strength~
+@296  = ~Infernal Combustion Enigma~
+@297  = ~Infernal Combustion Enigma~
+@298  = ~Thunderbolt ~
+@299  = ~Thunderbolt~
+@300  = ~Power Word: Burn~
+@301  = ~Power Word: Burn~
+@302  = ~Abyssal Fury~
+@303  = ~Abyssal Fury
+  Level: 9
+  Range: 50 feet
+  Duration: Instant
+  Speed: 9
+  Area of Effect: 1 creature
+  Saving Throw: see below
+  
+  When compared to the Tanar'ri, at least the Baatezu are more civilized. There is, perhaps, nothing more horrific than the unbounded fury of Abyss. By use of this spell, the ground shall split open and the victim dragged into the Tanar'rian Madness. Welcome to Hell.
+  
+  This spell opens a planar portal beneath a specified victim and drags them down into the Abyss. The portal remains open even after the victim is swallowed in. The only sound bystanders hear is the incessant screaming of the victim as he/she is torn apart by the ruthless Tanar'ri. After what seems like only a few seconds (which is more than an eternity for the victim in the Abyss), the victim (or what's left of him) gets spat back out of the portal. 
+  (1) If the victim makes a successful saving throw vs death at +4, he will get spat out of the portal in 'one piece,' but while the victim sensed nothing at first, after a split-second, all the Wrath of the Tanar'ri will surface. The victim will suffer 10d3 pts. of damage as he suffers multiple 'delayed' attacks and slashes from all angles. 
+  (2) If the victim fails the saving throw, it is instant death. All that is left are body parts. ~
+@304  = ~Ajundurar's Ice Shard~
+@305  = ~Ajundurar's Ice Shard
+  Invocation
+  Level: 4
+  Range: Visual range of caster
+  Duration: Instant
+  Casting Time: 1
+  Area of Effect: Special 
+  Saving Throw: None 
+  
+  Ajundurar's Ice Shard, a extremely useful spell often employed by powerful mages due to its comparatively short casting time. When the mage completes the incantation his hand bursts briefly into cold blue light and then a magical shard of freezing ice flies toward the target, inflicting cold damage upon them.
+  Effects:
+  The shard of ice inflicts 6d6 of cold damage on the target with a save vs spells for half damage.~
+@306  = ~Melt~
+@307  = ~Melt
+  Level: 7
+  Range: Visual sight of caster
+  Duration: Instantaneous
+  Casting Time: 8
+  Area of Effect: Target Creature
+  Saving Throw: Save vs polymorph at -1.
+  
+  This spell alters the makeup of the target creature's body. The molecules the creature is composed of begin to deform and slide over each other. The bonds between the target's atoms is weakened - in other words, they melt into a sticky puddle of slime on the floor.
+  However, the target is not killed. Even in this gelatinous state they still have some control, although due to the fact that they are a puddle of slime, their ability to attack is greatly decreased.~
+@308  = ~Recemon's Wonderful Rejuvenation~
+@309  = ~Recemon's Wonderful Rejuvenation
+  (Necromancy)
+  Level: 8
+  Range: 20 feet
+  Duration: Permanent
+  Casting Time: 5
+  One Creature 
+  Saving Throw: None
+  
+  As much as mages hate to admit it, priests have their uses. There is no denying their power, especially in the art of healing. This spell however allows wizards to hold their own. It creates powerful magic that will completely heal a target, and remove all ill effects. As such it is a incredibly useful spell to an adventuring wizard.~
+@310  = ~Azuth's Rune of Utter Negativity~
+@311  = ~Azuth's Rune of Utter Negativity
+  (Metamagic)
+  Level: 9
+  Range: Visual sight of caster 
+  Duration: 5 rounds
+  Casting Time: 15
+  Area of Effect: Target creature
+  Saving Throw: None
+  
+  Azuth, the lord of spells was once a powerful mortal Archmage until he ascended unto godhood. Shortly before he became a god, it is believed he forged this spell. It is perhaps his crowning achievement, even more so than immortality. However, soon after his ascension, this spell was destroyed, or apparently destroyed, by Mystra, for its power was to be feared, even by the Gods. This spell takes a mage a great deal of time of cast. However, when it is finally unleashed, nothing can withstand it. For a single instant it surrounds the target with total nothingness. This nothingness drains magic from the target, severely weakening them. It is perhaps the only way a mage can battle a God, for only a spell such as this can make a God vulnerable to a mage's magic.
+  Effects:
+  This spell wipes away magical resistances. When cast, the targets resistance to fire/ice/cold/magical damage will be set to -25%. Magic resistance will be set to 0. All physical and magical protections surrounding the caster will also be removed.~
+@312  = ~Storm Force~
+@313  = ~Storm Force
+  (Alteration)
+  Level: 7
+  Range: Self
+  Duration: 2 turns
+  Casting Time: 10 round
+  Area of Effect: Special 
+  Saving Throw: None 
+  
+  With this spell, the wizard calls forth the elements. A ball of twisting electrical clouds appears before him and, at the culmination of the spell, he unleashes them into the heavens. Moments later, a storm of incredible power begins. The sky turns dark, and thunder rumbles everywhere. Huge bolts of unnatural lightning strike down onto the caster's enemies, dealing massive damage.~
+@314  = ~Ring of Invisibility ~
+@315  = ~Invisibility (Illusion/Phantasm) 
+  Level: 2
+  Range: Touch 
+  Duration: Special 
+  Casting Time: 2 
+  Area of Effect: Creature touched 
+  Saving Throw: None 
+  
+  This spell causes the creature touched to vanish from sight and be undetectable by normal vision or even infravision. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable. Even allies cannot see the invisible creature or his gear, unless these allies can normally see invisible things or employ magic to do so.  Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. The spell remains in effect until it is magically broken or dispelled, until the recipient attacks any creature, or until 24 hours have passed. The caster cannot perform any actions that manipulate the environment around him such as opening doors, disarming a trap, or opening a chest.  He can, however, cast defensive spells on himself and fellow party members.  And if he attacks, he immediately becomes visible, although the invisibility enables him to attack first.~
+@316  = ~Power Word: Vaporise~
+@317  = ~Power Word: Vaporise
+  (Conjuration/Summoning) 
+  Level: 8
+  Range: Visual sight of caster 
+  Duration: Special
+  Casting Time: 1 
+  Area of Effect: 1 creature 
+  Saving Throw: None
+  
+  Much like the mage spell Disintegrate, the Power Word: Vaporise is deadly and instantaneous. Once uttered, the targeted creature must make a Save vs Spells at -2 or slowly dissipate into nothingness. As the spell takes effect, the victim slowly fades and becomes insubstantial, until finally they vanish, never to be seen again.~
+@318  = ~Tectonic Titillation~
+@319  = ~Tectonic Titillation
+  (Alteration)
+  Level: 7
+  Range: 120 yards.
+  Duration: 10 rounds
+  Casting Time: 10 rounds
+  Area of Effect: 40' radius
+  Saving Throw: Special
+  
+  With this spell, the wizard extends his influence deep into the earth. Using all the will he can muster, he manipulates the huge tectonic forces deep within the earth. Rock is forced over rock, and the earth shudders.
+  Effects:
+  Three tremors occur 2 rounds after each other. Each tremor deals 2D8 damage to everyone in the area of effect. At the start of the earthquake, everyone in the area of effect must make a Save vs Spells at -4 or be knocked to the ground. They must then make another Save vs Breath Weapons at -4 or be sent into confusion by the earthquake.~
+@320  = ~Vestcake's Floating Curse~
+@321  = ~Vest cakes Floating Curse
+  Invocation
+  Level: 5
+  Casting time: 5
+  Range: Visual range of caster.
+  This spell creates a whirling mass of uncontrolled magic energy that crackles over the area of effect determined by the caster. The chaotic magical energy releases bursts of power that strikes everybody  in the area of effect while they remain in the cloud of magic. After a while the magic will dissipate away and the spell will end, however so chaotic is the spell that any spell caster within it will find that their spells stand a good chance of going haywire.
+  Effects:
+  Each round everyone in the area of effect takes 1d8+2 of electrical damage. And their is a 10% chance that any spell caster within the cloud will find their spells failing or becoming unpredictable.   ~
+@322  = ~Wave of Obliteration~
+@323  = ~Wave of Obliteration
+  (Evocation)
+  Level: 9
+  Range: 30ft 
+  Duration: Permanent 
+  Casting Time: 8 
+
+  This is an amazing find and, for the adventuring mage, one of extreme use. The Wave of Obliteration spell was last seen being used around 100 years ago. Two nobles of Tethyr were fighting over their father's castle, as his will had left its ownership in debate. As so often is the case in contentious circumstances, the two nobles were both powerful Archmages, both having been tutored by their father in the art. This spell was apparently a family heirloom, and a source of great jealousy from other magical households. Needless to say, the two nobles decided that the only answer was for a duel. The results were unpleasant to say the least. Afterwards, it was deduced from the rubble that both magi had released this spell simultaneously. The effects indeed showed the power of this spell. One half of the castle was discovered several years later in a pond several miles away, although the servants were never found... The mages were both buried in very small coffins. 
+  When the mage completes the incantation of this spell, he raises his hands and pushes his palms away from himself. From his hands a wall of pure, uncontrolled magical energy bursts. The magic explodes forth, taking everything in its path with it. Any creature caught within this energy wave will take massive damage from the energies involved, and must make a Save vs Spells or be literally obliterated by the sheer power of this spell.
+  Effects:
+  All creatures in the path of the spell will take 10D5+20 points of magical damage with no save. They must then make a Save vs Spells at -2 or be vaporised by the spell.~
+@324  = ~Sphere of Dissipation~
+@325  = ~Sphere of Dissipation
+  Level: 8
+  Abjuration
+  Casting Time: 9
+  Duration: 5 rounds 
+  This immensely powerful spell is shrouded in mystery (probably because only 4 copies of it have ever been discovered). Its abilities are truly impressive making it possibly the most powerful protective spell available to the mage however no one knows where the spell originated from, although some sages believe it was created in the days of Myth Drannor. When the final word of the spell is spoken a globe of twisting magical energies springs up around the caster. The magical globe absorbs all energy that strikes it dissipating it into nothingness. The energy that can be absorbed can be either physical or magical in origin and is completely nullified by the sphere. The intensity of energy that the sphere can absorb relies solely on the ability of the mage who cast the spell and as the mage increases in power so does the spell. 
+  At 16th level the spell protects from 1st to 3rd level spells and protects from non magical weapons.    
+  At 17th level the sphere protects from 1st to 4th level spells and still protects from normal weapons but grants 25% resistance to all physical attacks.
+  At 18th level the sphere protects from 1st to 5th level spells and grants immunity to normal and +1 weapons
+  At 19th level the sphere protects from 1st to 6th level spells, gives immunity to normal and +1 weapons and gives 25% resistance to all physical attacks.
+  At 20th level the sphere protects from 1st to 7th level spells and gives immunity to normal, +1 and +2 weapons.
+  The sphere cannot be used in conjunction with other weapon immunity spells.~
+@326  = ~Shadrick's Shattering Arrow~
+@327  = ~Shadrick's Shattering Arrow
+  (Evocation)
+  Level: 2
+  Casting Time: 5
+  Range: 100ft
+  Evocation
+  Many a powerful mage has looked down their noses at this spell when they were but magelings, only to stare in terror as it flew towards them later in life. At very low levels, this spell is, quite frankly, pathetic. However, as the mage advances, so the power of the spell increases. The spell creates a magical arrow of solidified power that flies from the casters hand to strike his selected target.
+  Abilities:
+  At levels 1-6 the arrow does 1D8 piercing damage with no save, and 2 magic damage on a failed Save vs Spells.
+  At levels 7-12 the arrow does 2D6 of piercing damage and 2 fire/cold/elec damage with no saving throw. 
+  At levels 13-18 the arrow does 3D8 + 2 magic damage, with a Save vs Spells for half. The target must also Save vs Death at -2 or be stunned for 2 rounds. The spells casting time is decreased by 1.
+  At levels 19 and above the arrow becomes a shining flash of magic. It inflicts 5D8 points of magical damage save versus spell for half. The target must also make a Save vs Death at +2 or be killed. If they survive this, they are automatically stunned for 3 rounds.~
+@328  = ~Black-Barbed Curse~
+@329  = ~Black-Barbed Curse
+  Level: 4
+  Conjuration/Summoning
+  The night hags were powerful near godlike witches who roamed the planes many years ago. Although most of their exploits are unknown one night hag is documented particularly well. Ravel Puzzelwell possibly the the most powerful of the nighthags and famous enemy of the Lady of pain. It is believed that ravel some how tried to break the lady's link with the city of Sigil her motives for this  are unknown but none the less the lady's rage was great and ravel was flung into a demiplane of existence, one of the ladies mazes.  Ravel rotted in her planer cage for many years all the while her hatred and sadness formed around her in the shape of huge black barbed vines. When Ravel was somehow killed this spell found its way out into the planes. It calls forth the huge black barbed vines of ravels maze causing them to rip out of the ground raking and cutting at the casters enemies.
+  Effects:
+  Range: 30
+  Casting Time:4
+  Damage: 6d6 of piercing damage with Save vs spell for half.~
+@330  = ~Unthinkable Logic~
+@331  = ~Unthinkable Logic
+  Level 6
+  Range: 50
+  Alteration
+  Casting time: 6
+  This mathematical spell calls forth material from the plane of Mechanus, a demiplane of Primus. This spell infuses space around the caster with the utter logic of the plane of Mechanus. The spell reveals to all non-Primus beings for a brief instant the intrinsically logical nature of reality. Most beings are totally unable to cope with this revelation, and they are thrown into confusion and chaos as their brains try to comprehend what they have seen. Creatures with particularly unevolved brains may even be instantly slain by this spell, as their brains are destroyed in the attempt to understand.  
+  Effects:
+  Save vs Spells at -3 or be confused and blinded for 6 turns.
+  Target will lose 2 points of Intelligence and Wisdom for 6 hours with no save.
+  Save vs Spells at -2 or the target will be have a 75% chance of miscasting their spells for 6 turns.~
+@332  = ~Robes of Inferno~
+@333  = ~Robes of Inferno:
+  These are the robes of the sorcerer Inferno, whose astrally-projected image carried them, and was subsequently destroyed by you. The robes emanate powerful magic, and grant sorcerous protections from anything that might assault a mage.
+  
+  STATISTICS:
+  Armour Class: +3
+  +5% Immunity to Everything
+  Saving Throws: +1
+  Immunity to Non-Magical Weapons
+  Weight:  3~
+@334  = ~Spell Globe Key~
+@335  = ~This item contains no power in itself, but it is the key to the mighty magic that controls the spell globes, balls of pure energy. Were this key to be smashed the spell globes magic would no doubt be released.~
+
+@338  = ~Sacrificial Dagger~
+@339  = ~This dagger seems strange somehow?~
+@340  = ~Sacrificial Dagger
+  Celdarick, a mage, was captured by worshipers of Shar and, along with the rest of his village, was taken to temple of Shar to be sacrificed to the evil goddess. Celdarick, however, had a plan of escape. In his cell he used his remaining magic to create this replica of the Sacrificial Daggers that the Priests of Shar used. The dagger, when used on him, would allow him to teleport away to safety. As he was lead to the altar, he managed to exchange the real dagger for this one, but to no avail. The priest had decided to use magic to kill their victims that day.
+  STATISTICS:
+  
+  When plunged into the chest of the user the dagger grants the ability to blink once a day. This however harms the user, and their maximum hit points will be decreased by four permanently.
+  Special:  The dagger turns to smoke on use.
+  Usage:  Place into quick item slot~
+@341  = ~Avernus' Ward~
+@342  = ~Avernus Ward:
+  This strange amulet is forged from metal found only on the plane of Avernus, one of the lower planes of existence. This amulet is woven with infernal magics and is completely linked with the plane of Avernus and, as such, provides the wearer protection from some of the powerful demons that inhabit that plane.
+  Equipping Effects:
+  +1 Armour Class 
+  +20% Fire Resistance
+  +10% Magic Resistance
+  Reflects Level 1 spells back at caster.
+  Infravision.~
+@343  = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
+  
+  STATISTICS:
+  Damage:  1D4 
+  Damage type:  piercing
+  Weight: 1
+  Speed Factor: 2 
+  Proficiency Type: Dagger
+  Type:  1-handed
+  Requires:3 Strength~
+@344  = ~Potion of Retrieval~
+@345  = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials.  Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.  ~
+@346  = ~When drunk, this potion allows a spell caster to focus their mind on the magics they have lost, recalling one previously cast spell.
+  
+  STATISTICS:
+  Special:  When drunk, the imbiber will re-memorize 1 lost spell of 6th level or lower.~
+@347  = ~Elixir of Elysium~
+@348  = ~A powerful potion made from the blood of a lesser Deva. Inside the dull red glass resides a small fraction of the power of Mount Celestia, one of the upper planes of the multiverse. When drunk, the sheer glory of Elysium flows through the drinker. Due to the nature of the upper planes, for a evil individual to consume this potion would result in instant death.
+  
+  STATISTICS:
+  Heals 10 hit points
+  Strength and Constitution raised by 1
+  +20% Resistance to Magical and Fire damage.
+  All attacks made by the drinker do maximum damage every hit.
+  Duration: half an hour.~
+@349  = ~Aura of Power~
+@350  = ~Aura of Power
+  (Alteration)
+  Level: 2
+  Range: Area
+  Duration: 12 hours
+  Casting Time: 20 
+  Area of Effect: Current Area
+  Saving Throw: None 
+  
+  This spell is often employed by Liches and powerful Evil Archmagi. It creates a sense of evil magic pervading the entire area, making any creature within it feel they are being watched, and making the hairs on the back of their necks stand up. While only really for dramatic effect, it does have some small effect on beings.
+  Effects:
+  All in area receive a -1 penalty to their Saves vs Spells. There is a small chance that some beings may be totally terrified by this spell, and must make a Save vs Spells or run in horror, but they do so with a save of +6.
+  The casting mage receives +1 luck while the spell is in effect.
+  This spell will only work once on a creature.~
+@351  = ~Berrilium's Brilliant Bouquet~
+@352  = ~Berrilium's Brilliant Bouquet
+  (Alteration)
+  Level 6
+  Casting time: 5
+  Berrilium was a street magician in the city of Waterdeep. He possessed absolutely no magical ability, and would perform sleight of hand tricks to amuse the crowds. However, he was a gambling man, and also very unlucky. One day his debtors, in the form of several very large muggers, came to collect. It is unknown exactly why Berrilium chose that moment to pull a bunch of paper flowers from his sleeve, but it is believed that his fear, in a last act of desperation, infused the paper flowers with magic, turning them into blinding balls of magic light. The muggers were blinded by the brilliant light, allowing Berrilium the time he needed to escape.
+  This spell creates a brilliant bouquet of shining magical flowers that sprouts from the caster's body. 
+  Effects:
+  All in area of effect must save versus spell at -2 or be blinded for 2 turns. Even if they resist this effect they are stunned for 2 rounds by the sheer beauty of the flowers.~
+@353  = ~Evisceration~
+@354  = ~Evisceration
+  (Alteration) 
+  Level: 8
+  Range: 50 yards
+  Duration: Instantaneous
+  Casting Time: 5
+  Area of Effect: One target
+  Saving Throw: Special
+  
+  When cast, this powerful spell allows the wizard to reach out and remove part of, or all of, an internal organ from a living being.
+  One of the following organs will be affected, although the wizard cannot control which one. The target will always save versus death at +1.
+  The organs that are affect are as follows:
+  The heart - the target will be instantly slain 
+  The liver - The target will receive 30 points of poison damage.
+  The brain - The target will be permanently feebleminded and unable to cast spells.  
+  The stomach - The target will receive 35 points of acid damage. 
+  The eye - The target will be permanently blinded.
+  The lungs - The target will collapse into unconsciousness for a time, and then be slowed.~
+@355  = ~Iridium Sphere~
+@356  = ~Iridium Sphere
+  (Evocation) 
+  Level: 5
+  Range: 30 yards 
+  Duration: special 
+  Casting Time: 5
+  Area of Effect: One creature
+  Saving Throw: Special 
+  
+  As the mage completes the incantation of this spell, a ball of what appears to be flowing quicksilver appears before them. 
+  With a wave, the mage can send this sphere flying towards one target. When the sphere hits it appears to be totally absorbed into the target. The sphere also affects any metal on the target, magnetizing it, and making very attractive to other metals.
+  Effects:
+  2D10 magical damage, +3 damage per 3 levels, starting at level 9.
+  The target must make a Save vs Spells at -2 or become magnetized.
+  If magnetized, the target suffers -1 to Dexterity, -2 to AA and -8 AC vs Missile Weapons.~
+@357  = ~Karsus' Crimson Flames~
+@358  = ~Karsus' Crimson Flames 
+  Level: 8
+  Range: Visual Range 
+  Duration: 4 rounds
+  Casting Time: 8 
+  Area of Effect: One Creature 
+  Saving Throw: None 
+  
+  Karsus was perhaps the most powerful of Archmages to come to power in ancient Netheril, and one of the most foolish, for he attempted to seize Godhood through his magic, and failed, being punished with an eternity of torment. Karsus' spells are renowned for their power, and this is no exception, being one of his most potent death magics.
+  When cast, the target is surrounded by an aura of magical crimson flames that literally burn the life of the target away. The flames last for 4 rounds, and each round the target must make a Save vs Death or be instantly killed. Even if the target resists the death magic, they are overcome with fear at being surrounded with the flames, and will run in fear until the flames extinguish. While a target is surrounded by the flames, their regeneration (if any) will cease, and they will be immune to all healing magics.~
+@359  = ~Killimer's Power Nullification~
+@360  = ~Killimer's Power Nullification
+  (Alteration)
+  Level: 7
+  Casting time: 11
+  Duration: 2 turns
+  Saving throw: Negates
+  
+  Killimer was your average adventuring mage. He was not particularly powerful, and spent his life in adventuring bands, battling the undead and any manner of evil foe you care to name. After four years with the same band of adventurers, he had become close to his companions in arms, and they to him. One day, the mage and his companions were beset by a group of powerful spellcasters, who had gained control of a local town and were dominating all the trade routes. Killimer's companions were helpless against the combined attack of so many magic-users. Two were destroyed by magical fire, and a third was turned into a small amphibian. Killimer, out of spells, called out a desperate prayer to Mystra, Goddess of Magic, for aid. The Lady, hearing his call, granted him this spell, and its words blazed across his mind like fire. As he incanted it the magic in the area began to wax and wane. The opposing magi found it nigh impossible to weave their spells, giving Killimer's companions the opportunity they needed to hack the spellcasters to pieces.
+  Effects: 
+  For the duration of the spell, all magic is slowed and distorted, and all spellcasting speeds are increased by 5 for enemy mages. Any enemy mages can make a Save vs Spells to avoid this effect, but they do so at -3.~
+@361  = ~Kelton's Kinetic Knives~
+@362  = ~Kelton's Kinetic Knives
+  (Conjuration/Summoning)
+  Level: 4
+  Range: visual range.
+  Duration: 1 hour
+  Casting Time: 9 round
+  Area of Effect: Special 
+  Saving Throw: None 
+  
+  With this spell the mage brings into being shimmering blades of magical force. The blades whirl around and when they strike a enemy explode in a small burst of magic. The knives can be controlled individually by the mage, and will remain for 1 hour before evaporating. Once they strike an opponent, they vanish forever.
+  Effects:
+  Each knife deals 5-10 magical damage. They act as +3 weapons, and stun the target for a short period if a Save vs Spells is failed at +2.
+  The mage receives one knife for every five levels up to a maximum of 8 at 37th level. The knives are not harmed by physical or magical attacks but may be destroyed by a Dispel Magic spell.~
+@363  = ~Nightmare Syndrome~
+@364  = ~Nightmare Syndrome
+  Conjuration/Summoning
+  Level: 8
+  Range: 15 feet
+  Duration: 1/2 hour
+  Casting Time: 15 round
+  Area of Effect: Special 
+  Saving Throw: None 
+  
+  Darkness seems to surround the mage as he casts this spell and a chill creeps into the air. As the final words of the ritual are said a planar nexus opens to the Demiplane of Fear and calls forth a terrible being. The nightmare a wraith like creature that assumes the form of its victim worst fear and attacks causing many to flee in fear.
+  Effects:
+  Calls forth a nightmare to serve the caster for half an hour.~
+@365  = ~Nagaths Polarized Pyrotechnics~
+@366  = ~Nagaths Polarized Pyrotechnics
+  Level: 9
+  Range: Visual range of caster 
+  Duration: Instantaneous 
+  Casting Time: 3 rounds
+  Area of Effect: Huge!
+  Saving Throw: 1/2 
+  
+  This is the final spell of the arch lich Nagath. He spent many hundreds of years journeying the multiverse, on his final trip it is believed that he crossed paths with an Overgod (much like lord Ao) on the astral plane, needless to say the arch lich could not have won but as the god banished him to a plane of eternal fire the archlich screamed forth this terrible spell. The god was unharmed but a shock wave of tectonic violence ran through the astral plane killing many of its inhabitants. When invoked this spell conjurers material from upward of 10 different planes spewing forth a maelstrom of incredible violence. The main power of this spell lies in that it draws its energy from its targets and the more beings the greater the power of the spell and the greater its area of effect. For each being the area of effect 2d10 of damage is done with no save and 1d10 damage is done although this can be avoided with a save vs spells at -2. So fantastic is the is the sheer power of the spell that all in side the area of effect (if they survive) will be confused for the next 5 rounds. ~
+@367  = ~Requiem of Elysium~
+@368  = ~Requiem of Elysium
+  (Invocation) 
+  Level: 9
+  Range: 100
+  Casting Time: 10
+  Area of Effect: Visual Range of Caster
+  Saving Throw: Neg
+  
+  The mage raises their hands to the heavens and creates a portal of the upper planes of Elysium. The righteous energy of the deva and greater deva, the inhabitants of this plane, rush forth in a tidal wave of magical energy. The fires of Elysium cleanse evil and destroy darkness, this is a powerful spell.
+  Effects:
+  6D10 Fire and 6D10 magic damage with a save vs spell for 1/2.
+  All in area of affect must save versus spell at -4 or be blinded and deafened for 1 turn.
+  Creatures of Darkness such as undead, shadows and demons must save versus death at -2 or be instantly destroyed.~
+@369  = ~Summon Helmed Horror~
+@370  = ~Summon Helmed Horror:
+  (Conjuration/Summoning)
+  Casting Time: 4
+  Range: Caster
+  Duration: 2 hours
+  
+  The mage Degrodel was one of the more unpleasant characters you met on your journeys in Baldur's Gate. He apparently was obsessed with the items of Balduran the great explorer. He believed that Dradeel Balduran's personal mage had hidden parts of the secret of a great spell in each of Balduran's items. Unfortunately you killed him before he could complete his research. This spell was one his favorites allowing him to summon 1-3  helmed horror to his service. The horrors will serve the caster without question for 2 hours and then vanish. ~
+@371  = ~Soul Cage~
+@372  = ~Soul Cage
+  (Necromancy)
+  Level: 8
+  Casting Time: 1 turn
+  Target: One
+  
+  A terrible spell to call upon indeed, this spell is considered so horrible that many magical societies have out lawed it (the research into this spell is believed to be one reason the red wizards of Thay split from the haluraans). When completed the soul of the target is surrounded by a cage of crackling energy that slowly shrinks pulling the soul of the victim into another plane where it is destroyed ( perhaps an anti-matter plane, or the negative energy plane). The death is exceeding horrible as the soul is literally torn free from the body, destroying both body and soul in the process. The victim is allowed a save vs death to avoid having their soul destroyed. Even if they save versus the spell they still take 2D10 damage and are nauseated for a short time.~
+@373  = ~Create Minion~
+@374  = ~Create Minion
+  (Conjuration/summoning)
+  Level: 9
+  Casting time: 3 rounds
+  Range: Visual sight of caster
+  
+  Normally to conjure monsters or undead on a permanent basis requires much preparation and many rituals, this spell however being as powerful as it is allows the mage to summon forth a minion permanently in one easy spell. The spell allows the caster to choose which type of monster to summon even undead can be summoned, there is no limit to the number of creatures that can be summoned so a patient mage can easily go about creating a army.
+  ~
+@375  = ~Triple Fireball Blast~
+@376  = ~Triple Fireball Blast
+  Level: 7
+  Range: Visual range of caster 
+  Duration: Instantaneous 
+  Casting Time: 7 
+  Area of Effect: 30-foot radius x3  
+  Saving Throw: 1/2 
+  
+  A fireball is an explosive burst of flame, which detonates with a low roar and delivers damage proportional to the level of the wizard who cast it - 1d6 points of damage for each level of experience of the spellcaster (up to a maximum of 10d6). The wizard points his finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the pointing digit and, unless it impacts upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). Creatures failing their saving throws each suffer full damage from the blast. Those who roll successful saving throws manage to dodge, fall flat, or roll aside, each receiving half. This is a more powerful version of the fireball spell, when the final word of the invocation is uttered three roaring balls of flame fly forth to strike 3 respective targets.~
+@377  = ~Tyndal's Temporal Compressor~
+@378  = ~Tyndal's Temporal Compressor
+  Level: 7
+  Alteration
+  Duration: 1 Turn
+  Target:Self
+  Casting time: 8
+  
+  A effective intra-combat spell for the adventuring mage. When cast reality is seen to warp and twist around the caster and he visibly fades out of existence. In actuality the caster is displaced slightly from the normal stream of time. 
+  The effect of this temporal displacement is to make the mage harder to affect from normal reality. Weapons seem not to be able to connect with the mage and any none magical weapon is incapable of affecting the mage. Because the mage no longer exists in the normal flow of events while under the effects of this spell no aging can take place, also speed altering spells and spells that imprison or maze  are useless against the mage. From the mages view the world appears to be moving exceedingly slowly but to others the mage moves extremely quickly becoming a deadly foe.
+  Effects:
+  Immunity to non-magical weapons.
+  40% resistance to all forms of physical attack.
+  +2 to all saving throws
+  +2 Armour class
+  Immunity to speed altering, imprisonment and maze spells.  ~
+@379  = ~Tyndal's Spacial Compressor~
+@380  = ~Tyndal's Spacial Compressor
+  Level 2:
+  Alteration
+  Casting Time: 1
+  
+  To cast this spell the mage simply snaps their fingers. A audible in rush of air occurs and the mage vanishes. In actuality the mage has teleported away. However the mage has no control over where they teleport and may well be teleported in front of a yet more powerful enemy. A useful cantrip none the less.
+  Effects:
+  Random Teleport ~
+@381  = ~Vorpal Bolt~
+@382  = ~Vorpal Bolt
+  Conjuration/Summoning
+  Level: 5
+  Casting Time: 6
+  Range: Sight of Caster
+  Saving Throw: Neg
+  
+  With this powerful spell the mage calls forth material from the ethereal plane of existence and shapes it into a spear of magical energy. At the culmination of the spell this magical bolt ripples forth from the mages hands and strikes one opponent of his choosing. The bolt is near infinitely sharp and cuts easily through flesh and bone as such when the bolt strikes a target there is a good chance that it will instantly slay the target and if it does not it is still capable of passing right through the targets body doing massive damage. 
+  Effects:
+  The vorpal bolt deals 6d8 points of piercing damage to the target. There is also a 25% chance that the bolt will instantly slay the target. A save versus death is allowed.~
+@383  = ~Blood to Acid~
+@384  = ~Blood to Acid
+  (Alteration) 
+  Level: 6
+  Range: 0
+  Duration: 20 rounds
+  Casting Time: 8
+  Area of Effect: The Caster 
+  Saving Throw: None 
+  
+  When cast the mages blood bubbles and warps turning into a highly concentrated acid. Strangely enough this has no adverse effect on the caster. It does however prove a powerful deterrent to attack. When a successful attack is made the casters blood sprays onto the attacker. The blood now being highly acidic burns and scars the attacker eating into their flesh. While also hurting the attackers the acid in the blood burns away all poisons that might effect the caster. 
+  Effects:
+  Every attack made against the caster does 2d8+3 acid damage to the attacker.
+  Immunity to Poison
+  100% resistance to acid. ~
+@385  = ~Dance Macabre~
+@386  = ~Dance Macabre
+  (Alteration)
+  Level: 9
+  Casting Time: 4
+  Range: Visual Range
+  Saving Throw: Neg
+  
+  This spell is generally accompanied by a wave of evil laughter. Apparently this spell was created by a fairy godmother (who as everyone knows are generally pretty strange people) gone mad. The kitchen maid  had of course just married the prince.  The fairy godmother was casting a spell to allow them to dance in mid air surrounded by music and magical lights. However during the casting, for absolutely no apparent reason the fairy godmother went completely and utterly insane. The spell reflected this sudden change of mental state and the bodies of the maid and prince withered into decayed corpses dancing for all eternity (funnily enough no one really seemed to mind since the marriage was only so the king could fulfill a clause in a will allowing him to collect a vast inheritance). Never the less despite the stressful circumstances the court mage managed to copy down the spell as the fairy godmother screamed it. Luckily he had the foresight to copy it onto a fire proof scroll. This was luckily because several seconds later the fairy godmother turned herself into a small purple atomic pumpkin. Several years later when the castle ruins had ceased to glow mauve, an adventuring mage found the scroll and the spell has propagated from that time forth.  
+  This spell causes the targets body to decay into rotting corpse that spasms and jerks as it dances to some obscene infernal music. The target can save versus death at -4 otherwise it will dance forever or until slain. Even if they resist the effect of spell they are still cursed with bad luck for 6 hours.~
+@387  = ~Mordenkainen's Forceful Hammer~
+@388  = ~That means nothing to me!  Tell me, <CHARNAME>... did you destroy the Imprisoned One or didn't you?!  If you did, then you have foolishly freed him to return to the Abyss... I must know!~
+@389  = ~'Abyss'?  You said you knew nothing of the Imprisoned One!  You lied to me!~
+@390  = ~Mordenkainen's Forceful Hammer (Evocation) 
+  Level: 8
+  Range: 0
+  Duration: 30 rounds
+  Casting Time: 9
+  Area of Effect: Special
+  Saving Throw: None 
+  
+  This powerful spell causes space to fold and distort forming into the shape of a large magical hammer. The hammer glistens with power and is magically animated. The hammer is totally under control of the caster and will obey every command given to it. The hammer acts as a +5 weapon and does 2d4 +5  of crushing damage with each hit +3 magic damage. With each hit there is also a small chance that the target will be stunned and knocked unconscious.  ~
+@391  = ~Melectar's Spell Regeneration~
+@392  = ~Melectar's Spell Regeneration
+  (Invocation)
+  Level: 8
+  Casting Time: 15
+  Range: Caster
+  Duration: 5 turns
+  Saving Throw: NA
+   
+  A particular mage who long frequented the Waterdeep region of the realms was a keen fan of magical dueling. In this dangerous sport magical items were bet and two mages would duel till one submitted, the winner taking the items. The mages name was Belfarst, he created a winning strategy where by he would estimate his opponents ability and then count the number of spells they had cast so that he always had spells when his opponent was out. This method of dueling however failed him when he encountered Melectar.
+  Melectar had long researched what powers allowed a mage to memorize spells. This enchantment was his result, it allowed him to rememorize spells after he had cast them. Although the casting was very difficult Melectar managed to cast it before the duel. Belfarst was horrified to discover that when he still had only a few magic missile spells left, Melectar was till tossing chain lightning. Melectar won, accidentally killing Belfarst with a disintegrate spell. This spell is his legacy to magic though its uses stretch far beyond dueling.
+  This spell rememorizes one wizard spell of 6th level or lower every turn for the duration of spell. Due to the energies involved there is a small chance that the spell will cause 5d10 damage upon casting, the spell regeneration will still occur though.~
+@393  = ~Otiluke's Bouncy Bubbles~
+@394  = ~Otiluke's Bouncy Bubbles
+  (Abjuration) 
+  Level: 7
+  Range: Visual Range
+  Duration: 5 Rounds
+  Casting Time: 6
+  Area of Effect:  3 target creatures
+  Saving Throw: Neg.
+  
+  This spell allows the caster to create 3 bubbles of magical force around any 3 creatures they  wish to protect. The bubbles are rubbery and semi-solid. Weapons striking the bubbles are slowed and hence can only do minimal damage. Non- Magical weapons are totally unable to penetrate the bubble. Only one bubble may be cast on a creature any more then this and the spell becomes ineffective. 
+  Effects:
+  +3 to Armour Class
+  +40% resistance to all physical damage.
+  +90% to all missile damage.
+  Immunity to non-magical weapons  ~
+@395  = ~Otiluke's Intangible Filter~
+@396  = ~Otiluke's Intangible Filter
+  (Abjuration) 
+  Level: 3
+  Range: 0
+  Duration: 3 Rounds
+  Casting Time: 1
+  Area of Effect: Caster
+  Saving Throw: Neg.
+  
+  One of Otiluke's most specialized protection spells. This spell surrounds the caster with a magical aura that filters out all gaseous toxins that the spell deems  harmful to the caster. While within the aura all spells that create poisonous clouds will have no effect on the caster. This spell protects from  but is not limited to. 
+  Stinking cloud, Cloudkill, Death fog, Incendiary Cloud and Miasma. This spell will not work on the plane of limbo and unfortunately does not protect from breath weapons such as dragons breath, or polyhydra breath. ~
+@397  = ~Tereledra's Pocket Army~
+@398  = ~Tereledra's Pocket Army
+  (Summoning)
+  Level: 8
+  Casting Time : 12
+  Range: Caster
+  Saving Throw: Neg.
+  
+  Tereledra was a powerful archmage who resided on the plane of dust, a plane that sucks the life out of its inhabitants. Tereledra had long traveled the planes and had built up many enemies especially in the anarchist faction of Sigil. After being attacked by a group of anarchist wild mages he decided to give it all up, change his name and vanish. 
+  For many years he journeyed the inner planes free of his old foes. He joined with a well respected group of mercenaries and traveled with them long, eventually he confided in them his old and secret identity, feeling he could trust them. Little had he bargained on the size of the anarchists reward for his head. The mercenary group turned on him. They underestimated his power and Tereledra in a fit of rage slew them all consigning their souls to a pocket plane to serve him for all eternity. This spell their only gateway to the rest of the planes. It is believed that Tereledra was later slain when one of the wraith company was resurrected by a sympathetic priest, the freed wraith killed Tereledra in a single stroke.  This spell will call forth 5 to 10 wraiths of Tereledra's old mercenary group. The wraiths will serve the caster for 2 hours before returning to their pocket plane. The wraiths are fighters of between 7th and 10th level carrying +1 equipment. The wraiths will serve the caster without question but cannot communicate with anything else. The wraiths will also serve Tereledra before any other so they are incapable of fighting him or in any way inconveniencing him. ~
+@399  = ~Robe of Vecna~
+@400  = ~Robe of Vecna
+  This robe doesn't even have close to the power that the two famous artifacts, the Hand and Eye of Vecna possess.  Still, from simply being worn by the powerful lich, the robe absorbed enough magical energies to become a potent magic item.
+  
+  STATISTICS:
+  Equipped Abilities:
+  AC: base set to 5
+  Improves casting speed by 4
+  +10% Magic Resistance
+  Weight:  3~
+@401  = ~Forge Item~
+@402  = ~Light the torch with the red oil.~
+@404  = ~Almost immediately you realize that the man is the creator of the deck.  The image both smiles slightly and nods to you, tapping the scale in his withered hands.~
+@405  = ~What remains of the Deck of Many Things begins to fade suddenly... and within the space of a moment it is gone forever.~
+@406  = ~Open the Portal to the Temple's Lower Levels
+
+It seems the way to get down to the next level is by performing some type of Ritual.  Since this is a temple, I imagine the altar would have something to do with this.~
+@407  = ~Cold, so very cold...~
+@409  = ~Open the Portal to the Temple's Lower Levels
+
+The ghost of the temple's archivist suggested I seek out the forgetful old priest - though I doubt he's even still alive.~
+@410  = ~Open the Portal to the Temple's Lower Levels
+
+Before I can complete the Ritual which will open the passage to the next level, I must somehow learn the proper chapter and verse which must be read from the Ritual Book.~
+@411  = ~You are startled as the picture of a blazing, fiery rock seems to leap out at you from the card, it's golden trail leading deep within the black background.  The card is labeled 'COMET'.~
+@412  = ~Miasma~
+@413  = ~Three women hold a single thread between them, all looking at you askance.  One is young and beautiful, another middle-aged and matronly, the third a crone.  The card is labeled 'ERINYES'.~
+@414  = ~The card depicts a man seated upon an iron throne, his countenance commanding and regal both.  For a moment, you are sure the figure nods to you solemnly.  The card is labeled 'THRONE'.~
+@415  = ~The card shows an old man with flaming-red hair and fiery eyes staring out at you.  In his hands he holds a scale, the small silver bowls evenly balanced.  The card is clearly labeled 'BALANCE'.~
+@416  = ~Breach Weave~
+@417  = ~Escaping Carston's Level
+
+Much as I suspected, the key to getting off of this level is the Machine of Lum the Mad.   I assume that by manipulating the levers, dials and buttons I can figure out a way to activate the gate to the next level.  But before I can experiment with the infernal machine, I'll have to get through that glass bubble of Carston's.~
+@418  = ~Wild Magic Zone~
+@419  = ~Melanthium's Shield of Oblivion~
+@420  = ~Melanthium's Streamers~
+@421  = ~Deva~
+@422  = ~Scribbled Note~
+@428  = ~Meteorite~
+@429  = ~Comet 
+(Any School) 
+Level: 10
+Range: 90 yards
+Duration: Instantaneous
+Casting Time: 3
+Area of Effect:  30' radius
+Saving Throw: None
+
+A more powerful and specialized version of Meteor Swarm, a huge meteor or comet strikes the earth damaging all enemies in its path and sending out a powerful shockwave that knocks away all foes in the area of effect. Those knocked down must save vs. paralyzation or be stunned for 1D4 rounds. The comet itself does 10D10 damage. 
+
+This spell will not harm party members.~
+@430  = ~Implosion~
+@431  = ~Implosion (Evocation) 
+Level: Quest
+Range: Visual range of caster
+Duration: 2 Rounds  
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Special
+
+This spell creates a rift in the earth beneath the target which implodes and closes in upon itself, crushing and burning the target and holding it for 1 round. The spell does 10D10 fire damage and 10D10 blunt damage. The victim can save vs. spell for half damage.
+~
+@432  = ~Melanthium's Rain of Terror~
+@435  = ~Fireshield (Red) (Evocation, Alteration) 
+Level: 4
+Range: 0
+Duration: 3 rounds + 1 round/level
+Casting Time: 4 
+Area of Effect: The Caster 
+Saving Throw: None 
+
+The red fireshield protects the user from fire damage by surrounding the caster with a shield of flame.  This shield not only grants the user 50% fire resistance, but also protects the caster from attacks made within a 5' radius around the caster.  An opponent that hits the caster with any weapons or spells within this radius suffers 1d8 +2 fire damage.~
+@436  = ~Judgment Of The Overgods ~
+@437  = ~Spell~
+@438  = ~An amazing spell~
+@439  = ~Probe Plane~
+@441  = ~Resist Magic~
+@445  = ~Lich Touch~
+@446  = ~What's this?  'Construct'?  Another battle, is it?~
+@447  = ~Lich Control Undead~
+@448  = ~Control Undead (Necromancy) 
+Level: 7
+Range: Visual sight of caster
+Duration: 6 rounds + 1 round/level
+Casting Time: 7
+Area of Effect: 1-4 creatures
+Saving Throw: Special
+
+The control undead spell allows the caster to take control of 1-4 undead creatures within the area of effect.  This creates a telepathic link between the caster and the undead allowing complete control.  If the undead have 3 Hit Dice or less then there is no saving throw allowed, however if they have 4 Hit Dice or more a save vs. spells is allowed to negate the effect.  The undead remain under control of the caster for the duration of the spell or until they are affected by a dispel magic.~
+@449  = ~Lich Aura of Fear~
+@450  = ~You wagered some of your experience... I shall take my prize now.  And, no... you may not have it back. Return, if you wish to play again.~
+@451  = ~Melanthium's Hand of Fate~
+@452  = ~Sorcerous Bolt~
+@454  = ~Melanthium's Rage~
+@456  = ~Mystra's Blessing~
+@457  = ~Permanent +2 To Save Versus Spells.~
+@463  = ~Miasma
+(Conjuration) 
+Level: 7
+Range: 10 yards 
+Duration: 1 turn
+Casting Time: 7
+Area of Effect: 30' radius
+Saving Throw: None 
+When the final word of this spell is uttered the ground beneath the target bubbles and cracks and foul noxious vapors billow forth into a huge seething cloud. The gas of the cloud reeks of death and decay all within it are sicked and feel very weak. The vapors are also highly toxic and slowly poison anyone breathing them in. The vapors sting and burn the eyes as well making visibility in the fog incredibly difficult.
+Effects:
+Each round everyone in the cloud will take 3d8 of poison damage with no save. While they remain in the cloud they are nauseated and slowed and each round they must save versus spell or be blinded for one round.~
+@471  = ~Blink~
+@477  = ~Summon Monster~
+@478  = ~We shall see, <CHARNAME>.  ~
+@479  = ~Create Undead~
+@480  = ~Set Spike Trap~
+@481  = ~Create Spider~
+@482  = ~Set Exploding Trap~
+@483  = ~Summon Shadow Wolf~
+@484  = ~Evasion~
+@486  = ~Threats are not the answer here.  Everyone stay calm and we can work together to find a solution.~
+@487  = ~Create Baby Wyvern~
+@488  = ~What do you know of the prophecy, exactly?~
+@496  = ~Healed~
+@499  = ~Spell Protections Removed~
+@507  = ~Magic Missile~
+@508  = ~Magic Missile (Evocation) 
+Level: 1
+Range: Visual range of caster 
+Duration: Instantaneous 
+Casting Time: 1 
+Area of Effect: 1 creature
+Saving Throw: None 
+
+Use of the Magic Missile spell, one of the most popular first level spells, creates up to five missiles of magical energy that dart forth from the wizard's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage. For every two extra levels of experience, the wizard gains an additional missile - he has two at 3rd level, three at 5th level, four at 7th level, and a maximum of five missiles at 9th level. ~
+@532  = ~Melanthium's magic attack~
+@533  = ~As you make your way into the slums reality begins to waver and blur around you. Just as you are begining to lose consciousness, you suddenly find yourself somewhere else.~
+@534  = ~Nice demon. See students, if you provide them with enough love and care, demons are completely harmless!~
+@535  = ~Watch out professor!~
+@536  = ~Don't worry, he just wants a head scratch. Don't you big fella? Come here and daddy will give you a nice scratch.~
+@537  = ~Well, I did warn him. You can't say I didn't. Now can I please go somewhere else. Somewhere less disturbing?~
+@538  = ~Khelben~
+@539  = ~You shall not pass this point spawn of evil!~
+@540  = ~And who's going to stop me... priest. You? Your faith is weak. Your power has waned. Bow before your new master and I may let you live!~
+@541  = ~Never! You are an abomination in His Sight! My faith may be weak, but it is more then enough to stop you!~
+@542  = ~Helm, I may have lost my way, but I beseech you, though it will cost me my life, help me save these people!~
+@543  = ~Hahahahaha! Don't you know little mortal, the gods are... otherwise occupied. He can't help you now.~
+@545  = ~Priest of Helm~
+@546  = ~Now I think I'll just go attack these nice adventurers for no reason other then... Well. No reason really. That's just what people do in this game. They attack other random people. DIIIIIEEEEEEEEE!!!!~
+@547  = ~Urp. 'scuse me.~
+@548  = ~Ewww! I think that demon has a piece of the Professor caught in his teeth!~
+@549  = ~Ouch!~
+@550  = ~Hey, cool, another me!~
+@551  = ~Indeed, shall we kick some adventurer ass?~
+@552  = ~You know, with the number of times I've split, you would think that I would have won by now.~
+
+@553 = ~Clerics Aid~
+@554 = ~Clerics Aid
+This odd helm boosts a Cleric/Mages divine power at the cost of their magical ability.
+
+STATISTICS:
+  +1 Cleric Spells for levels 1 - 7
+  -1 Mage spells for levels 1 - 8
+  +1 to casting speed
+
+Usuable by:
+  Fighter/Mage/Clerics and Cleric/Mages~
+@555 = ~Mages Sight~
+@556 = ~Mages Sight
+This odd helm boosts a Cleric/Mages magical ability at the cost of their divine power.
+
+STATISTICS:
+  +1 Mage spells for levels 1 - 8
+  -1 Cleric Spells for levels 1 - 7
+  +1 to casting speed
+
+Usuable by:
+  Fighter/Mage/Clerics and Cleric/Mages~
+@557 = ~Thieves Friend, Thieves foe~
+@558 = ~Thieves Friend, Thieves foe
+A very strange sword, this weapon provides it's wielder with massive bonuses offset by crippling effects
+
+STATISTICS:
+  Every hit is a backstab
+  +2 to backstab modifier
+  
+  Sets attacks per round to 1
+  Makes weilder immune to haste and improved haste
+  Removes the weilders ability to cast level 6, 7, 8 and 9 spells
+
+Usuable by:
+  Fighter/Thief/Mages and Thief/Mages~
+@559 = ~Dragon Bolts~
+@560 = ~Dragon Bolts
+Imbued with the power of a dragon, these bolts send their target flying backwards, as if they were buffeted by a dragons wings
+
+  Enchantment: +4
+  Damage: 1d10 +5
+  THACO: +4
+  Damage Type: Missile (piercing)
+  Weight: 0
+  Launcher: Crossbow
+  
+Special: Inflicts wing buffet on whatever it hits.~
+
+@561 = ~Practicality vs. Potentiality~
+@562 = ~Practicality vs. Potentiality
+Which is preferable? To be prepared for "anything". Or to be better prepared for the most likely outcome?
+
+STATISTICS:
+  Renders wearer immune to:
+    Fire Arrow
+    Acid Arrow
+    Magic Missile
+    Chromatic Orb
+    
+  Reduces wearer's resistance to Fire/Acid/Magic damage by 15%~
+@563  = ~Belt~
+@564  = ~Sticks and stones may break my bones but not arrows.~
+@565  = ~It's a belt. What more do you want to know?~
+@566  = ~I suppose it should be stick, stones and something sharp and slashy....
+Ok, ok, so the names makes no sense, I plead sleep deprivation.
+
+STATISTICS:
+  80% missile resistance
+  -20% crushing/piercing/slashing resistance
+
+Unusuable by:
+  Wizard Slayer~
+
+@574 = ~Triumph of the Caster~
+@575 = ~Triumph of the Caster
+This sword was designed to allow Fighter/Mages to cast multiple spells per round. The only draw back is that the sword itself is as dull as a butter knife. Well, that and it make wielding two weapons at once unfeasable.
+
+Damage Bonus: -5
+THACO Bonus: -5
+
+Damage: 1d3
+Speed: 2
+Proficiency Type: Shortsword
+
+STATISTICS:
+  Grants permanent Aura Cleansing
+  Off-hand THACO bonus: -20
+
+Usuable by:
+  Fighter/Mage
+  Fighter/Mage/Thief
+  Fighter/Mage/Cleric~
+
+@576 = ~It's a short sword. A bit dull perhaps, but a shortsword none the less.~
+
+@593 = ~The Elements~
+@594 = ~The Elements
+Who needs resistances when you can just regenerate the damage?
+
+STATISTICS:
+  1 HP regen per second
+  -50 to ALL resistances
+
+Unusuable by:
+  Wizard Slayer~
+
+@567  = ~Githyanki Captain~
+@568  = ~Githyanki~
+@569  = ~Illithid~
+
+@570  = ~Averners Odd Items~
+@571  = ~The Professor~
+@572  = ~Assistant Scott~
+@573  = ~Belle~
+
+@577  = ~Priest of Helm~
+@578  = ~Warrior of Helm~
+@579  = ~Tanar'ri~
+@580  = ~Tanar'ri Mage~
+@581  = ~Priest of Talos~
+@582  = ~Warrior of Talos~
+@583  = ~Tanar'ri Raver~
+@584  = ~Nubber~
+@585  = ~Baatezu~
+@586  = ~Tanar'ri Stalker~
+@587  = ~Baatezu Lich~
+@588  = ~Paladin of the Radiant Heart~
+@589  = ~Baatezu Stalker~
+@590  = ~Pompous Adventurer~
+@591  = ~Pompous Adventurer's Sidekick~
+@592  = ~Plane-traveling Adventurer~
+@595  = ~Tanar'ri Leader~
+@596  = ~Baatezu Leader~
+@597  = ~Ultimate Expression of Hatred~
+@598  = ~Ultimate Expression of Wrath~
+@599  = ~Lothander~
+@600  = ~Helm~
+@601  = ~Talos~
+@602  = ~No! This cannot be!~
+@603  = ~Kobold~
+@604  = ~Nooooooo! You can't do this to me!!!!!!!!~
+@605  = ~Ha. Your coming with me. I'm sure Belle will just love to see you again!~
+@606  = ~Acolyte of Talos~
+@607  = ~Acolyte of Lothander~
+@608  = ~Your pathetic protections shall not save you!~
+@609  = ~HA! Do you really think that can stop me?~
+@610  = ~Yes Professor! Right Away!~
+@611  = ~Professor! Something is wrong!~
+@612  = ~AHHHH!!!!~
+@613  = ~Assistant Scott!! Noooooooo!~
+@614  = ~Teos, the chicken~
+@615  = ~Teos finally drove you to the breaking point. So you turned him into a chicken. Now to deliver him to Belle.~
+@616  = ~Nooooooo!!!!!!~
+@617  = ~Goodbye Teos. Have a nice trip.~
+
+@618  = ~Dwarf Forger~
+@619  = ~The Wailing~
+@620  = ~Speak to each of the apprenti in turn, they will demonstrate a spell of their choice. Once you have spoken to all of them, speak with me again.~
+@621  = ~Assistant Scott! Begin the opening of the portal!~
+
+@622  = ~Short Sword~

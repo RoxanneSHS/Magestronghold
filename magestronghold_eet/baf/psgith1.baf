@@ -1,0 +1,23 @@
+IF
+	See("psFlay1")
+THEN
+	RESPONSE #100
+		Attack("psFlay1")
+		Continue()
+END
+
+IF
+	See("psFlay2")
+THEN
+	RESPONSE #100
+		Attack("psFlay2")
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+		Continue()
+END

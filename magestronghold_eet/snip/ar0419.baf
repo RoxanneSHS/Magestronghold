@@ -1,0 +1,24 @@
+IF
+	Global("psSpawnInchantraToggle", "GLOBAL", 1)
+THEN
+	RESPONSE #100
+		FadeToColor([20.0], 0)
+		ActionOverride(Player1, JumpToPoint([854.569]))
+		ActionOverride(Player2, JumpToPoint([916.553]))
+		ActionOverride(Player3, JumpToPoint([848.620]))
+		ActionOverride(Player4, JumpToPoint([976.558]))
+		ActionOverride(Player5, JumpToPoint([925.599]))
+		ActionOverride(Player6, JumpToPoint([868.658]))
+		Wait(1)
+		SetGlobal("psSpawnInchantraToggle", "GLOBAL", 2)
+		FadeFromColor([20.0], 0)
+		CreateCreature("psInch", [597.412], 14)
+		ActionOverride("psInch", StartDialogNoSet(Player1))
+END
+
+IF
+	Dead("psInch")
+THEN
+	RESPONSE #100
+		SetGlobal("psInchantraDeadToggle", "GLOBAL", 1)
+END

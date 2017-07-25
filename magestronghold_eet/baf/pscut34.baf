@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		MultiPlayerSync()
+		CutSceneId(Player1)
+		OpenDoor("Door0400")
+		Wait(1)
+		CreateCreature("psDego",[3192.2887],4)
+		ActionOverride("psDego",MoveToPoint([2950.2699]))
+		Wait(4)
+		ActionOverride("psDego",StartDialogueNoSet(Player1))
+END
+
+
+

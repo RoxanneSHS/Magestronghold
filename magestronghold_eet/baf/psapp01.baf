@@ -1,0 +1,43 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #2
+		DisplayStringHead(Myself,0) // <NO TEXT>
+		ForceSpell(Myself,FLASHY_1)
+		Wait(2)
+	RESPONSE #2
+		DisplayStringHead(Myself,0) // <NO TEXT>
+		CreateVisualEffectObject("ICMAGICH",Myself)
+		Wait(2)
+	RESPONSE #10
+		CreateVisualEffectObject("AMCALL",Myself)
+		Wait(2)
+	RESPONSE #10
+		CreateVisualEffectObject("ICRMPARI",Myself)
+		Wait(3)
+	RESPONSE #30
+		ForceSpell(Myself,FLASHY_1)
+		Wait(3)
+	RESPONSE #30
+		ForceSpell(Myself,FLASHY_2)
+		Wait(3)
+	RESPONSE #30
+		ForceSpell(Myself,FLASHY_4)
+		Wait(4)
+	RESPONSE #30
+		CreateVisualEffectObject("ICRMPARI",Myself)
+		Wait(3)
+	RESPONSE #30
+		CreateVisualEffectObject("ICRMPARI",Myself)
+	RESPONSE #60
+		ForceSpell(Myself,FLASHY_1)
+		Wait(2)
+	RESPONSE #60
+		ForceSpell(Myself,FLASHY_2)
+		Wait(3)
+	RESPONSE #60
+		ForceSpell(Myself,FLASHY_4)
+		Wait(4)
+END
+
+

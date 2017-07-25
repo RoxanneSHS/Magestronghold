@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		CutSceneId(Player1)
+		StartCutSceneMode()
+		Wait(1)
+		CreateCreatureDoor("psAdApp1",[2772.2678],1)
+		CreateCreatureDoor("psAdApp2",[2836.2653],1)
+		CreateCreatureDoor("psAdApp3",[2891.2623],1)
+		CreateCreatureDoor("psAdApp4",[2957.2570],1)
+		CreateCreatureDoor("psAdApp5",[2944.2624],1)
+		CreateCreatureDoor("psAdApp6",[3058.2555],1)
+		Wait(2)
+		ActionOverride(Player1,DisplayStringHead(Myself,6456)) // You are a fool to attack me and for that you shall die.
+		StartCutScene("psCut31")
+END
+
+
+

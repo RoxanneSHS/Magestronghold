@@ -1,0 +1,15 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		Wait(1)
+		FadeFromColor([30.0],0)
+		Wait(1)
+		ForceSpell(Myself,DO_SOME_EFFECTS)
+		Wait(1)
+		SetDialog("psMelLad")
+		StartDialogNoSet(Player1)
+END
+
+

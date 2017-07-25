@@ -1,0 +1,42 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #2
+		ForceSpellPoint([1542.1103],WIZARD_DEATH_SPELL)
+		Wait(2)
+	RESPONSE #2
+		ForceSpellPoint([1542.1103],WIZARD_FIREBALL)
+		Wait(5)
+	RESPONSE #10
+		CreateVisualEffectObject("AMCALL",Myself)
+		Wait(2)
+	RESPONSE #10
+		ForceSpellPointRES("SPWI302",[1542.1103])
+		Wait(10)
+	RESPONSE #30
+		ForceSpellPoint([1542.1103],WIZARD_FEEBLEMIND)
+		Wait(8)
+	RESPONSE #30
+		ForceSpellPoint([1542.1103],WIZARD_CHAIN_LIGHTNING)
+		Wait(7)
+	RESPONSE #30
+		ForceSpellPoint([1542.1103],WIZARD_SLEEP)
+		Wait(4)
+	RESPONSE #30
+		CreateVisualEffectObject("ICRMPARI",Myself)
+		Wait(3)
+	RESPONSE #30
+		CreateVisualEffectObject("ICRMPARI",Myself)
+	RESPONSE #60
+		ForceSpellPoint([1542.1103],WIZARD_FIREBALL)
+		Wait(5)
+	RESPONSE #60
+		ForceSpellPoint([1542.1103],WIZARD_CHAIN_LIGHTNING)
+		Wait(15)
+	RESPONSE #60
+		ForceSpellPoint([1542.1103],WIZARD_FIREBALL)
+		Wait(10)
+END
+
+
+

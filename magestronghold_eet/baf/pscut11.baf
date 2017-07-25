@@ -1,0 +1,54 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		MoveViewPoint([971.1312],VERY_FAST)
+		StartCutSceneMode()
+		CutSceneId("psMel")
+		ActionOverride("psMel",ForceSpell(Myself,4652))
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psSPTar5")
+		ReallyForceSpell("psMel",4651)
+		SmallWait(1)
+		ActionOverride("psSPTar1",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar2",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar3",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar4",ReallyForceSpell("psMel",4651))
+		Wait(1)
+		ScreenShake([20.20],10)
+		PlaySound("EFF_P92")
+		ReallyForceSpell("psMel",4651)
+		SmallWait(1)
+		ActionOverride("psSPTar1",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar2",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar3",ReallyForceSpell("psMel",4651))
+		SmallWait(1)
+		ActionOverride("psSPTar4",ReallyForceSpell("psMel",4651))
+		Wait(1)
+		CreateVisualEffect("SPFIREPI",[881.1290])
+		CreateVisualEffect("SPFIREPI",[911.1334])
+		CreateVisualEffect("SPFIREPI",[991.1332])
+		CreateVisualEffect("SPFIREPI",[996.1258])
+		CreateVisualEffect("SPFIREPI",[957.1231])
+		CreateVisualEffect("HELLOLY",[796.1406])
+		CreateVisualEffect("HELLOLY",[783.1200])
+		CreateVisualEffect("HELLOLY",[1050.1451])
+		CreateVisualEffect("HELLOLY",[1199.1310])
+		CreateVisualEffect("HELLOLY",[1039.1160])
+		ActionOverride("psMel", SetDialog("psMelEnd")
+		ActionOverride("psMel",StartDialogueNoSet(Player1))
+END
+
+
+

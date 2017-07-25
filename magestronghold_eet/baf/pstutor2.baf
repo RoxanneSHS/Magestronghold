@@ -1,0 +1,11 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		MoveToPointNoInterrupt([1209.1411])
+		Wait(20)
+		MoveToPointNoInterrupt([1639.1400])
+		Wait(20)
+END
+
+

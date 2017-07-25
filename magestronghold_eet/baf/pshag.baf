@@ -1,0 +1,188 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("psHagSpellupToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,CLERIC_REGENERATE)
+		ApplySpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)
+		ApplySpell(Myself,CLERIC_PHYSICAL_MIRROR)
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		GiveItemCreate("psSPL17",Myself,1,1,1)
+		GiveItemCreate("psSPL11",Myself,1,1,1)
+		GiveItemCreate("psSPL06",Myself,1,1,1)
+		GiveItemCreate("psSPL03",Myself,1,1,1)
+		SetGlobal("psHagSpellupToggle","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psDoom","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),4662)
+		ForceSpell(LastSeenBy(Myself),CLERIC_CREEPING_DOOM)
+		ForceSpell(LastSeenBy(Myself),CLERIC_GREATER_COMMAND)
+		SetGlobal("psDoom","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psImprisonment","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_IMPRISONMENT)
+		SetGlobal("psImprisonment","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,CLERIC_SUNRAY)
+		ForceSpell(Player1,CLERIC_BOLT_OF_GLORY)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_BLIND)
+		ForceSpell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+		ForceSpell(LastSeenBy(Myself),CLERIC_UNHOLY_BLIGHT)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #60
+		ForceSpell(LastSeenBy(Myself),CLERIC_CONFUSION)
+		ForceSpell(LastSeenBy(Myself),4662)
+		ForceSpell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		Continue()
+	RESPONSE #60
+		ForceSpell(LastSeenBy(Myself),CLERIC_RIGID_THINKING)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psRemoveMagic","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_IRONSKIN)
+		ForceSpell(LastSeenBy(Myself),4662)
+		ForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+		SetGlobal("psRemoveMagic","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psImmunity","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		SetGlobal("psImmunity","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psDeathWard","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_DEATH_WARD)
+		SetGlobal("psDeathWard","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psFirestorm","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,CLERIC_FIRE_STORM)
+		SetGlobal("psFirestorm","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psMalison","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_DEATH)
+		SetGlobal("psMalison","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psInvisible","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ForceSpell(Myself,WIZARD_INVISIBILITY)
+		SetGlobal("psInvisible","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psStunPerson","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_STUN)
+		SetGlobal("psStunPerson","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("Silence","LOCALS",0)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+		ForceSpell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+		ForceSpell(LastSeenBy(Myself),WIZARD_SUMMON_HAKEASHAR)
+		SetGlobal("Silence","LOCALS",1)
+		Continue()
+END
+
+IF
+	HPLT(Myself,100)
+	GlobalLT("MediumWounds","LOCALS",3)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)
+		IncrementGlobal("MediumWounds","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		ForceSpell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+		Continue()
+END
+
+
+

@@ -1,0 +1,99 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Bombard","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+		ForceSpell(Myself,DEMILICH_DEATH)
+		SetGlobal("Bombard","LOCALS",1)
+		Wait(2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),DEMILICH_TRAP_SOUL)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),DEMILICH_TRAP_SOUL)
+		StartTimer(55,60)
+		Wait(3)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #10
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+	RESPONSE #10
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+	RESPONSE #10
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+	RESPONSE #10
+		ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+	RESPONSE #10
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_POWER_WORD_STUN)
+	RESPONSE #10
+		ForceSpell(Myself,WIZARD_TIME_STOP)
+		ForceSpell(SixthNearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+		ForceSpell(SixthNearestEnemyOf(Myself),WIZARD_POWER_WORD_BLIND)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	See(Player1)
+	HPLT(LastSeenBy(Myself),60)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF.0.0.0.0.SUMMONED])
+	!Range(LastSeenBy(Myself),15)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+		Continue()
+END
+
+IF
+	TimerExpired(55)
+	Global("DemilichHowl","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("DemilichHowl","LOCALS",0)
+		ForceSpell(Myself,DEMILICH_DEATH)
+		Continue()
+END
+
+

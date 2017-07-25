@@ -1,0 +1,98 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Invocy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+		ApplySpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ApplySpell(Myself,WIZARD_SHIELD)
+		SetGlobal("Invocy","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+		ForceSpell(NearestEnemyOf(Myself),4661)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+		Wait(2)
+		ForceSpell(SecondNearestEnemyOf(Myself),4653)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Boom","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),4654)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_ICE_STORM)
+		Wait(2)
+		SetGlobal("Boom","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FIREBALL)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),4656)
+		ForceSpell(SecondNearestEnemyOf(Myself),4653)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FIREBALL)
+		Wait(2)
+		Continue()
+END
+
+
+

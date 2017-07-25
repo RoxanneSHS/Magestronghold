@@ -1,0 +1,26 @@
+IF
+	Global("Stormy","LOCALS",0)
+THEN
+	RESPONSE #100
+		Weather(RAIN)
+		SetGlobal("Stormy","LOCALS",1)
+		Wait(15)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		Wait(8)
+		ReallyForceSpell(NearestEnemyOf(LastSummonerOf(Myself)),CLERIC_CALL_LIGHTNING)
+		Wait(8)
+		ReallyForceSpell(SecondNearestEnemyOf(LastSummonerOf(Myself)),CLERIC_CALL_LIGHTNING)
+		Wait(8)
+		ReallyForceSpell(ThirdNearestEnemyOf(LastSummonerOf(Myself)),CLERIC_CALL_LIGHTNING)
+		Wait(8)
+		ReallyForceSpell(FourthNearestEnemyOf(LastSummonerOf(Myself)),CLERIC_CALL_LIGHTNING)
+		Wait(8)
+		ReallyForceSpell(FifthNearestEnemyOf(LastSummonerOf(Myself)),CLERIC_CALL_LIGHTNING)
+END
+
+

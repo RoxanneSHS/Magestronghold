@@ -1,0 +1,13 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psMel")
+		ActionOverride("psKOrd01",MoveToPoint([543.377]))
+		ActionOverride("psKOrd02",MoveToPoint([622.417]))
+		ActionOverride("psKOrd03",MoveToPoint([711.463]))
+		ActionOverride("psKOrd04",MoveToPoint([560.436]))
+		ActionOverride("psKOrd05",MoveToPoint([623.467]))
+		Wait(7)
+		ActionOverride("psKOrd05",StartDialogueNoSet("psMel"))
+END

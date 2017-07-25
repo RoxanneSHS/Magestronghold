@@ -1,0 +1,117 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psSpellupToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(NearestEnemyOf(Myself),WIZARD_MORDENKAINENS_SWORD)
+		ApplySpell(SecondNearestEnemyOf(Myself),WIZARD_INVISIBLE_STALKER)
+		ApplySpell(ThirdNearestEnemyOf(Myself),WIZARD_WYVERN_CALL)
+		ApplySpell(FourthNearestEnemyOf(Myself),WIZARD_MORDENKAINENS_SWORD)
+		ApplySpell(FifthNearestEnemyOf(Myself),WIZARD_MORDENKAINENS_SWORD)
+		ApplySpell(SixthNearestEnemyOf(Myself),WIZARD_SUMMON_DJINNI)
+		ApplySpell(Myself,WIZARD_MONSTER_SUMMONING_3)
+		SetGlobal("psSpellupToggle","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_SUMMON_EFREET)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Demony","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([418.1011],WIZARD_GATE)
+		SetGlobal("Demony","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Mazey","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+		SetGlobal("Mazey","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_BLIND)
+		ForceSpell(NearestEnemyOf(Myself),4657)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_POWER_WORD_STUN)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
+		ForceSpell(ThirdNearestEnemyOf(Myself),4655)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_SUMMON_HAKEASHAR)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,WIZARD_POWER_WORD_KILL)
+		ForceSpell(NearestEnemyOf(Myself),4657)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+		Wait(2)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+		Continue()
+END
+
+
+

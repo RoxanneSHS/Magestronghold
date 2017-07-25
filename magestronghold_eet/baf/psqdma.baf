@@ -1,0 +1,10 @@
+IF
+	Detect([PC])
+THEN
+	RESPONSE #100
+		Swing()
+		Wait(2)
+		Recoil()
+END
+
+

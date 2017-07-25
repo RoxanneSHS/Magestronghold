@@ -1,0 +1,71 @@
+IF
+	Difficulty(EASIEST)
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		GiveItemCreate("MISC07", "psMel", 20000, 0, 0)
+		SetGlobal("psDiffChosen", "GLOBAL", 1)
+		ChangeAIScript("psEasy", 0)
+END
+
+IF
+	Difficulty(EASY)
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		GiveItemCreate("MISC07", "psMel", 20000, 0, 0)
+		GiveItemCreate("MISC45", "psMel", 2, 0, 0)
+		SetGlobal("psDiffChosen", "GLOBAL", 2)
+		ChangeAIScript("psNormal", 0)
+END
+
+IF
+	Difficulty(NORMAL)
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		GiveItemCreate("MISC07", "psMel", 25000, 0, 0)
+		GiveItemCreate("MISC45", "psMel", 2, 0, 0)
+		GiveItemCreate("amul26", "psMel", 1, 0, 0)		
+		FillSlot(0)
+		SetGlobal("psDiffChosen", "GLOBAL", 3)
+		ChangeAIScript("psCore", 0)
+END
+
+IF
+	Difficulty(HARD)
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		GiveItemCreate("psMelHrd", "psMel", 1, 0, 0)
+		GiveItemCreate("psBrac01", "psMel", 1, 0, 0)
+		GiveItemCreate("amul26", "psMel", 1, 0, 0)		
+		FillSlot(SLOT_GAUNTLETS)
+		FillSlot(SLOT_RING_LEFT)
+		FillSlot(0)								//This is for amulet. For some reason the slot.ids file doesn't have a header like all the other ids files. As a result weidu doesn't like it and gives errors if you try and use SLOT_AMULET, thus the 0
+
+		GiveItemCreate("MISC07", "psMel", 30000, 0, 0)
+		GiveItemCreate("MISC45", "psMel", 2, 0, 0)
+		SetGlobal("psDiffChosen", "GLOBAL", 4)
+		ChangeAIScript("psHard", 0)
+END
+
+IF
+	Difficulty(HARDEST)
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		GiveItemCreate("psMelIns", "psMel", 1, 0, 0)
+		GiveItemCreate("amul26", "psMel", 1, 0, 0)		
+		GiveItemCreate("psStaf01", "psMel", 1, 0, 0)
+		GiveItemCreate("psBrac01", "psMel", 1, 0, 0)
+		FillSlot(SLOT_WEAPON)
+		FillSlot(SLOT_GAUNTLETS)
+		FillSlot(SLOT_RING_LEFT)
+		FillSlot(0)
+		
+		GiveItemCreate("MISC07", "psMel", 50000, 0, 0)
+		GiveItemCreate("MISC45", "psMel", 2, 0, 0)
+		SetGlobal("psDiffChosen", "GLOBAL", 5)
+		ChangeAIScript("psInsane", 0)
+END

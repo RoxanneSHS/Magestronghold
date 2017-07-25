@@ -1,0 +1,12 @@
+IF
+	True()
+Then
+	Response #100
+		CutSceneID(Player1)
+		ClearAllActions()
+		
+		CreateCreatureDoor("psBelle", [500.500], 0)
+		Wait(5)
+		ActionOverride("psTeos", StartDialogNoSet("psBelle"))
+		EndCutSceneMode()
+End

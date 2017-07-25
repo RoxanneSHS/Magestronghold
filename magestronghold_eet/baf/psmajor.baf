@@ -1,0 +1,106 @@
+IF
+	See(NearestEnemyOf(Myself))
+	HPGT(Myself,600)
+	Global("Jon","LOCALS",0)
+THEN
+	RESPONSE #100
+		Polymorph(JON_IRENICUS)
+		ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		ApplySpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+		SetGlobal("Jon","LOCALS",1)
+		Wait(2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPGT(Myself,600)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_GREATER_MALISON)
+		Wait(1)
+		ForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_FEAR)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_FLESH_TO_STONE)
+		Wait(2)
+		ForceSpell(Myself,WIZARD_TIME_STOP)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_FIREBALL)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_FIREBALL)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+		Wait(2)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+		Wait(2)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		Wait(2)
+		ForceSpell(Player1,WIZARD_POWER_WORD_STUN)
+		Wait(3)
+END
+
+IF
+	HPLT(Myself,600)
+	HPGT(Myself,400)
+	Global("Bdhi","LOCALS",0)
+THEN
+	RESPONSE #100
+		Polymorph(BODHI)
+		SetGlobal("Bdhi","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,600)
+	HPGT(Myself,400)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	HPLT(Myself,400)
+	HPGT(Myself,200)
+	Global("Sare","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("psqnima",Myself,1,1,1)
+		Polymorph(SAREVOK)
+		SetGlobal("Sare","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,400)
+	HPGT(Myself,200)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	HPLT(Myself,200)
+	Global("Shad","LOCALS",0)
+THEN
+	RESPONSE #100
+		Polymorph(SHADOW)
+		DisplayStringHead(Myself,311) // Curse you <CHARNAME>! I shall not be defeated by you!
+		ApplySpell(Player1,BEHOLDER_FEAR)
+		SetGlobal("Shad","LOCALS",1)
+		SetGlobal("psElminsterSpawnToggle","GLOBAL",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,200)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+
+

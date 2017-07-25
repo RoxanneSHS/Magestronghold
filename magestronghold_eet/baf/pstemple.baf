@@ -1,0 +1,6 @@
+IF
+	Global("psTempleInvadedToggle", "GLOBAL", 1)
+THEN
+	Response #100
+		DestroySelf()
+End

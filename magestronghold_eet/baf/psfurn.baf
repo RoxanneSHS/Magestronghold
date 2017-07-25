@@ -1,0 +1,8 @@
+IF
+	See(Player1)
+	Global("psForge", "GLOBAL", 1)
+THEN
+	RESPONSE #100
+		SetGlobal("psForge", "GLOBAL", 0)
+		StartDialogueNoSet(Player1)
+END

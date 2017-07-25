@@ -1,0 +1,90 @@
+IF
+	HPPercentLT(Myself, 50)
+	GlobalLT("psHealedAll", "LOCALS", 3)
+Then
+	Response #100
+		IncrementGlobal("psHealedAll", "LOCALS", 1)
+		ForceSpell(myself, CLERIC_MASS_CURE)
+End
+
+
+IF
+	HPPercentLT(Myself, 25)
+	Global("psHealed", "LOCALS", 0)
+Then
+	Response #100
+		SetGlobal("psHealed", "LOCALS", 1)
+		ForceSpell(myself, CLERIC_HEAL)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(Myself, CLERIC_DEFENSIVE_HARMONY)
+End
+
+IF
+	Global("psHolyMight", "LOCALS", 0)
+Then
+	Response #100
+		SetGlobal("psHolyMight", "LOCALS", 1)
+		ForceSpell(Myself, CLERIC_DRAW_UPON_HOLY_MIGHT)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(NearestEnemyOf(Myself), CLERIC_CALL_LIGHTNING)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(NearestEnemyOf(Myself), CLERIC_FLAME_STRIKE)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(NearestEnemyOf(Myself), CLERIC_GLYPH_OF_WARDING)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(Myself, CLERIC_CALL_WOODLAND_BEINGS)
+End
+
+IF
+	Global("psChant", "LOCALS", 0)
+Then
+	Response #100
+		SetGlobal("psChant", "LOCALS", 1)
+		ForceSpell(Myself, CLERIC_CHANT)
+End
+
+IF
+	Global("psStrength", "LOCALS", 0)
+Then
+	Response #100
+		SetGlobal("psStrength", "LOCALS", 1)
+		ForceSpell(Myself, CLERIC_STRENGTH_OF_ONE)
+End
+
+IF
+	RandomNum(5, 1)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		ForceSpell(NearestEnemyOf(Myself), CLERIC_BOLT_OF_GLORY)
+End

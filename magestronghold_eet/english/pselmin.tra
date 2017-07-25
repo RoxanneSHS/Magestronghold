@@ -1,0 +1,36 @@
+@0    = ~You awaken.~
+@1    = ~What... what happened?~
+@2    = ~You appeared a short time ago from some sort of planar portal that opened as I was investigating.~
+@3    = ~Now, you must tell me what happened. It is vitally important.~
+@4    = ~Is that you, Elminster?~
+@5    = ~Yes, it is I, Child. But please; can you tell me what occurred here?~
+@6    = ~I am not sure... The Cowled Wizards were weaving a Spell of Release around the Artifact... Then a man appeared... He killed the Wizards, and said something about "revenge", and "the Lady", but that he needed to do something to someone on the Prime Material Plane first. Then he sent me to a demi-plane constructed from my own thoughts.~
+@7    = ~Did he say his name? This is vital.~
+@8    = ~No; he did not mention a name.~
+@9    = ~Then we must assume the worst, and that means that you have done something extremely foolish, young one. You said something about a Spell of Release? What exactly had you to do with this?~
+@10   = ~The Cowled Wizards sent me to retrieve an artifact from a Red Wizard. I killed him, and returned the artifact. They wanted to unlock its power and destroy the island of Thay.~
+@11   = ~Yes, that spell of unbinding would have done it... Well, now you must aid me, young one. Your actions have endangered Toril, and if we wait much longer every single plane of existence. ~
+@12   = ~That artifact was created around five hundred years ago in the city of Sigil. I know only what Mystra has revealed to me, but what I do know is that a sorcerer, a incredibly powerful sorcerer, came to Sigil. Shortly thereafter a fight started between the sorcerer and the Lady of Pain. A titanic fight ensued, and many planes were destroyed in the conflict.~
+@13   = ~Somehow the fight ended when the Lady managed to turn the Sorcerer's power against him, trapping him in a tiny reality, to spend an eternity sealed away from all others.~
+@14   = ~Who is the Lady of Pain?~
+@15   = ~The Lady? She is a powerful being, more so then any God. She controls the City of Sigil, somehow drawing her power from all the planes. ~
+@16   = ~How could a mere sorcerer hope to defy such a being?~
+@17   = ~Do not be confused, young one. He is not like the sorcerers of our world. They are but beings with a natural affinity to magic. He... he is different. He is perhaps the most powerful being in all the planes. Even the Lady could not defeat him without tricking him. ~
+@18   = ~The Planes and all realities are woven from energy. That energy is diluted and dissipated to create the planes. This sorcerer, however, can manipulate that pure energy. He can create realities with a word, or destroy them with a thought. He is a being to feared above all others. ~
+@19   = ~What can we possibly do against such a powerful being?~
+@20   = ~No way I'll not toy with a being of that power!~
+@21   = ~He is weak at the moment. The Cowled Wizards' powers only slightly dented the defenses around his prison. He had to use all his power to escape. This is the time to strike, lest he recuperate.~
+@22   = ~Why are you here, anyway?~
+@23   = ~I, along with many others, sensed the vast magic he used to escape. Also, he is attacking my Mistress.~
+@24   = ~Your Mistress?~
+@25   = ~Mystra, the Goddess of Magic. He is attacking her with all his might. We must stop him before she is destroyed. Only we mortals can save her. He has barred all the other gods, including Lord Ao Himself, from aiding her.~
+@26   = ~Why does he desire Mystras destruction?~
+@27   = ~She wove great protections around the artifact, when the Lady tossed it into the prime material, to stop anyone from unlocking the power within. He might have been freed years ago if it were not for her.~
+@28   = ~What do we do then?~
+@29   = ~He is at the Harper Hold in the city. He is using the Shrine of Mystra to attack her. If we can but distract him then Mystra may be able, with the aid of the other Gods, to destroy him while he is still weak. But we must hurry!~
+@30   = ~Very well. Let us go!~
+@31   = ~I will teleport us there.~
+@32   = ~You have no option, lest you face the wrath of Mystra! You have freed this sorcerer, and you will help stop him.~
+@33   = ~Very well.~
+
+

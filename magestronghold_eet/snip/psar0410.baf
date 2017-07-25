@@ -1,0 +1,86 @@
+IF
+	Global("psDeactivatedToggle", "AR0410", 1)
+	!Global("psElminsterSpawnToggle","GLOBAL",1)		//Unless elminster is spawning
+	!Global("psGiveToesArtifactCounter","GLOBAL",1)		//or you are in the cutscene
+THEN
+	Response #100
+		SetGlobal("psDeactivatedToggle", "AR0410", 0)
+		Activate("psApp06a")
+		Activate("psApp06b")
+		Activate("psApp06c")
+		Activate("psApp06d")
+		Activate("psApp07a")
+		Activate("psApp07b")
+		Activate("psApp07c")
+		Activate("psCowl01")
+		Activate("psApp08")
+END
+
+IF
+	Global("psStockedWithLoot","AR0410",0)
+THEN
+	RESPONSE #100
+		SetGlobal("psStockedWithLoot","AR0410",1)
+		ActionOverride("Container 1",CreateItem("psqrequ",1,0,0)) // Requiem of Elysium
+		Continue()
+END
+
+IF
+	Global("psGiveToesArtifactCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Deactivate("psApp06a")
+		Deactivate("psApp06b")
+		Deactivate("psApp06c")
+		Deactivate("psApp06d")
+		Deactivate("psApp07a")
+		Deactivate("psApp07b")
+		Deactivate("psApp07c")
+		Deactivate("psCowl01")
+		Deactivate("psApp08")
+		SetGlobal("psDeactivatedToggle", "AR0410", 1)
+		
+		CreateCreature("CSCOWL1",[599.691],0) // Cowled Wizard
+		CreateCreature("CSCOWL2",[699.742],0) // Cowled Wizard
+		CreateCreature("CSCOWL3",[783.721],0) // Cowled Wizard
+		CreateCreature("CSCOWL4",[817.632],0) // Cowled Wizard
+		CreateCreature("CSCOWL5",[691.548],0) // Cowled Wizard
+		CreateCreature("CSCOWL6",[603.612],0) // Cowled Wizard
+		CreateCreatureDoor("psTeos",[875.488],0) // Teos
+		MoveViewPoint([694.647],INSTANT)
+		FadeFromColor([30.0],0)
+		Wait(2)
+		SetGlobal("psGiveToesArtifactCounter","GLOBAL",2)
+		ActionOverride("psTeos", StartDialogNoSet(Player1))		
+END
+
+IF
+	Global("psElminsterSpawnToggle","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("psElminsterSpawnToggle","GLOBAL",2)
+		ActionOverride("psMel",DestroySelf())
+		CreateCreature("psElmin",[759.565],0) // Elminster
+		MoveViewPoint([694.647],INSTANT)
+		FadeFromColor([30.0],0)
+END
+
+IF			//Spawns the various apprenti etc that gate in when Teos does.
+	Global("psTeosNotAccepted", "GLOBAL", 4)
+	Global("psAR0410Toggle", "AR0410", 0)
+	!Global("psElminsterSpawnToggle","GLOBAL",1)		//Unless elminster is spawning
+	!Global("psGiveToesArtifactCounter","GLOBAL",1)		//or you are in the cutscene
+THEN
+	RESPONSE #100
+		SetGlobal("psAR0410Toggle", "AR0410", 1)
+		CreateCreature("psApp06a", [890.405], 10)
+		CreateCreature("psCowl01", [882.452], 10)
+		CreateCreature("psApp06b", [665.386], 10)
+		CreateCreature("psApp06c", [1065.626], 8)
+		CreateCreature("psApp06d", [929.634], 8)
+		CreateCreature("psApp07a", [502.587], 15)
+		CreateCreature("psApp07b", [722.565], 2)
+		CreateCreature("psApp07c", [621.750], 9)
+		CreateCreature("psApp08", [637.646], 0)
+
+END

@@ -1,0 +1,20 @@
+//Turn teos into a chicken and give him to the player as an item.
+
+If
+	True()
+Then
+	Response #100	
+		CutSceneID(Player1)
+		ClearAllActions()
+		
+		ForceSpell("psTeos", CHICKEN_CHANGE)
+		
+		DisplayStringHead("psTeos", @604)
+		Wait(4)
+		DisplayStringHead(Player1, @605)
+		Wait(2)
+		GiveItemCreate("psTChick", Player1, 1, 0, 0)
+		ActionOverride("psTeos", DestroySelf())
+		
+		EndCutSceneMode()
+End

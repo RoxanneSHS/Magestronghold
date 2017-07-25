@@ -1,0 +1,15 @@
+IF
+	Dead("psAdv07")
+THEN
+	RESPONSE #100
+		Attack("psAdv08")
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		Attack(NearestEnemyOf(Myself))
+		Continue()
+End

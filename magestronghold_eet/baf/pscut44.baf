@@ -1,0 +1,89 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneID(Player1)
+		Wait(2)
+		CreateCreatureImpassable("OBSERVE", [3156.2090], 0)	//Baat Leader
+		CreateCreatureImpassable("OBSERVE", [2978.2252], 0) //Tana Leader
+		CreateCreatureImpassable("OBSERVE", [3114.1717], 0)
+		CreateCreatureImpassable("OBSERVE", [2693.2090], 0)	
+		CreateCreatureImpassable("OBSERVE", [3490.1825], 0)		//Tana UD tele spot
+		CreateCreatureImpassable("OBSERVE", [1964.2705], 0)		
+
+
+
+
+
+
+		CreateCreature("psBaatL", [3156.2090], 3)	//Leader
+		CreateCreature("psMari1", [3161.2026], 3)	//Marileth
+		CreateCreature("psMari2", [3234.2064], 3)	//Marileth
+		CreateCreature("psBaat04", [3240.2018], 3)  //Lich
+
+		CreateCreature("psTanaL", [2978.2252], 10)  //Leader
+		CreateCreature("psTana03", [2890.2275], 10) //Lich
+		CreateCreature("psTana02", [2910.2316], 10) //Sirine
+		CreateCreature("psTana04", [2900.2322], 10) //Raver
+
+		CreateCreature("C6KNGT1", [3047.1742], 7)	//Knights to be killed
+		CreateCreature("C6KNGT2", [3106.1776], 7)
+
+		CreateCreature("C6KNGT3", [2440.2257], 7)	//Knights to be killed
+		CreateCreature("CLSTKN01", [2490.2288], 7)
+		
+		CreateCreature("HELMKNI1", [3000.1862], 3)	//Knights who talk in last scene		
+		CreateCreature("TALKNI01", [2945.1910], 12)
+
+		ActionOverride("HELMKNI1", FaceObject("TALKNI01")
+		ActionOverride("TALKNI01", FaceObject("HELMKNI1")
+		
+
+		MoveViewPoint([3050.2150], INSTANT)
+		FadeFromColor([20.0], 0)
+		Wait(2)
+		DisplayStringHead("psBaatL", @31)
+		Wait(4)
+		CreateVisualEffect("SPPORTAL",[3064.2117])
+		CreateCreature("psKob01", [3064.2117], 3)
+		SmallWait(1)
+		CreateVisualEffect("SPPORTAL",[3098.2140])
+		CreateCreature("psKob02", [3098.2140], 3)
+		SmallWait(1)
+		CreateVisualEffect("SPPORTAL",[3137.2160])
+		CreateCreature("psKob01", [3137.2160], 3)
+		SmallWait(1)
+		CreateVisualEffect("SPPORTAL",[3027.2151])
+		CreateCreature("psKob01", [3027.2151], 3)
+		SmallWait(1)
+		CreateVisualEffect("SPPORTAL",[3065.2173])	
+		CreateCreature("psKob02", [3065.2173], 3)
+		SmallWait(1)
+		CreateVisualEffect("SPPORTAL",[3109.2199])	
+		CreateCreature("psKob02", [3109.2199], 3)
+		
+		Wait(3)
+		DisplayStringHead("psKob01", @32)
+		Wait(3)
+		DisplayStringHead("psKob02", @33)
+		Wait(5)
+		DisplayStringHead("psTanaL", @34)
+		Wait(3)
+		DisplayStringHead("psKob01", @90)
+		Wait(2)
+		DisplayStringHead("psKob01", @91)
+		Wait(3)
+		
+		ActionOverride("psTanaL", ForceSpell("psBaatL", TRAP_FIREBALL))
+		Wait(3)
+		DisplayStringHead("psBaatL", @35)
+		Wait(5)
+		DisplayStringHead("psBaatL", @36)
+		Wait(3)
+		ActionOverride("C6KNGT1", MoveToPoint([2810.1936]))
+		ActionOverride("C6KNGT2", MoveToPoint([2851.1962]))
+		ActionOverride("CLSTKN01", MoveToPoint([2761.2007]))
+		ActionOverride("C6KNGT3", MoveToPoint([2796.2022]))
+		Wait(3)
+		StartCutScene("psCut45")
+END

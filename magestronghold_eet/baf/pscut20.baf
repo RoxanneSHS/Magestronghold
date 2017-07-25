@@ -1,0 +1,38 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		MultiPlayerSync()
+		StartCutSceneMode()
+		CutSceneId("psTeos")
+		SetGlobal("psGiveToesArtifactToggle","GLOBAL",1)
+	Wait(2)	SetGlobal("psTeosCutSceneDialogToggle", "GLOBAL", 1)
+		Wait(2)
+		CreateVisualEffectObject("SPDIMNDR",Player1)
+		CreateVisualEffectObject("SPDIMNDR",Player2)
+		CreateVisualEffectObject("SPDIMNDR",Player3)
+		CreateVisualEffectObject("SPDIMNDR",Player4)
+		CreateVisualEffectObject("SPDIMNDR",Player5)
+		CreateVisualEffectObject("SPDIMNDR",Player6)
+		Wait(1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,Rest())
+		ActionOverride(Player2,Rest())
+		ActionOverride(Player3,Rest())
+		ActionOverride(Player4,Rest())
+		ActionOverride(Player5,Rest())
+		ActionOverride(Player6,Rest())
+		ActionOverride(Player1,LeaveAreaLUA("AR0410","",[843.466],0))
+		ActionOverride(Player2,LeaveAreaLUA("AR0410","",[664.1531],2))
+		ActionOverride(Player3,LeaveAreaLUA("AR0410","",[600.1519],14))
+		ActionOverride(Player4,LeaveAreaLUA("AR0410","",[839.1635],0))
+		ActionOverride(Player5,LeaveAreaLUA("AR0410","",[931.1652],4))
+		ActionOverride(Player6,LeaveAreaLUA("AR0410","",[538.1444],2))
+		EndCutSceneMode()
+ SetGlobal("psTeosCutSceneDialogToggle", "GLOBAL", 1)		ActionOverride("psTeos",DestroySelf())
+END
+
+
+

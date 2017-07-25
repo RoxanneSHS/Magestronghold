@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneID("psMystra")
+		MoveViewObject(Myself,INSTANT)
+		CreateVisualEffectObject("SPFLSRIN",Myself)
+		Wait(2)
+		CreateVisualEffect("SPFIRSDI",[593.782])
+		CreateVisualEffect("SPFIRSDI",[587.746])
+		ScreenShake([20.20],10)
+		Wait(1)
+		CreateVisualEffect("SPFIRSDI",[634.792])
+		CreateVisualEffect("SPFIRSDI",[634.755])
+		CreateVisualEffect("SPFIRSDI",[593.782])
+		CreateVisualEffect("SPFIRSDI",[587.746])
+		Wait(1)
+		ForceSpell(Myself,HOLY_LIGHT_FROM_ABOVE)
+		ForceSpell(Player1,DRAGON_WING_BUFFET)
+		EndCutSceneMode()
+		DestroySelf()
+END

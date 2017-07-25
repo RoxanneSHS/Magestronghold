@@ -1,0 +1,114 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Global("Magicy1","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ApplySpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+		ApplySpell(Myself,WIZARD_STONE_SKIN)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_ELECTRICITY)
+		SetGlobal("Magicy1","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Doomy1","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_TIME_STOP)
+		ForceSpell(LastSeenBy(Myself),WIZARD_ENERGY_DRAIN)
+		ForceSpell(LastSeenBy(Myself),4653)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_SWORD)
+		SetGlobal("Doomy1","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,WIZARD_LOWER_RESISTANCE)
+		ForceSpell(LastSeenBy(Myself),4655)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #60
+		ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)
+		ForceSpell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		Continue()
+	RESPONSE #60
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Absolu","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		SetGlobal("Absolu","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Firey","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Player1,4654)
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		SetGlobal("Firey","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Malison","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_GREATER_MALISON)
+		ForceSpell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+		SetGlobal("Malison","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Protecty1","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+		SetGlobal("Protecty1","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+		ForceSpell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+		ForceSpell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		ForceSpell(LastSeenBy(Myself),4653)
+		Continue()
+END
+
+
+

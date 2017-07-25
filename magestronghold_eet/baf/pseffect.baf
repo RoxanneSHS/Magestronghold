@@ -1,0 +1,25 @@
+IF
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("HELLOLY",Myself)
+		Wait(1)
+END
+
+IF
+	See(Player1)
+	Range(Player1,1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+		CreateVisualEffectObject("HELLOLY",Myself)
+END
+
+IF
+	Global("psFinalQuestToKillMelCounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+
+

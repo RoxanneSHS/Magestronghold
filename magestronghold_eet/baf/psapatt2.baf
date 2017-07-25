@@ -1,0 +1,9 @@
+IF
+	Detect(Player1)
+	Global("psFanaticAttackToggle","GLOBAL",0)
+	Global("psDegoSpawnToggle","AR0411",0)
+THEN
+	RESPONSE #100
+		SetGlobal("psFanaticAttackToggle","GLOBAL",1)
+		StartDialogueNoSet(Player1)
+END

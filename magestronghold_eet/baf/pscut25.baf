@@ -1,0 +1,30 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeFromColor([30.0],0)
+		Wait(1)
+		ActionOverride("psSPTar1",ReallyForceSpell("psSPTar3",4651))
+		ActionOverride("psSPTar3",ReallyForceSpell("psSPTar5",4651))
+		ActionOverride("psSPTar5",ReallyForceSpell("psSPTar2",4651))
+		ActionOverride("psSPTar2",ReallyForceSpell("psSPTar4",4651))
+		ActionOverride("psSPTar4",ReallyForceSpell("psSPTar1",4651))
+		Wait(2)
+		ActionOverride("psSPTar1",ReallyForceSpell("psSPTar3",4651))
+		ActionOverride("psSPTar3",ReallyForceSpell("psSPTar5",4651))
+		ActionOverride("psSPTar5",ReallyForceSpell("psSPTar2",4651))
+		ActionOverride("psSPTar2",ReallyForceSpell("psSPTar4",4651))
+		ActionOverride("psSPTar4",ReallyForceSpell("psSPTar1",4651))
+		Wait(2)
+		ActionOverride("psSPTar1",ReallyForceSpell("psSPTar3",4651))
+		ActionOverride("psSPTar3",ReallyForceSpell("psSPTar5",4651))
+		ActionOverride("psSPTar5",ReallyForceSpell("psSPTar2",4651))
+		ActionOverride("psSPTar2",ReallyForceSpell("psSPTar4",4651))
+		ActionOverride("psSPTar4",ReallyForceSpell("psSPTar1",4651))
+		Wait(2)
+		StartCutScene("psCut26")
+END
+
+
+

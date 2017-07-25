@@ -1,0 +1,121 @@
+IF
+	HPLT(Myself, 150)
+	GlobalLT("psRestore", "LOCALS", 2)
+THEN
+	Response #100
+		ReallyForceSpell(Myself, CLERIC_HEAL)
+		ReallyForceSpell(Myself, WIZARD_TENSERS_TRANSFORMATION)
+		
+		ReallyForceSpell(Myself, CLERIC_GLOBE_OF_BLADES)
+		ReallyForceSpell(Myself, WIZARD_STONE_SKIN)
+		ReallyForceSpell(Myself, WIZARD_GLOBE_OF_INVULNERABILITY)
+		ReallyForceSpell(Myself, CLERIC_PHYSICAL_MIRROR)
+		ReallyForceSpell(Myself, WIZARD_MIRROR_IMAGE)
+		IncrementGlobal("psRestore", "LOCALS", 1)
+END		
+
+IF
+	Global("psUDSpellUp", "LOCALS", 0)
+Then
+	Response #100
+		ReallyForceSpell(Myself, CLERIC_GLOBE_OF_BLADES)
+		ReallyForceSpell(Myself, WIZARD_STONE_SKIN)
+		ReallyForceSpell(Myself, WIZARD_GLOBE_OF_INVULNERABILITY)
+		ReallyForceSpell(Myself, CLERIC_PHYSICAL_MIRROR)
+		ReallyForceSpell(Myself, WIZARD_MIRROR_IMAGE)
+		SetGlobal("psUDSpellUp", "LOCALS", 1)
+		Attack(NearestEnemyOf(myself))
+END
+
+IF
+	See("psTanaUD")
+THEN
+	RESPONSE #100
+		Attack("psTanaUD")
+		Continue()
+END
+
+IF
+	See("psTana01")
+THEN
+	RESPONSE #100
+		Attack("psTana01")
+		Continue()
+END
+
+IF
+	See("psTana02")
+THEN
+	RESPONSE #100
+		Attack("psTana02")
+		Continue()
+END
+
+IF
+	See("psTana03")
+THEN
+	RESPONSE #100
+		Attack("psTana03")
+		Continue()
+END
+
+IF
+	See("psTana04")
+THEN
+	RESPONSE #100
+		Attack("psTana04")
+		Continue()
+END
+
+IF
+	See("psTanaL")
+THEN
+	RESPONSE #100
+		Attack("psTanaL")
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(myself))
+END
+
+IF
+	See(NearestEnemyOf(myself))
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself), WIZARD_DRAGONS_BREATH)
+		Continue()
+END
+
+IF
+	RandomNum(6, 1)
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(myself), WIZARD_ABI_DALZIMS_HORRID_WILTING)
+		Continue()
+END
+
+IF
+	RandomNum(15, 1)
+	GlobalLT("psPlanatarSummon", "LOCALS", 2)
+	See(NearestEnemyOf(myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(myself), WIZARD_SUMMON_PLANATAR_EVIL)
+		IncrementGlobal("psPlanatarSummon", "LOCALS", 1)
+END
+
+IF
+	RandomNum(35, 1)
+	Global("psUDTimestop", "LOCALS", 0)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		SetGlobal("psUDTimestop", "LOCALS", 1)
+		ForceSpell(Myself, WIZARD_TIME_STOP)
+END

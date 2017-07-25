@@ -1,0 +1,34 @@
+IF
+	HPLT(Myself, 150)
+	GlobalLT("psTanaSummonedCounter", "LOCALS", 3)
+	See(NearestEnemyOf(Myself))
+Then
+	Response #100
+		IncrementGlobal("psTanaSummonedCounter", "LOCALS", 1)
+		CreateCreatureObject("psTana01", NearestEnemyOf(Myself), 0, 0, 0)
+		CreateCreatureObject("psTana02", NearestEnemyOf(Myself), 0, 0, 0)
+		CreateCreatureObject("psTana03", NearestEnemyOf(Myself), 0, 0, 0)
+		CreateCreatureObject("psTana04", NearestEnemyOf(Myself), 0, 0, 0)
+END
+
+IF
+	GlobalLT("psTanaAura", "LOCALS", 4)
+	GlobalTimerExpired("psNoCast", "LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		IncrementGlobal("psTanaAura", "LOCALS", 1)
+		ForceSpell(Myself, CLERIC_AURA_OF_FLAMING_DEATH)
+		SetGlobalTimer("psNoCast", "LOCALS", 90)
+END
+
+
+IF
+	GlobalTimerExpired("psNoCast", "LOCALS")
+	Global("psTanaStorm", "LOCALS", 0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("psTanaStorm", "LOCALS", 1)
+		ForceSpell(NearestEnemyOf(Myself), CLERIC_STORM_OF_VENGEANCE)
+END

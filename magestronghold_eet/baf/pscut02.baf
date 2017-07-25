@@ -1,0 +1,42 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		StartCutSceneMode()
+		Wait(1)
+		CutSceneId("psMel")
+		Wait(1)
+		ActionOverride("psTeos", ForceSpell(Myself,WIZARD_DIMENSION_DOOR))
+		ActionOverride("psTeos", DestroySelf())
+		ActionOverride("psMel",ForceSpell("CSCowl6",CUTSCENE_POWERWORD_KILL))
+		ActionOverride("psMel",ReallyForceSpellRES("SPWI918","CSCowl5")) // Bigby's Crushing Hand
+		ActionOverride("CSCowl5",ForceSpell("psMel",WIZARD_DISINTEGRATE))
+		ActionOverride("CSCowl4",ForceSpell("psMel",WIZARD_FLAME_ARROW))
+		ActionOverride("CSCowl3",ForceSpell("psMel",WIZARD_FLAME_ARROW))
+		ActionOverride("psMel",ForceSpell("CSCowl4",CUTSCENE_FLESH_TO_STONE))
+		ActionOverride("psMel",ApplySpell("CSCowl5",WIZARD_DISINTEGRATE_IGNORE_RESISTANCE))
+		ActionOverride("psMel",ForceSpell("CSCowl4",WIZARD_MELF_ACID_ARROW))
+		ActionOverride("CSCowl3",ForceSpell("psMel",CUTSCENE_LOWER_RESISTANCE))
+		ActionOverride("CSCowl2",ForceSpell("psMel",CUTSCENE_LOWER_RESISTANCE))
+		ActionOverride("CSCowl1",ForceSpellRES("SPPSAP1","psMel"))
+		ActionOverride("psMel",ForceSpell("CSCowl3",FORCE_DAMAGE_1))
+		ScreenShake([20.20],10)
+		ActionOverride("psMel",ForceSpell("CSCowl3",CUTSCENE_POWERWORD_KILL))
+		ActionOverride("psMel",ForceSpell(Myself,FLASHY_2))
+		ActionOverride("CSCowl3",ForceSpell("psMel",CUTSCENE_LOWER_RESISTANCE))
+		ActionOverride("CSCowl2",ForceSpell("psMel",CUTSCENE_LOWER_RESISTANCE))
+		ActionOverride("CSCowl2",ForceSpell("psMel",WIZARD_ABI_DALZIMS_HORRID_WILTING))
+		ActionOverride("psMel",ForceSpell("CSCowl2",WIZARD_FINGER_OF_DEATH_IGNORE_RESISTANCE))
+		ActionOverride("CSCowl1",ForceSpell("psMel",WIZARD_SPELL_STRIKE))
+		ActionOverride("CSCowl1",ForceSpell("psMel",WIZARD_FLAME_ARROW))
+		ActionOverride("CSCowl1",ForceSpell("psMel",WIZARD_FLAME_ARROW))
+		ActionOverride("psMel",ForceSpell("CSCowl1",FLASHY_DEATH_1))
+		ActionOverride("CSCowl1",ForceSpell("psMel",WIZARD_CHROMATIC_ORB))
+		ActionOverride("psMel",ForceSpell("CSCowl4",WIZARD_MELF_ACID_ARROW))
+		ActionOverride("psMel",ForceSpell("Player1",0))
+		ActionOverride("psMel",StartDialogueNoSet(Player1))
+END
+
+
+

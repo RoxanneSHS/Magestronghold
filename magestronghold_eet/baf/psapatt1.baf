@@ -1,0 +1,11 @@
+IF
+	Detect(Player1)
+	Global("psAdv0enturerAttack","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("psAdventurerAttack","GLOBAL",1)
+		StartDialogueNoSet(Player1)
+END
+
+
+

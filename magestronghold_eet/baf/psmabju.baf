@@ -1,0 +1,117 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psSpellupToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		SetGlobal("psSpellupToggle","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Impris","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_IMPRISONMENT)
+		SetGlobal("Impris","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Impris1","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_IMPRISONMENT)
+		SetGlobal("Impris1","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_DEATH)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,30)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_MANTLE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+	See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_SPELL_STRIKE)
+		ForceSpell(LastSeenBy(Myself),WIZARD_PIERCE_SHIELD)
+		ForceSpell(Myself,WIZARD_SPELL_TURNING)
+		Continue()
+END
+
+
+

@@ -1,0 +1,59 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psAdApp1")
+		MultiPlayerSync()
+		Wait(1)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		DisplayStringHead(Myself,1468) // Ahh, no! Help!
+		Wait(2)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		Wait(3)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		Wait(3)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		Wait(3)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		Wait(3)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+		Wait(3)
+		ForceSpell("psBroom1",WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("psBroom1")
+		Wait(1)
+		MoveToObject("psAdApp1")
+		Wait(1)
+		FaceObject("psAdApp1")
+		Swing()
+		SmallWait(10)
+		Swing()
+		SmallWait(10)
+		Attack("psAdApp1")
+		Wait(1)
+		Kill("psAdApp1")
+END
+
+IF
+	Global("psBroomSpawnToggle","AR0411",0)
+THEN
+	RESPONSE #100
+		CutSceneId("psBroom1")
+		FadeToColor([30.0],0)
+		ActionOverride("OBSERVE",DestroySelf())
+		Wait(2)
+		MoveViewObject(Player1,INSTANT)
+		Wait(1)
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+		SetGlobal("psBroomSpawnToggle","AR0411",1)
+		DestroySelf()
+END
+
+
+

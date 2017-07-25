@@ -1,0 +1,19 @@
+IF
+	Global("Player1Usesorcery","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Player1Usesorcery","GLOBAL",1)
+		ActionOverride(Player1,StartDialogueNoSet(Player1))
+END
+
+IF
+	Global("Player1Usesorcery","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Player1Usesorcery","GLOBAL",0)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		DestroySelf()
+END
+
+
+

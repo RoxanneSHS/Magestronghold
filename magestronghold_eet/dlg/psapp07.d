@@ -1,0 +1,28 @@
+BEGIN ~psApp07~
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN goAway
+SAY @0
+	IF ~~ THEN REPLY @1 GOTO whatAre
+	IF ~~ THEN REPLY @2 GOTO bye
+	IF ~~ THEN REPLY @3 GOTO deathWish
+END
+
+IF ~~ THEN BEGIN whatAre
+SAY @4
+	IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN bye
+SAY @5
+	IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN deathWish
+SAY @6
+	IF ~~ THEN EXIT
+END
+
+IF ~True()~ THEN BEGIN insane
+SAY @7
+IF ~~ THEN EXIT
+END

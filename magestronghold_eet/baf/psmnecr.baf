@@ -1,0 +1,90 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Imune","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_SPIRIT_ARMOR)
+		ApplySpell(Myself,WIZARD_ANIMATE_DEAD)
+		ApplySpell(Myself,WIZARD_ANIMATE_DEAD)
+		SetGlobal("Imune","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_ANIMATE_DEAD)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Deathy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		SetGlobal("Deathy","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Deathy11","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		SetGlobal("Deathy1","LOCALS",1)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_SPELL)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		Continue()
+END
+
+
+
