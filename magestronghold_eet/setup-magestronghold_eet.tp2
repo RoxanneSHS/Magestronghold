@@ -1,7 +1,6 @@
 BACKUP ~magestronghold_eet/backup~
-
-AUTHOR ~Org: Inferno & M, Updates: Hlid, Duality, Malbolgia~
 //EET reduced and adapted version of Planar Sphere mod, by Roxanne@SHS
+AUTHOR ~Org: Inferno & M, Updates: Hlid, Duality, Malbolgia~
 VERSION ~0.1~
 
 AUTO_TRA ~magestronghold_eet/%s~
