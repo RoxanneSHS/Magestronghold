@@ -1060,11 +1060,6 @@ COPY ~magestronghold_eet/itm/psBook02.itm~ ~override/psBook02.itm~
     SAY NAME2 @158
     SAY DESC @159
 
-COPY ~magestronghold_eet/itm/psBook04.itm~ ~override/psBook04.itm~
-    SAY NAME1 @158
-    SAY NAME2 @158
-    SAY DESC @159
-
   COPY ~magestronghold_eet/itm/psRing02.ITM~ ~override/psRing02.ITM~
     SAY NAME1 @82
     SAY NAME2 @160
