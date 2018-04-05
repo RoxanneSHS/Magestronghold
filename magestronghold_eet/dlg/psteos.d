@@ -330,3 +330,5 @@ SAY~Huh, someone's angry, aren't we...we are...take that down...please...eh...~
 IF~~THEN DO~SetGlobal("PsTeosRabbit","ar0410",2) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 END
 
+ADD_TRANS_ACTION MGTeos01 BEGIN 43 END BEGIN 0  END
+ ~SetGlobalTimer("TeolMessenger","GLOBAL",SEVEN_DAYS)~
