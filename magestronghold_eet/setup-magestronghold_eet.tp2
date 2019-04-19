@@ -2172,13 +2172,9 @@ EXTEND_TOP    ~AR0410.bcs~  ~magestronghold_eet/snip/psAR0410.baf~
 EXTEND_TOP    ~AR0411.bcs~  ~magestronghold_eet/snip/psAR0411.baf~
 EXTEND_TOP    ~AR0419.bcs~  ~magestronghold_eet/snip/AR0419.baf~
 EXTEND_TOP    ~AR0500.bcs~  ~magestronghold_eet/snip/psAR0500.baf~
-EXTEND_TOP    ~AR0700.bcs~  ~magestronghold_eet/snip/psAR0700.baf~
-USING ~magestronghold_eet/english/AR0700.tra~
 EXTEND_TOP    ~AR0709.bcs~  ~magestronghold_eet/snip/psAR0709.baf~
 EXTEND_TOP    ~AR1000.bcs~  ~magestronghold_eet/snip/psAR1000.baf~
-EXTEND_TOP    ~AR1002.bcs~  ~magestronghold_eet/snip/psAR1002.baf~
 EXTEND_TOP    ~FURNACE2.bcs~  ~magestronghold_eet/snip/sFurnace.baf~
-EXTEND_TOP    ~ar0900.bcs~  ~magestronghold_eet/snip/psAR0900.baf~
 
 
 ////////////////////////////////////////////////////////
