@@ -29,7 +29,7 @@ SAY @8
 IF ~~ THEN EXIT
 END
 
-IF ~!NumTimesTalkedTo(0)~ THEN BEGIN returned
+IF ~!NumTimesTalkedTo(0)!Global("psProfsPortalCounter","GLOBAL",1)~ THEN BEGIN returned
 SAY @9
 ++ @10 GOTO questions
 ++ @11 DO ~SetGlobal("psProfsPortalCounter", "GLOBAL", 1)
