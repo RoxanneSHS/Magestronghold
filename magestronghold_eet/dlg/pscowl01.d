@@ -19,7 +19,7 @@ END
 
 IF ~~ THEN BEGIN openGateway
 SAY @7
-IF ~~ THEN DO ~SetGlobal("psProfsPortalCounter", "GLOBAL", 1)
+IF ~~ THEN DO ~SetGlobal("psProfsPortalCounter","GLOBAL",1)
 StartCutSceneMode()
 StartCutScene("psCutPor")~ EXIT
 END
@@ -29,10 +29,10 @@ SAY @8
 IF ~~ THEN EXIT
 END
 
-IF ~!NumTimesTalkedTo(0)!Global("psProfsPortalCounter","GLOBAL",1)~ THEN BEGIN returned
+IF ~!NumTimesTalkedTo(0)Global("psProfsPortalCounter","GLOBAL",0)~ THEN BEGIN returned
 SAY @9
 ++ @10 GOTO questions
-++ @11 DO ~SetGlobal("psProfsPortalCounter", "GLOBAL", 1)
+++ @11 DO ~SetGlobal("psProfsPortalCounter","GLOBAL",1)
 StartCutSceneMode()
 StartCutScene("psCutPor")~ EXIT
 END
@@ -49,7 +49,7 @@ SAY @17
 ++ @18 EXIT
 END
 
-IF ~!NumTimesTalkedTo(0)Global("psProfsPortalCounter","GLOBAL",1)~ THEN BEGIN returned2
-SAY ~Hello again. Leave me to my work.~
+IF ~!NumTimesTalkedTo(0)!Global("psProfsPortalCounter","GLOBAL",0)~ THEN BEGIN returned2
+SAY @19
 IF~~THEN EXIT
 END
