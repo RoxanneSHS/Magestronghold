@@ -48,3 +48,8 @@ IF ~~ THEN BEGIN ofCourseNot
 SAY @17
 ++ @18 EXIT
 END
+
+IF ~!NumTimesTalkedTo(0)Global("psProfsPortalCounter","GLOBAL",1)~ THEN BEGIN returned2
+SAY ~Hello again. Leave me to my work.~
+IF~~THEN EXIT
+END
