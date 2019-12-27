@@ -3,7 +3,7 @@ BACKUP ~magestronghold_eet/backup~
 //AUTHOR ~Org: Inferno & M, Updates: Hlid, Duality, Malbolgia~
 SUPPORT ~Roxanne - https://baldursextendedworld.com/EET-Updates/ or roxanne@baldursextendedworld.com~
 
-VERSION ~0.2~
+VERSION ~0.3~
 
 AUTO_TRA ~magestronghold_eet/%s~
 
@@ -53,6 +53,8 @@ COPY_EXISTING ~LAVOK01.cre~ ~override~       	//LAVOK needs Robe of Evil Archmag
   END
 BUT_ONLY_IF_IT_CHANGES
 
+COPY_EXISTING ~25spell.STO~ ~override/26spell.sto~
+SAY 0xc @623
 
 COPY ~magestronghold_eet/cre/psDwarf1.cre~ ~override/psDwarf1.cre~
   SAY NAME1 @618

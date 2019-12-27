@@ -9,7 +9,7 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY @3
-  IF ~~ THEN DO ~StartStore("bdonoro",LastTalkedToBy())~ EXIT
+  IF ~~ THEN DO ~StartStore("26spell",LastTalkedToBy())~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
