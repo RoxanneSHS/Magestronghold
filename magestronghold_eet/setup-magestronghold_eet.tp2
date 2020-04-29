@@ -3,7 +3,7 @@ BACKUP ~magestronghold_eet/backup~
 //AUTHOR ~Org: Inferno & M, Updates: Hlid, Duality, Malbolgia~
 SUPPORT ~Roxanne - https://baldursextendedworld.com/EET-Updates/ or roxanne@baldursextendedworld.com~
 
-VERSION ~0.3~
+VERSION ~0.4~
 
 AUTO_TRA ~magestronghold_eet/%s~
 
@@ -11,6 +11,10 @@ LANGUAGE ~English~
 ~english~
 //~magestronghold_eet/english~
 ~magestronghold_eet/english/setup.tra~
+
+LANGUAGE ~Russian (adapted by Serdrick)~
+~Russian~
+~magestronghold_eet/Russian/setup.tra~
 
 BEGIN @0
 
@@ -2145,28 +2149,28 @@ COMPILE ~magestronghold_eet/dlg~  // Full dialogs
      ~magestronghold_eet/baf~  // Full Scripts
 
 COMPILE ~magestronghold_eet/baf/psCut41.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut42.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut43.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut44.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut45.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut46.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut47.baf~
-USING ~magestronghold_eet/english/ar0900.tra~
+USING ~magestronghold_eet/%s/ar0900.tra~
 
 COMPILE ~magestronghold_eet/baf/psCut39.baf~
-USING ~magestronghold_eet/english/ar0300.tra~
+USING ~magestronghold_eet/%s/ar0300.tra~
 
 // Extending existing scripts and possibly existing scripts
 
