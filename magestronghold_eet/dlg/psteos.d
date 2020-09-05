@@ -306,27 +306,27 @@ IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-1~Global("PsTeosRabbit","ar0410",1)~THEN BEGIN rabbit1
-SAY~A...a rabbit...magic of immense magnitude. A rabbit out of nowhere - by Mystra!~
-IF~~THEN REPLY~Teos?~GOTO rabbit2
-IF~~THEN REPLY~I have the feeling I've seen this trick before...it did not require artifacts or Mystra or such last time around.~GOTO rabbit2
+SAY @85 /*A...a rabbit...magic of immense magnitude. A rabbit out of nowhere - by Mystra!*/
+IF~~THEN REPLY @86 /*Teos?*/ GOTO rabbit2
+IF~~THEN REPLY @87 /*I have the feeling I've seen this trick before...it did not require artifacts or Mystra or such last time around.*/ GOTO rabbit2
 END
 
 IF~~THEN BEGIN rabbit2
-SAY~This is...a rabbit. A pretty ordinary one, as it seems. Nothing magical or powerful about it. This must have been a...fraud?~
-IF~~THEN REPLY~Obviously. And the last one you and your cowls play on me. It's over, Teos!~GOTO rabbit3
+SAY @88 /*This is...a rabbit. A pretty ordinary one, as it seems. Nothing magical or powerful about it. This must have been a...fraud?*/
+IF~~THEN REPLY @89 /*Obviously. And the last one you and your cowls play on me. It's over, Teos!*/ GOTO rabbit3
 END
 
 IF~~THEN BEGIN rabbit3
-SAY~What do you mean?~
-IF~~THEN REPLY~I mean that it's over, Teos, you and your masters have overdone it. Leave while you still can or I'll show you MY magic!~GOTO rabbit4
-IF~~THEN REPLY~I'm fed up with you and your games, Teos. This sphere is now rightfully mine, you clown. Get out and never come back, this is my last word!~GOTO rabbit4
-IF~~THEN REPLY~Enough is enough. This is your end, Teos, no magic will now save you from my wrath!~GOTO rabbit4
+SAY @90 /*What do you mean?*/
+IF~~THEN REPLY @91 /*I mean that it's over, Teos, you and your masters have overdone it. Leave while you still can or I'll show you MY magic!*/ GOTO rabbit4
+IF~~THEN REPLY @92 /*I'm fed up with you and your games, Teos. This sphere is now rightfully mine, you clown. Get out and never come back, this is my last word!*/ GOTO rabbit4
+IF~~THEN REPLY @93 /*Enough is enough. This is your end, Teos, no magic will now save you from my wrath!*/ GOTO rabbit4
 END
 
 IF~~THEN BEGIN rabbit4
-SAY~Huh, someone's angry, aren't we...we are...take that down...please...eh...~
-=~Magic, Teos, think of your magic.~
-=~I leave you to your sphere, <CHARNAME>, it's all yours, yes, it is. I hold my word. Eh, peace?~
+SAY @94 /*Huh, someone's angry, aren't we...we are...take that down...please...eh...*/
+=@95 /*Magic, Teos, think of your magic.*/
+=@96 /*I leave you to your sphere, <CHARNAME>, it's all yours, yes, it is. I hold my word. Eh, peace?*/
 IF~~THEN DO~SetGlobal("PsTeosRabbit","ar0410",2) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 END
 
