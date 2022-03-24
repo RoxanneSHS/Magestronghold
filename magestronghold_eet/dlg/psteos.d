@@ -250,7 +250,7 @@ END
 IF ~~ THEN BEGIN psMainQuest-18 // from: 17.0
   SAY @56
   ++ @57 GOTO psMainQuest-19
-  ++ @85 GOTO psMainQuest-19
+  ++ @97 GOTO psMainQuest-19
 END
 
 IF ~~ THEN BEGIN psMainQuest-19 // from: 18.0
